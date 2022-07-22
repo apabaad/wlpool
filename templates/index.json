@@ -185,12 +185,161 @@
         "align_text": "left",
         "divider": false
       }
+    },
+    "1658457580b8985e5c": {
+      "type": "custom-content",
+      "blocks": {
+        "1658457580165bfe3c-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#f9f9f9",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "Lorem ipsum",
+            "subheading": "",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. <\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "DISCOVER MORE",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-wpool-primary",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "1658457580165bfe3c-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new-years-party-in-full-swing.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "1658457580165bfe3c-0",
+        "1658457580165bfe3c-1"
+      ],
+      "settings": {
+        "heading": "Promotions",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "165845897368f27069": {
+      "type": "custom-content",
+      "blocks": {
+        "16584589724f2dcf9e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/handful-of-acorns.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "16584589724f2dcf9e-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#f9f9f9",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "Lorem ipsum",
+            "subheading": "",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. <\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "DISCOVER MORE",
+            "button_link": "",
+            "button_style": "sf__btn-secondary",
+            "button_color": "sf__btn-wpool-primary",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16584589724f2dcf9e-1",
+        "16584589724f2dcf9e-0"
+      ],
+      "settings": {
+        "heading": "Recipies",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "165845919560822654": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1658459195335a5891-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "envelope",
+            "title": "Downloads",
+            "text": "<p>Access or download your product manuals.<\/p>"
+          }
+        },
+        "1658459195335a5891-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "phone",
+            "title": "Contact Us",
+            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1658459195335a5891-0",
+        "1658459195335a5891-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
     }
   },
   "order": [
     "16584440690057b786",
     "1654683750035958ea",
     "1658444034f1baadd9",
-    "1658447237c1ccb236"
+    "1658447237c1ccb236",
+    "1658457580b8985e5c",
+    "165845897368f27069",
+    "165845919560822654"
   ]
 }
