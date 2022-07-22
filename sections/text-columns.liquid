@@ -25,7 +25,7 @@
       {%- else -%}
         {%- assign column_width = grid_item_width -%}
       {%- endif -%}
-      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
+      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }} wpool-grid__item" {{ block.shopify_attributes }} data-aos="row-of-3">
         {%- if block.settings.enable_image -%}
           <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
             {% if block.settings.button_link != blank %}
@@ -50,17 +50,19 @@
             {% endif %}
           </div>
         {% endif %}
-        {%- if block.settings.title != blank -%}
-          <h3>{{ block.settings.title }}</h3>
-        {% endif %}
-        {% if block.settings.text != blank %}
-          <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
-        {% endif %}
-        {% if block.settings.button_label != blank %}
-          <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
-            {{ block.settings.button_label }}
-          </a>
-        {% endif %}
+        <div class="wpool-grid-text">
+          {%- if block.settings.title != blank -%}
+            <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+          {% endif %}
+          {% if block.settings.button_label != blank %}
+            <a href="{{ block.settings.button_link }}" class="sf__btn sf__btn-wpool-primary">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+      </div>
       </div>
     {%- endfor -%}
   </div>

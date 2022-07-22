@@ -1981,7 +1981,7 @@ body .collapsible-trigger--inline .collapsible-trigger__icon svg {
  steel cucine homepage 
 -----------------------------------------------------------------*/
 
-.cucine-hover {
+/* .cucine-hover {
   transition: 0.5s ease;
 }
 
@@ -1993,7 +1993,7 @@ body .collapsible-trigger--inline .collapsible-trigger__icon svg {
 .cucine-hover:hover .text-white {
   opacity: 1;
   color: #000;
-}
+} */
 
 .text-white {
   font-weight: bold;
@@ -2078,6 +2078,37 @@ cucine  collection page
   max-width: 490px !important;
 }
 
-.grid__item {
-  padding-left: 0 !important;
+/* WHIRLPOOL  */
+
+.grid {
+  display: flex; /* for homepage whirlpool columns */
+}
+
+.sf__btn-wpool-primary {
+  background-color: #fdc100 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: 0 !important;
+}
+
+.sf__btn-wpool-primary:hover {
+  background: #fdc100 !important;
+  border-color: 0 !important;
+  box-shadow: 0 0 0 0rem #fdc100 !important;
+  color: #fff !important;
+  opacity: 0.5 !important;
+}
+
+.sf__btn-wpool-primary--padding {
+  padding: 5px 8px !important;
+}
+
+.wpool-grid__item {
+  background-color: #f9f9f9;
+  padding: 0 0 30px 0 !important;
+  margin-left: 25px;
+}
+
+.wpool-grid-text {
+  padding: 0 30px;
 }

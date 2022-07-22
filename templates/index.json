@@ -26,7 +26,7 @@
             "text_padding_bottom": 40,
             "title": "Innovation & Design",
             "subheading": "",
-            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
             "width": "33%",
             "inner_width": 500,
             "alignment": "center",
@@ -36,8 +36,8 @@
             "text_color": "black",
             "button_label": "DISCOVER MORE",
             "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_color": "sf__btn-black",
+            "button_style": "sf__btn-secondary",
+            "button_color": "sf__btn-wpool-primary",
             "mobile_order": "",
             "block_custom_class": ""
           }
@@ -96,12 +96,12 @@
         "1658444034211766c6-0": {
           "type": "text",
           "settings": {
-            "BgColor": "#ffffff",
+            "BgColor": "#f9f9f9",
             "text_padding_top": 40,
             "text_padding_bottom": 40,
-            "title": "Innovation & Design",
+            "title": "Environment",
             "subheading": "",
-            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
             "width": "50%",
             "inner_width": 500,
             "alignment": "center",
@@ -112,7 +112,7 @@
             "button_label": "DISCOVER MORE",
             "button_link": "",
             "button_style": "sf__btn-primary",
-            "button_color": "sf__btn-black",
+            "button_color": "sf__btn-wpool-primary",
             "mobile_order": "",
             "block_custom_class": ""
           }
@@ -129,7 +129,7 @@
         "header_alignment": "center",
         "container": "container",
         "background_color": "",
-        "gap": 30,
+        "gap": 0,
         "use_scroll_mobile": false,
         "gap_mobile": 16,
         "custom_class": ""
@@ -145,8 +145,8 @@
             "image": "shopify:\/\/shop_images\/flames-flicker-in-open-wick-candle-holders.jpg",
             "image_width": 650,
             "title": "Lorem ipsum",
-            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. <\/p>",
-            "button_label": "Optional button",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. <\/p>",
+            "button_label": "DISCOVER MORE",
             "button_link": ""
           }
         },
@@ -158,7 +158,7 @@
             "image_width": 650,
             "title": "Lorem ipsum",
             "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
-            "button_label": "Optional button",
+            "button_label": "DISCOVER MORE",
             "button_link": ""
           }
         },
@@ -170,7 +170,7 @@
             "image_width": 650,
             "title": "Lorem ipsum",
             "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
-            "button_label": "Optional button",
+            "button_label": "DISCOVER MORE",
             "button_link": ""
           }
         }
@@ -181,7 +181,7 @@
         "1658447237cd88c810-2"
       ],
       "settings": {
-        "title": "",
+        "title": "Discover Whirlpool",
         "align_text": "left",
         "divider": false
       }
