@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "16584440690057b786": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/youtu.be\/aca4ZGHdOGE?t=13",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "1654683750035958ea": {
+      "type": "custom-content",
+      "blocks": {
+        "e357f6a1-d0c8-4e97-bbf6-550481f2602b": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#f9f9f9",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "Innovation & Design",
+            "subheading": "",
+            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
+            "width": "33%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "DISCOVER MORE",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "0a99770e-12c4-4add-bccf-dff8a6bcbb8d": {
+          "type": "image_card",
+          "settings": {
+            "width": "66%",
+            "content_position": "center_center",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify:\/\/shop_images\/homepage-gallery-01-set-talent-p201047xx-115z1.jpg",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "e357f6a1-d0c8-4e97-bbf6-550481f2602b",
+        "0a99770e-12c4-4add-bccf-dff8a6bcbb8d"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "1658444034f1baadd9": {
+      "type": "custom-content",
+      "blocks": {
+        "1658444034211766c6-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/country-road-with-tall-windmills-on-the-left.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "1658444034211766c6-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "Innovation & Design",
+            "subheading": "",
+            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "DISCOVER MORE",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "1658444034211766c6-1",
+        "1658444034211766c6-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "1658447237c1ccb236": {
+      "type": "text-columns",
+      "blocks": {
+        "1658447237cd88c810-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/flames-flicker-in-open-wick-candle-holders.jpg",
+            "image_width": 650,
+            "title": "Lorem ipsum",
+            "text": "<p>dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. <\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "1658447237cd88c810-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lensball-blue-and-purple-lights.jpg",
+            "image_width": 650,
+            "title": "Lorem ipsum",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "1658447237cd88c810-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/globe-wrapped-in-lights.jpg",
+            "image_width": 650,
+            "title": "Lorem ipsum",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1658447237cd88c810-0",
+        "1658447237cd88c810-1",
+        "1658447237cd88c810-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "16584440690057b786",
+    "1654683750035958ea",
+    "1658444034f1baadd9",
+    "1658447237c1ccb236"
+  ]
+}

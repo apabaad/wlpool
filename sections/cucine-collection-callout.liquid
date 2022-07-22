@@ -1,0 +1,97 @@
+
+<div class="page-width cucine-collection-callout page-width-cucine">
+    <h3 class="cucine-callout-collection-title">
+        {% comment %} <div class="red-line" style="border-bottom:1px solid red;"> </div> {% endcomment %}
+        {{ section.settings.collection-title }}
+    </h3>
+    <div class="grid-view grid--uniform 4">
+        {% for product in collections[section.settings.selected-collection].products %}
+
+            {%- assign preview_image = product.featured_media.preview_image -%}
+            {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        
+        <div class="grid__item grid-product small--one-half medium-up--one-quarter aos-init aos-animate ">
+            <div class= "grid-product__content  relative p-1 pb-14 ">
+            <a href="{{ product.url | within: collection }}" class="grid-product__link">
+                <div class = "grid-product__image-mask 3">
+                    <div class="image-wrap cucine-grid-item-container" style="height: 0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio }}%;">
+                        
+                        <img class="grid-product__image lazyloaded" src="{{ preview_image | img_url: '400x' }}" alt="">
+                        
+                        <h5 class="cucine-callout-product-title" align="center" style="padding-top:10%">{{ product.title }}</h5>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name":"Cucine collection callout",
+        "settings":[
+            {
+            "id":"collection-title",
+            "type":"text",
+            "label":"Collection Title"
+            },
+            {
+            "id":"selected-collection",
+            "type":"collection",
+            "label":"Select collection"
+            }
+        ],
+        "presets":[
+            {
+                "name":"Cucine Collection Callout"
+            }
+        ]
+    }
+{% endschema %}
+
+
+{% style %}
+
+.page-width-cucine{
+    max-width:1170px;
+}
+
+.red-line:after{
+    content:' '
+
+}
+
+    .cucine-collection-callout{
+        margin-top: 60px;
+    }
+
+.cucine-grid-item-container{
+    box-shadow:0 0 13px #0000001a;
+    padding:20% 5%;
+    margin:10px;
+    overflow:hidden;
+    max-height:200px !important;
+    
+}
+
+.cucine-collection-callout .grid-product__image{
+    width:80%;
+}
+
+.cucine-callout-product-title, .cucine-callout-collection-title{
+    font-weight:bold;
+}
+
+@media screen and (max-width:500px){
+    .cucine-callout-product-title{
+        font-size:14px;
+        text-transform:none;
+    }
+}
+
+{% endstyle %}

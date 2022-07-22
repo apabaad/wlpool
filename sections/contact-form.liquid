@@ -1,0 +1,217 @@
+<div class="index-section">
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h4 class="section-header__title bg-black text-white" style="padding:10px; font-weight:normal;">
+          {{ section.settings.title }}
+        </h4>
+        {%- if section.settings.text != blank -%}
+          <div class="rte section-header__rte">{{ section.settings.text }}</div>
+        {%- endif -%}
+      </div>
+    {% endif %}
+
+    <div class="form-vertical">
+      {%- assign form_id = 'contact-' | append: section.id -%}
+      {% style %}
+      .field-block label.error{
+        bottom: 6px;
+      }
+      {% endstyle %}
+      
+      {% comment %} <script>
+        $(document).ready(function() {
+      $("#{{form_id}}").validate({
+      rules: {
+      email: {
+        required: true,
+        email: true
+        },
+      }
+      });
+      });
+      </script> {% endcomment %}
+
+      {%- form 'contact', id: form_id -%}
+
+        {%- if form.posted_successfully? -%}
+          <p class="note note--success">
+            {{ 'contact.form.post_success' | t }}
+          </p>
+        {%- endif -%}
+
+        {{ form.errors | default_errors }}
+
+        <div class="grid grid--small">
+          <div class="grid__item medium-up--one-half field-block">
+            <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
+            <input type="text" placeholder="{{ 'contact.form.name' | t }}*" required id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+
+          <div class="grid__item medium-up--one-half field-block">
+            <label for="ContactFormPostcode-{{ section.id }}">Postcode</label>
+            <input type="text" required placeholder="Postcode*" pattern="[0-9]" id="ContactFormPostcode-{{ section.id }}" class="input-full" name="contact[postcode]" autocorrect="off" autocapitalize="off" >
+          </div>
+        </div>
+        
+        {% if template == "product" %}
+        <div class="grid grid--small">
+          <div class="grid__item medium-up--one-half field-block">
+            <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+            <input type="email" required placeholder="{{ 'contact.form.email' | t }}*" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+          </div>
+          <div class="grid__item medium-up--one-half field-block">
+            <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" required placeholder="{{ 'contact.form.phone' | t }}*" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">          </div>
+        </div>
+
+      {% endif %}
+        {%- if section.settings.show_phone -%}
+          <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+        {%- endif -%}
+
+        <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+        <textarea rows="5" placeholder="{{ 'contact.form.message' | t }}*" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+        <button type="submit" class="btn">
+          {{ 'contact.form.send' | t }}
+        </button>
+
+        {% comment %}
+          Remove the following three lines of code to remove the note
+          about being protected by Google's reCAPTCHA service.
+          By removing it, the small reCAPTCHA widget will appear in the
+          bottom right corner of the page.
+        {% endcomment %}
+        {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+
+<div class="text-with-img-overlay">
+  <div class="full-width">
+    
+    {% for block in section.blocks %} 
+    <div class="image-with-overlay-box">
+    	<div class="image-with-overlay">
+     {% if block.settings.img !=blank %}
+         <img src="{{ block.settings.img | img_url:'master'}}">
+      {% endif %}
+        </div>
+    <div class="text-with-img-box-content">
+      <div class="item-icon-title--area">
+        <div class="icon">
+          {% if block.settings.iconimg !=blank %}
+              <img src="{{ block.settings.iconimg | img_url:'master' }}">
+         {% endif %}
+        </div>
+        <div class="headline">{{ block.settings.heading }}</div>
+      </div>
+      <div class="item-description--area">
+        <div class="copy">
+          <div class="wysiwyg-content">
+          {% if block.settings.content !=blank %}
+          <p>{{ block.settings.content }}</p>
+          {% endif %}
+          {% if block.settings.content !=blank %}
+          <p>{{ block.settings.timingcontent }}</p>
+          {% endif %}
+          </div>
+        </div>
+        	
+        <div class="cta">
+        <a href="tel:131349" title="Call 13 13 49" gtm-initialize-click-cta="true" gtm-initialized-click-phone-number="true" gtm-initialized-outbound="true">{{ block.settings.call }}</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+    
+  </div>
+</div>  
+  
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.contact-form.settings.content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.contact-form.settings.title.label",
+      "default": "Contact us"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.contact-form.settings.text.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_phone",
+      "label": "t:sections.contact-form.settings.show_phone.label"
+    },
+    {
+	  "id": "narrow_column",
+      "type": "checkbox",      
+      "label": "t:sections.contact-form.settings.narrow_column.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add Block",
+      "settings": [
+  {
+      "id": "img",
+      "type": "image_picker",
+      "label": "Image"
+    },
+{
+      "id": "iconimg",
+      "type": "image_picker",
+      "label": "Icon"
+    },
+	{
+      "id": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "mainheading"
+    },
+	{
+      "id": "content",
+      "type": "text",
+      "label": "Content",
+      "default": "loreum is a typewritter"
+    },
+	{
+      "id": "timingcontent",
+      "type": "text",
+      "label": "Content",
+      "default": "loreum is a typewritter"
+    },	
+	{
+      "id": "call",
+      "type": "text",
+      "label": "Content",
+      "default": "loreum is a typewritter"
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.contact_form.name"
+    }
+  ]
+}
+{% endschema %}

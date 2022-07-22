@@ -1,0 +1,162 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Get in touch"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "8b3c26b0-3382-4068-81dd-9164f4506bd6": {
+          "type": "select",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/westinghouse_support_warrantyinfo_640x640_desktop.jpg",
+            "iconimg": "shopify:\/\/shop_images\/location.png",
+            "heading": "Address:",
+            "content": "40-50 Mark Anthony Drive, Dandenong South VIC 3175",
+            "timingcontent": "",
+            "call": ""
+          }
+        },
+        "74fbd876-0474-42d4-a0b6-4f82881bd037": {
+          "type": "select",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/westinghouse_support_productvideos_640x640_desktop.jpg",
+            "iconimg": "shopify:\/\/shop_images\/call.png",
+            "heading": "Phone:",
+            "content": "1300 762 219",
+            "timingcontent": "",
+            "call": ""
+          }
+        },
+        "8f2164df-6a89-4732-ad73-29aabc1101e3": {
+          "type": "select",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/westinghouse_support_brochureandrecipes_640x640_desktop_1.jpg",
+            "iconimg": "shopify:\/\/shop_images\/email.png",
+            "heading": "Email:",
+            "content": "General Enquiry :<br> arisit.digital@arisit.com",
+            "timingcontent": "Spare Parts Enquiry : <br>arisit.parts@arisit.com",
+            "call": ""
+          }
+        }
+      },
+      "block_order": [
+        "8b3c26b0-3382-4068-81dd-9164f4506bd6",
+        "74fbd876-0474-42d4-a0b6-4f82881bd037",
+        "8f2164df-6a89-4732-ad73-29aabc1101e3"
+      ],
+      "settings": {
+        "title": "Contact Us",
+        "text": "<p>If you need any assistance on our products or services or have a question you would like to ask, simply contact us.<\/p>",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    },
+    "16548615836bbec494": {
+      "type": "icon-box",
+      "blocks": {
+        "1654861582f137b86b-0": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_84x_c5dd5197-d0e5-4a99-b648-5fb1368e1de6.png",
+            "image_by_url": "",
+            "title": "Address",
+            "description": "<p>40-50 Mark Anthony Drive,<br\/>Dandenong South VIC 3175<\/p>",
+            "link": ""
+          }
+        },
+        "1654861582f137b86b-1": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_87x_bfd56107-08f7-4269-ba81-adb13746e521.png",
+            "image_by_url": "",
+            "title": "Phone",
+            "description": "<p>1300 762 219<\/p>",
+            "link": ""
+          }
+        },
+        "1654861582f137b86b-2": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_90x_aaf60730-d5c0-4219-97f4-1d7894a4984c.png",
+            "image_by_url": "",
+            "title": "24\/7 online support",
+            "description": "<p>General Enquiry : <a href=\"mailto:arisit.digital@arisit.com\" target=\"_blank\" title=\"mailto:arisit.digital@arisit.com\">arisit.digital@arisit.com<\/a><br\/>Spare Parts Enquiry : <a href=\"mailto:arisit.parts@arisit.com\" title=\"mailto:arisit.parts@arisit.com\">arisit.parts@arisit.com<\/a><\/p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654861582f137b86b-0",
+        "1654861582f137b86b-1",
+        "1654861582f137b86b-2"
+      ],
+      "settings": {
+        "heading": "Contact us",
+        "subheading": "",
+        "description": "If you need any assistance on our products or services or have a question you would like to ask, simply contact us.",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "horizontal",
+        "image_max_width": "30px",
+        "content_alignment": "start",
+        "use_scroll_mobile": true,
+        "use_grid_column_mb": false
+      }
+    },
+    "1654862253c3406032": {
+      "type": "map",
+      "settings": {
+        "map_title": "Use your store map",
+        "address": "<p>301 Front St W<br\/>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image": "shopify:\/\/shop_images\/slide-1.png",
+        "background_image_position": "bottom left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "form",
+    "16548615836bbec494",
+    "1654862253c3406032"
+  ]
+}

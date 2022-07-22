@@ -1,0 +1,301 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1657680556d5284aae": {
+      "type": "slideshow",
+      "blocks": {
+        "16576805563c24c805-1": {
+          "type": "image",
+          "settings": {
+            "title": "OUTDOOR",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "title_bg_color": "#000000",
+            "title_bg_opacity": 0,
+            "image": "shopify:\/\/shop_images\/Outdoor-intera_ab50c856-3017-4b55-947f-66ba6cf0fc51.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Outdoor-intera.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16576805563c24c805-1"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1657839725e036af89": {
+      "type": "custom-content",
+      "blocks": {
+        "16578397256a7a3117-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#232323",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "OUTDOOR KITCHENS",
+            "subheading": "",
+            "text": "<p>The comfort of your own kitchen, the freedom of wide-open spaces. Thanks to their modularity, Steel outdoor kitchen can be tailor made around your space and use needs.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "DISCOVER MORE",
+            "button_link": "shopify:\/\/pages\/outdoor-kitchens",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "2",
+            "block_custom_class": ""
+          }
+        },
+        "16578397256a7a3117-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cucine-1.jpg",
+            "link": "shopify:\/\/pages\/outdoor-kitchens",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "1",
+            "block_custom_class": ""
+          }
+        },
+        "40d86baf-291a-463e-bea7-cfe859191fb2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bbq3.jpg",
+            "link": "shopify:\/\/collections\/bbq-outdoor",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "3",
+            "block_custom_class": ""
+          }
+        },
+        "00f2482f-fc40-412a-86d5-9ef182bedc64": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#232323",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "BARBECUES",
+            "subheading": "",
+            "text": "<p>A new outlook of the barbecue object. A prestigious design, Perfect in each and every detail. An element around which to create a sophisticated and, at the same time, smooth and informal conviviality.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "DISCOVER MORE",
+            "button_link": "shopify:\/\/collections\/bbq-outdoor",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "4",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16578397256a7a3117-0",
+        "16578397256a7a3117-1",
+        "40d86baf-291a-463e-bea7-cfe859191fb2",
+        "00f2482f-fc40-412a-86d5-9ef182bedc64"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "#232323",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "1657839989775f0460": {
+      "type": "slick-image",
+      "blocks": {
+        "3e45ac62-d5ab-43f8-b0d6-0abedbc39c00": {
+          "type": "first-section",
+          "settings": {
+            "item1-pointer-top": "65",
+            "item1-pointer-left": "39",
+            "item1-card-image": "shopify:\/\/shop_images\/Sink_70cm.jpg",
+            "item1-card-title": "Sink 70cm",
+            "item1-link": "shopify:\/\/products\/swing-90-sinks",
+            "item2-pointer-top": "65",
+            "item2-pointer-left": "29",
+            "item2-card-image": "shopify:\/\/shop_images\/table_90.png",
+            "item2-card-title": "Table 90cm",
+            "item2-link": "shopify:\/\/products\/working-tables",
+            "item3-pointer-top": "65",
+            "item3-pointer-left": "23",
+            "item3-card-image": "shopify:\/\/shop_images\/table_90.png",
+            "item3-card-title": "Table 90cm",
+            "item3-link": "shopify:\/\/products\/working-tables",
+            "last-pointer-margin": ""
+          }
+        },
+        "6acdc1ca-2703-4963-99bd-b326a2d12e95": {
+          "type": "first-section",
+          "settings": {
+            "item1-pointer-top": "65",
+            "item1-pointer-left": "50",
+            "item1-card-image": "shopify:\/\/shop_images\/bbq_70.jpg",
+            "item1-card-title": "BBQ 70cm",
+            "item1-link": "shopify:\/\/products\/barbecues",
+            "item2-pointer-top": "65",
+            "item2-pointer-left": "42",
+            "item2-card-image": "shopify:\/\/shop_images\/bbq_90.png",
+            "item2-card-title": "BBQ 90cm",
+            "item2-link": "shopify:\/\/products\/barbecues",
+            "item3-pointer-top": "65",
+            "item3-pointer-left": "35",
+            "item3-card-image": "shopify:\/\/shop_images\/bbq_90.png",
+            "item3-card-title": "BBQ 90cm",
+            "item3-link": "shopify:\/\/products\/barbecues",
+            "last-pointer-margin": ""
+          }
+        },
+        "7eee9ede-fde7-46ac-9e2d-727d67dc4286": {
+          "type": "first-section",
+          "settings": {
+            "item1-pointer-top": "65",
+            "item1-pointer-left": "60",
+            "item1-card-image": "shopify:\/\/shop_images\/Table_70.jpg",
+            "item1-card-title": "Table 70cm",
+            "item1-link": "shopify:\/\/products\/working-tables",
+            "item2-pointer-top": "65",
+            "item2-pointer-left": "55",
+            "item2-card-image": "shopify:\/\/shop_images\/frige_90.jpg",
+            "item2-card-title": "Fridge 90cm",
+            "item2-link": "shopify:\/\/products\/fridges",
+            "item3-pointer-top": "65",
+            "item3-pointer-left": "50",
+            "item3-card-image": "shopify:\/\/shop_images\/cook-unit_90.jpg",
+            "item3-card-title": "Cook Unit 90cm",
+            "item3-link": "shopify:\/\/products\/cook-units",
+            "last-pointer-margin": ""
+          }
+        },
+        "dc71b3bc-044e-4f8b-82d7-e1075b5b7083": {
+          "type": "first-section",
+          "settings": {
+            "item1-pointer-top": "",
+            "item1-pointer-left": "",
+            "item1-card-title": "",
+            "item1-link": "",
+            "item2-pointer-top": "65",
+            "item2-pointer-left": "68",
+            "item2-card-image": "shopify:\/\/shop_images\/Sink_90.png",
+            "item2-card-title": "Cook Unit 90cm",
+            "item2-link": "shopify:\/\/products\/swing-90-sinks",
+            "item3-pointer-top": "65",
+            "item3-pointer-left": "64",
+            "item3-card-image": "shopify:\/\/shop_images\/cook-unit_90.jpg",
+            "item3-card-title": "Cook Unit 90cm",
+            "item3-link": "shopify:\/\/products\/cook-units",
+            "last-pointer-margin": ""
+          }
+        },
+        "e28bfcce-eb96-4e2b-b3b1-37885128c739": {
+          "type": "first-section",
+          "settings": {
+            "item1-pointer-top": "",
+            "item1-pointer-left": "",
+            "item1-card-title": "",
+            "item1-link": "",
+            "item2-pointer-top": "",
+            "item2-pointer-left": "",
+            "item2-card-title": "",
+            "item2-link": "",
+            "item3-pointer-top": "65",
+            "item3-pointer-left": "77",
+            "item3-card-image": "shopify:\/\/shop_images\/frige_90.jpg",
+            "item3-card-title": "Fridge 90cm",
+            "item3-link": "shopify:\/\/products\/fridges",
+            "last-pointer-margin": "-20.8"
+          }
+        }
+      },
+      "block_order": [
+        "3e45ac62-d5ab-43f8-b0d6-0abedbc39c00",
+        "6acdc1ca-2703-4963-99bd-b326a2d12e95",
+        "7eee9ede-fde7-46ac-9e2d-727d67dc4286",
+        "dc71b3bc-044e-4f8b-82d7-e1075b5b7083",
+        "e28bfcce-eb96-4e2b-b3b1-37885128c739"
+      ],
+      "settings": {
+      }
+    },
+    "165775634256eaf819": {
+      "type": "slideshow",
+      "blocks": {
+        "16577563413cbe636d-0": {
+          "type": "image",
+          "settings": {
+            "title": "INDOOR",
+            "title_size": 48,
+            "subheading": "Go to indoor section",
+            "link": "\/",
+            "link_text": "Visit now",
+            "text_align": "vertical-center horizontal-right",
+            "title_bg_color": "#000000",
+            "title_bg_opacity": 0.5,
+            "image": "shopify:\/\/shop_images\/banner_steel_ascot.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16577563413cbe636d-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "16578402505e4af08b": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Get a quote",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657680556d5284aae",
+    "1657839725e036af89",
+    "1657839989775f0460",
+    "165775634256eaf819",
+    "16578402505e4af08b"
+  ]
+}

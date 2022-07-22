@@ -1,0 +1,337 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1655097397f0a42f4b": {
+      "type": "custom-content",
+      "blocks": {
+        "f2d7e304-6c3a-417c-b962-38f28b78892e": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 0,
+            "text_padding_bottom": 0,
+            "title": "VICTORIA",
+            "subheading": "",
+            "text": "",
+            "width": "100%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "22e5ebf2-cae1-48fb-a113-300cef3c2388": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 0,
+            "text_padding_bottom": 0,
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>e&s Hawthorn<\/strong><br\/>632 Burwood Rd, Hawthorn, VIC<br\/>Wednesday 16th March, 2022<br\/>11am – 1pm<\/p><p><\/p>",
+            "width": "33%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "9261d682-dbba-433c-938e-5b1a0d7b94c6": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 0,
+            "text_padding_bottom": 0,
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>e&s Geelong<\/strong><br\/>Level 1, 970 Nepean Hwy, Moorabbin, VIC<br\/>Friday 18th March, 2022<br\/>11am – 1pm <\/p>",
+            "width": "33%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "427d60e0-2619-4d6f-af7c-21ae19d44ca2": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 0,
+            "text_padding_bottom": 0,
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>e&s Moorabbin<\/strong><br\/>Level 1, 970 Nepean Hwy, Moorabbin, VIC<br\/>Wednesday 23rd March, 2022<br\/>11am – 1pm<\/p>",
+            "width": "33%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "9e840493-bd9c-41d7-af19-7a4d613f2daf": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 0,
+            "text_padding_bottom": 0,
+            "title": "",
+            "subheading": "",
+            "text": "<p>To make a demonstration booking, please visit the booking page on the e&s website.<a href=\"https:\/\/cookingdemos.eands.com.au\/\"><strong>https:\/\/cookingdemos.eands.com.au<\/strong><\/a><strong>\/<\/strong><\/p>",
+            "width": "100%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "f2d7e304-6c3a-417c-b962-38f28b78892e",
+        "22e5ebf2-cae1-48fb-a113-300cef3c2388",
+        "9261d682-dbba-433c-938e-5b1a0d7b94c6",
+        "427d60e0-2619-4d6f-af7c-21ae19d44ca2",
+        "9e840493-bd9c-41d7-af19-7a4d613f2daf"
+      ],
+      "settings": {
+        "heading": "COOKING DEMONSTRATIONS",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "16550986582aa9fca3": {
+      "type": "custom-content",
+      "blocks": {
+        "1655098658a89b6bc0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reannecooking.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "1655098658a89b6bc0-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "",
+            "subheading": "",
+            "text": "<p>Salt & Company, a Perth-based cooking school is decked out in Steel appliances, and runs classes on how to make food from all over the globe, and on how to use Steel ovens to their full potential.<\/p><p>Learn to use your Steel oven like a professional. Cooking Teacher Reanne has appeared in segments on Perth’s Fresh TV, and has years of experience in creating amazing food from an array of cuisines and styles.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "bad93a74-9853-4edc-9cca-e0c925c82d67": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "",
+            "subheading": "",
+            "text": "<p><a href=\"http:\/\/saltandcompany.com.au\/cooking-classes\/\" target=\"_blank\"><strong>Book classes now.<\/strong><\/a> To take your cooking skills to the next level, head over to the <a href=\"http:\/\/saltandcompany.com.au\/cooking-classes\/\" target=\"_blank\"><strong>Salt & Company website<\/strong><\/a> and check out their upcoming class dates and times and book your class tickets today!<\/p>",
+            "width": "100%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "0dd69182-883b-46e6-9261-2aaba226af25": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10548325_719887868053077_5218036935190227917_o.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "19f22619-3342-4c23-892a-bb97ca67bf01": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "",
+            "subheading": "",
+            "text": "<p>experience working with some of the best chefs in the world including Rick Stein, Jamie Oliver, Antonio Carluccio and Maggie Beer. Experience great food – cooking it, eating it and enjoying it with like-minded people. Decked out with Steel appliances, you’ll be learning how to cook great food while having a first hand experience using our Steel appliances! Visit <a href=\"https:\/\/www.tastebudds.com.au\/contact\/\" target=\"_blank\"><strong>Taste Budds website<\/strong><\/a> to make a booking!<\/p><p>For other demonstrations, check out <a href=\"https:\/\/www.winningappliances.com.au\/cooking-demos?brand=steel&date=all\" target=\"_blank\"><strong>Winning Appliances.<\/strong><\/a><br\/><a href=\"https:\/\/www.winningappliances.com.au\/cooking-demos?brand=steel&date=all\" target=\"_blank\"><strong>Winning Appliances Joondalup<\/strong><\/a><br\/>Shop T3, 1 Sundew Rise,<br\/>Joondalup WA<\/p><p>Not in Perth, but still want to learn from the experts? In the section below, you can find times for upcoming demonstrations for other locations around Australia!<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "b4a80659-2ff2-4364-a5f6-9846a24cbfc6": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "QUEENSLAND – STACEY",
+            "subheading": "",
+            "text": "<p>To make a booking for a demonstration, give the store a call to register you interest and ask for times available.<\/p><p><strong>L&M Goldstar (Second Tuesday of every month)<\/strong><br\/>Quentyn Jury<br\/>2582 Gold Coast Hwy, Mermaid Beach Qld 4218<br\/>Ph: 07 5592 3344<\/p><p><strong>Status Plus<\/strong><br\/>Leighton Russell<br\/>51 Anderson St, Cairns Qld 4870<br\/>Ph: 07 4031 2676<\/p><p><strong>Newtons<\/strong><\/p><p>Brian Watson<br\/>443-445 Logan Road, Stones Corner Qld 4120<br\/>Ph: 07 3397 1161<\/p><p><strong>Winnings Indooroopilly<\/strong><br\/>Brad Wyeth<br\/>Unit 1 \/ 272 Moggill Road, Indooroopilly Qld 4068<br\/>Ph: 07 3397 1161<\/p><p><strong>Stock Appliances (Third Thursday of every month)<\/strong><br\/>Hannah Svendsen<br\/>797 Sandgate Road, Clayfield Qld 4011<br\/>Ph: 07 3862 3855<\/p><p><strong>Brisbane Appliance Sales<\/strong><br\/>Greg Hargreaves<br\/>171 Enoggera Road, Newmarket Qld 4051<br\/>Ph: 07 3356 8088<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        },
+        "d8d8c023-6d0e-48b6-9984-db807e0ee50c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chicken-empanadas.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "a3ce29ce-59fe-4f78-a820-18b13338a76d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/whitfords-demo-image.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "169de059-d309-4585-967a-a4a0c4c9a21d": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "NEW SOUTH WALES – WHITFORDS",
+            "subheading": "",
+            "text": "<p>Steel cooking demonstrations are now available at Whitfords, Five Dock, NSW. It will provide you an overview of the Steel Range Products giving you a real-time cooking demonstration and a delicious food.<\/p><p><strong>Whitfords – Five Dock:<\/strong><br\/>165 – 167 Great North Road,<br\/>Five Dock, 2046<\/p><p><a href=\"https:\/\/www.cooking-demonstrations.com.au\/events\/steel-cooking-demonstration\/\" target=\"_blank\"><strong>Click here to make a booking<\/strong><\/a><\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655098658a89b6bc0-1",
+        "1655098658a89b6bc0-0",
+        "bad93a74-9853-4edc-9cca-e0c925c82d67",
+        "0dd69182-883b-46e6-9261-2aaba226af25",
+        "19f22619-3342-4c23-892a-bb97ca67bf01",
+        "b4a80659-2ff2-4364-a5f6-9846a24cbfc6",
+        "d8d8c023-6d0e-48b6-9984-db807e0ee50c",
+        "a3ce29ce-59fe-4f78-a820-18b13338a76d",
+        "169de059-d309-4585-967a-a4a0c4c9a21d"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1655097397f0a42f4b",
+    "16550986582aa9fca3"
+  ]
+}

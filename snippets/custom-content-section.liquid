@@ -1,0 +1,113 @@
+{%- assign bg_color = section.settings.background_color -%}
+{%- assign has_bg = false -%}
+{% unless bg_color == "rgba(0,0,0,0)" or bg_color == blank %}
+  {% assign has_bg = true %}
+{% endunless %}
+{%- capture container -%}
+  {{ section.settings.container }} {% if section.settings.container != 'w-full' %}{%- if has_bg == false -%}section-my{%- else -%}section-py{%- endif -%}{% endif %}
+{%- endcapture -%}
+
+{%- assign scrollMobile = section.settings.use_scroll_mobile -%}
+
+<section
+    id="sf-custom-{{ section.id }}"
+    class="sf-custom {{ section.settings.custom_class }}{% if hide_if_empty and section.blocks.size == 0 %} hidden{% endif %}"
+    data-section-type="custom-content"
+    data-section-id="{{ section.id }}"
+    {% if has_bg %}
+        data-bg="{{ bg_color | color_to_hsl }}"
+    {% endif %}
+    style="--column-gap: {{ section.settings.gap }}px; --column-gap-mobile: {{ section.settings.gap_mobile }}px; background-color: {{ bg_color }};"
+>
+    <div class="{{ container }} mx-auto">
+        {%- assign block_width_mobile = '' -%}
+        {% if show_header %}
+            {% render 'index-section-header', section_settings: section.settings %}
+        {% endif %}
+
+        {% if section.blocks.size > 0 %}
+        {% if scrollMobile %}<div class="sf__ms">{% endif %}
+        <div class="sf-custom__grid flex {% unless scrollMobile %}flex-wrap{% else %}sf__ms-wrapper md:flex-wrap{% endunless %}">
+            {% for block in section.blocks %}
+                {% assign vertical_alignment = block.settings.alignment %}
+                {% case block.settings.width %}
+                    {% when '16%' %}
+                        {%- assign block_width = 'lg:w-1/6' -%}
+                        {%- assign block_width_mobile = 'w-1/2' -%}
+                    {% when '25%' %}
+                        {%- assign block_width = 'lg:w-1/4' -%}
+                        {%- assign block_width_mobile = 'w-1/2' -%}
+                    {% when '33%' %}
+                        {%- assign block_width = 'lg:w-1/3' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                    {% when '50%' %}
+                        {%- assign block_width = 'lg:w-1/2' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                    {% when '66%' %}
+                        {%- assign block_width = 'lg:w-2/3' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                    {% when '75%' %}
+                        {%- assign block_width = 'lg:w-3/4' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                    {% when '83%' %}
+                        {%- assign block_width = 'lg:w-10/12' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                    {% when '100%' %}
+                        {%- assign block_width = 'lg:w-full' -%}
+                        {%- assign block_width_mobile = 'w-full' -%}
+                {% endcase %}
+                {% style %}
+                @media(max-width:767px){
+                    #sf-custom__block--{{ block.id }}{
+                            order:{{block.settings.mobile_order}};
+                    }
+                }
+                {% endstyle %}
+                <div id="sf-custom__block--{{ block.id }}" class="sf-custom__block  sf-custom__block--{{ block.type }} flex {{ block_width }} {{ block_width_mobile }} items-{{ vertical_alignment }}" {{ block.shopify_attributes }} style="background-color:{{block.settings.BgColor}}">
+                    <div class="sf-custom__block-inner w-full {% if template == 'index' %}cucine-hover {% endif %}">
+                        {% case block.type %}
+                            {% when 'image' %}
+                                {% if block.settings.image != blank %}
+                                    <{% if block.settings.link %}a{% else %}div{% endif %}{% if block.settings.link %} href="{{ block.settings.link }}"{% endif %}>
+                                        {% render 'responsive-image', image: block.settings.image %}
+                                    </{% if block.settings.link %}a{% else %}div{% endif %}>
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg sf__placeholder-svg sf__placeholder-svg-no-border' }}
+                                {% endif %}
+                            {% when 'text' %}
+                        <div class="flex justify-{{block.settings.horizontal_alignment}} px-1 md:px-14" style="padding-top:{{block.settings.text_padding_top}}px; padding-bottom:{{block.settings.text_padding_bottom}}px;">
+                                <div style="max-width:{{block.settings.inner_width}}px">
+                                    <div class="text-{{ block.settings.align_text }}" style="color: {{ block.settings.text_color }};">
+                                        {% if block.settings.subheading != blank %}
+                                            <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
+                                        {% endif %}
+                                        {% if block.settings.title != blank %}
+                                            <h3 class="content__heading text-2xl text-{{ block.settings.text_color }} {% if block.settings.text_size == 'medium' %}lg:text-3xl sm:text-2xl{% else %}lg:text-5xl sm:text-3xl {% endif %}">{{ block.settings.title }}</h3>
+                                        {% endif %}
+                                        {% if block.settings.text != blank %}
+                                            <div class="prose rte mt-4 text-color-subtext {% if block.settings.text_size == 'medium' %}lg:text-base sm:text-tiny{% else %}lg:text-xl sm:text-lg {% endif %} ">{{ block.settings.text }}</div>
+                                        {% endif %}
+                                        {% if block.settings.button_label != blank %}
+                                            <div class="sf-custom__text-cta mt-8">
+                                                <a href="{{ block.settings.button_link }}" class="sf__btn {{ block.settings.button_style }} {{block.settings.button_color}} {{ block.settings.button_size }}">{{ block.settings.button_label }}</a>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% when 'image_card' %}
+                                {% render 'image-card', block: block, grid_columns: 'w-full', stack_on_mobile: scrollMobile, image_card_class: 'sf__hover-scale-up' %}
+                            {% when 'html' %}
+                                {% if block.settings.code != blank %}
+                                    {{ block.settings.code }}
+                                {% endif %}
+                        {% endcase %}
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+        {% if scrollMobile %}</div>{% endif %}
+        {% endif %}
+    </div>
+</section>

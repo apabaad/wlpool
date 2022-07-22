@@ -1,0 +1,260 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1654837648af55b8ec": {
+      "type": "image-with-text-1",
+      "disabled": true,
+      "blocks": {
+        "165483764804be05b1-0": {
+          "type": "item",
+          "settings": {
+            "enable_background": false,
+            "content_bg": "",
+            "content_position": "bottom_center",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "image": "shopify:\/\/shop_images\/STEEL-40-OFF-EX-DISPLAY-PROMO-web-574x574.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/STEEL-40-OFF-EX-DISPLAY-PROMO-web-574x574_574x.jpg?v=1654666569",
+            "title": "",
+            "subtitle": "",
+            "button_label": "Shop now",
+            "button_style": "sf__btn-primary",
+            "button_size": ""
+          }
+        },
+        "165483764804be05b1-1": {
+          "type": "item",
+          "settings": {
+            "enable_background": false,
+            "content_bg": "",
+            "content_position": "bottom_center",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "image": "shopify:\/\/shop_images\/ENFASI-oven-and-rangehood-promo-WEB-DEC-MAR-2022-574x574.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/ENFASI-oven-and-rangehood-promo-WEB-DEC-MAR-2022-574x574_360x.jpg?v=1654666599",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-primary",
+            "button_size": ""
+          }
+        },
+        "165483764804be05b1-2": {
+          "type": "item",
+          "settings": {
+            "enable_background": false,
+            "content_bg": "",
+            "content_position": "bottom_center",
+            "content_alignment": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "image": "shopify:\/\/shop_images\/STEEL-5-Year-Warranty-2021-574x574.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/STEEL-5-Year-Warranty-2021-574x574_360x.jpg?v=1654666646",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "165483764804be05b1-0",
+        "165483764804be05b1-1",
+        "165483764804be05b1-2"
+      ],
+      "settings": {
+        "heading": "Promotions",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "layout": "layout_2",
+        "gap": 15,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "custom_class": ""
+      }
+    },
+    "16554503628f2f0606": {
+      "type": "custom-content",
+      "blocks": {
+        "1655450361140b2aa7-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "“RETRO COOL”",
+            "subheading": "",
+            "text": "<p><em><strong>Kitchens & Yearbook<\/strong><\/em><br\/><em>Volume no.18 (Dec 2013)<\/em><\/p><p>A stylish blast from the past, this retro kitchen is full of personality. The client asked for a modern take on the retro kitchen, something cool and funky to complement the house and the area. The Mint interiors in-house design team worked closely with the client to design this delightful space, their pastel hues balanced by the crisp-white Corian benchtop. Small details such as the rounded corner shelves under the the bench stir memories of grandma’s kitchen, while the freestanding oven range warms this modern room with echoes of the past. Underneath the retro looks are the best of modern appliances and fittings. In every way, this kitchen masters a mix of old and new to create a stylish and inviting space.<\/p>",
+            "width": "66%",
+            "inner_width": 1200,
+            "alignment": "start",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "2",
+            "block_custom_class": ""
+          }
+        },
+        "1655450361140b2aa7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Steel-Freestanding-Gas-Stove-535x610.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center",
+            "mobile_order": "1",
+            "block_custom_class": ""
+          }
+        },
+        "b6efba17-1825-42ae-9dec-38d796355e5e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Built-In-Ovens-With-different-colour-range-253x370.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center",
+            "mobile_order": "3",
+            "block_custom_class": ""
+          }
+        },
+        "c7a68cf7-40c6-4901-b27a-ce501e39511d": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "“TRUE COLOURS”",
+            "subheading": "",
+            "text": "<p><em><strong>Kitchens & Yearbook<\/strong><\/em><br\/><em>Volume no.18 (Dec 2013)<\/em><\/p><p>Italian appliance company Steel promises elegance, beauty and function in one while exuding sophistication. Strong family ties and decades of knowledge translate to the contemporary products that Steel designs today.<br\/>In 1999, a third-generation descendant of Angelo Po founded the company. Angelo was a pioneer in the world of cookers and created the first hand-made wood-burning stove. Today, although the wood-burning stove has come a long way, the superiority of fine Italian craftsmanship remains. Steel has grown to become a leader in the manufacture of range cookers and hoods for domestic use. Branching into the commercial cooking sphere with its combination steam cooking method, Steel is at the forefront of the commercial market. Innovation, technology and quality define Steel. The company’s products come in a variety of beautiful styles and colours, enabling a level of Italian elegance and refinement to enter the home. Contact Arisit for information on where to purchase Steel products.<\/p>",
+            "width": "66%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "4",
+            "block_custom_class": ""
+          }
+        },
+        "1602f51d-f9dc-4a25-8a7a-6b0762f2b9f7": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "“THE ITALIAN JOB”",
+            "subheading": "",
+            "text": "<p><em><strong>Kitchens & Bathrooms Quarterly<\/strong><\/em><br\/><em>Volume no.20 (Sep 2014)<\/em><\/p><p>Italian appliance company Steel promises elegance, beauty and function in one while exuding sophistication. Strong family ties and decades of knowledge translate to the contemporary products that Steel designs today.In 1999, a third-generation descendant of Angelo Po founded the company. Angelo was a pioneer in the world of cookers and created the first hand-made wood-burning stove. Today, although the wood-burning stove has come a long way, the superiority of fine Italian craftsmanship remains. Steel has grown to become a leader in the manufacture of range cookers and hoods for domestic use. Branching into the commercial cooking sphere with its combination steam cooking method, Steel is at the forefront of the commercial market. Innovation, technology and quality define Steel. The company’s products come in a variety of beautiful styles and colours, enabling a level of Italian elegance and refinement to enter the home. Contact Arisit for information on where to purchase Steel products.<\/p>",
+            "width": "66%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "start",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "6",
+            "block_custom_class": ""
+          }
+        },
+        "3eacbf76-d2ef-4689-9be2-11d54588290f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Country-Style-Italian-Kitchen-Steel-Range-Products-535x355.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center",
+            "mobile_order": "5",
+            "block_custom_class": ""
+          }
+        },
+        "c96c5905-e7fa-4774-8dac-20f916de02a3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/90cm-Double-Oven.jpg",
+            "link": "",
+            "width": "33%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "aa063f63-d2d4-4340-87a3-5aa1726f5246": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#fff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "“DYNAMIC STYLE”",
+            "subheading": "",
+            "text": "<p><em><strong>Kitchens & Bathrooms Quarterly<\/strong><\/em><br\/><em>Volume no.22 No 2 (Jan 2015)<\/em><\/p><p>Steel, an Italian company with a 91-year pedigree in the commercial cooker market, has finally launched in Australia and with its domestic range of multi-function combi-steam ovens and cookers, it dares you to be different. Available in a range of dynamic colours to suit any personality or kitchen, the colour panels can be converted to suit any personality or kitchen, the colour panels can be converted back to stainless steel at a later stage, so resale considerations won’t stop you from expressing your true colours.<\/p><p>There are three oven models available: 90cm, 60cm and a 60cm double oven with pizza oven. All offer a high-grade stainless-steel interior and, for easy cleaning,removable internal panels to the sides, rear and base. All Steel ovens are multifunctional and feature two unique combi-steam functions: static steam (no fan)and fan-forced steam. A water reserve in the base of the oven creates steam for use during the cooking process. Combi-steam cooking saves cooking time, keeps the flavour in the food and is healthier than standard cooking as fat or oil is not necessary. Using heat and steam at the same time means that when you roast, the meat is not only juicy but also still crispy and brown.<\/p>",
+            "width": "66%",
+            "inner_width": 1200,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655450361140b2aa7-0",
+        "1655450361140b2aa7-1",
+        "b6efba17-1825-42ae-9dec-38d796355e5e",
+        "c7a68cf7-40c6-4901-b27a-ce501e39511d",
+        "1602f51d-f9dc-4a25-8a7a-6b0762f2b9f7",
+        "3eacbf76-d2ef-4689-9be2-11d54588290f",
+        "c96c5905-e7fa-4774-8dac-20f916de02a3",
+        "aa063f63-d2d4-4340-87a3-5aa1726f5246"
+      ],
+      "settings": {
+        "heading": "Gallery",
+        "subheading": "JUST ADD STEAM",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1654837648af55b8ec",
+    "16554503628f2f0606"
+  ]
+}

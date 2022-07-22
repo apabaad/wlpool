@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1658185086882fdf5d": {
+      "type": "slideshow",
+      "blocks": {
+        "16581850868fb95e11-0": {
+          "type": "image",
+          "settings": {
+            "title": "OUTDOOR KITCHENS",
+            "title_size": 50,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-right",
+            "title_bg_color": "#000000",
+            "title_bg_opacity": 0,
+            "image": "shopify:\/\/shop_images\/cuc-outdoor_page-header.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "16581850868fb95e11-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1658202677afa2d3c8": {
+      "type": "cucine-collection-callout",
+      "settings": {
+        "collection-title": "PREPARING",
+        "selected-collection": "preparing"
+      }
+    },
+    "1658202712e78d3a3b": {
+      "type": "cucine-collection-callout",
+      "settings": {
+        "collection-title": "COOKING",
+        "selected-collection": "cooking"
+      }
+    },
+    "1658202707b194bb63": {
+      "type": "cucine-collection-callout",
+      "settings": {
+        "collection-title": "WASHING",
+        "selected-collection": "washing"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1658185086882fdf5d",
+    "1658202677afa2d3c8",
+    "1658202712e78d3a3b",
+    "1658202707b194bb63"
+  ]
+}

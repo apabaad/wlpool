@@ -1,0 +1,176 @@
+<style>
+    #shopify-section-{{section.id}}.download-section{
+        margin-bottom:50px;
+    }
+    #shopify-section-{{section.id}}.download-section .section-header {
+        margin-bottom: 0px;
+    }
+    #shopify-section-{{section.id}}.download-section .section-header h2 {
+        font-size: 24px;
+    }
+    #shopify-section-{{section.id}} .index-section--download {
+        margin: 0 0 0 0;
+    }
+    #shopify-section-{{section.id}} .index-section--download .h4 {
+        margin-top:15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+    }
+    #shopify-section-{{section.id}} .download-block {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    #shopify-section-{{section.id}} .download-block i {
+        font-size: 2em;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    </style>
+    
+    {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+    
+        <div class="page-width">
+        
+          {%- if section.settings.title != blank -%}
+            <header class="section-header">
+              <h2 class="section-header__title">
+                {{ section.settings.title | escape }}
+              </h2>
+            </header>
+          {%- endif -%}
+        
+          {%- if section.blocks.size > 0 -%}
+        
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'question' %}
+                        {
+                          "@type": "Question",
+                          "name": {{ block.settings.title | json }},
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": {{ block.settings.text | json }}
+                          }
+                        }{% unless forloop.last %},{% endunless %}
+                    {% endcase %}
+                  {% endfor %}
+                ]
+              }
+            </script>
+        
+            {%- for block in section.blocks -%}
+              <div {{ block.shopify_attributes }}>
+                {% case block.type %}
+                  {% when 'rich-text'%}
+                    <div class="index-section index-section--download">
+                      <div class="text-{{ block.settings.align_text }}">
+                        <div class="grid">
+                          <div class="{% if block.settings.narrow_column %} medium-up--three-quarters medium-up--push-one-eighth{% endif %}">
+                            {%- if block.settings.title != blank -%}
+                              <p class="h4">
+                                {{ block.settings.title | escape }}
+                              </p>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                  {% when 'download'%}
+                      <a href="{{block.settings.download_url}}" class="download-block" target="_blank">
+                        <!-- <i class="fas fa-file-pdf"></i>   -->
+                        {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[24px] h-[24px] mr-[10px]' %}
+                        <span>{{ block.settings.title }}</span>
+                      </a>
+                {% endcase %}
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+        
+          {%- if section.blocks.size == 0 -%}
+            <div class="placeholder-noblocks">
+              {{ 'home_page.onboarding.no_content' | t }}
+            </div>
+          {%- endif -%}
+        </div>
+        
+        {%- if section.settings.divider -%}</div>{%- endif -%}
+        
+        {% schema %}
+        {
+          "name": "Download",
+          "class": "download-section index-section",
+          "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "t:sections.faq.settings.title.label",
+              "default": "FAQs"
+            }
+          ],
+          "blocks": [
+            {
+              "type": "rich-text",
+              "name": "t:sections.faq.blocks.rich_text.name",
+              "settings": [
+                { 
+                  "type": "text",
+                  "id": "title",
+                  "label": "t:sections.faq.blocks.rich_text.settings.title.label",
+                  "default": "Rich text"
+                },
+                {
+                  "type": "select",
+                  "id": "align_text",
+                  "label": "t:sections.faq.blocks.rich_text.settings.align_text.label",
+                  "default": "left",
+                  "options": [
+                    {
+                      "value": "left",
+                      "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.left.label"
+                    },
+                    {
+                      "value": "center",
+                      "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.center.label"
+                    },
+                    {
+                      "value": "right",
+                      "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.right.label"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "download",
+              "name": "download",
+              "settings": [
+                {
+                  "type": "text",
+                  "id": "title",
+                  "label": "Download title",
+                  "default": "Title"
+                },
+                {
+                    "type": "url",
+                    "id": "download_url",
+                    "label": "Download Url"
+                  }
+              ]
+            }
+          ],
+          "presets": [
+            { 
+              "name": "download"
+            }
+          ]
+        }
+        {% endschema %}
+        

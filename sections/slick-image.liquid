@@ -1,0 +1,343 @@
+<div class ="bbq-conf-container">
+    <div class="page-width">
+    <h2 class="text-center text-white" style="padding-top:20px;">Choose your configuration </h2>
+    <div class="bbq-conf-size-btn">
+        <div class="btn btn--tertiary btn--tertiary-cucine" data-slide="0">SMALL</div>
+        <div class="btn btn--tertiary btn--tertiary-cucine" data-slide="1">MEDIUM</div>
+        <div class="btn btn--tertiary btn--tertiary-cucine" data-slide="2">LARGE</div>
+    </div>
+    <div class = "bbq-conf-img">
+
+        <div class="bbq-conf-img-item">
+            {% for block in section.blocks %}
+            {% if block.settings.item1-pointer-left and block.settings.item1-pointer-top != blank %}
+            <div class="item-pointer" style="left:{{ block.settings.item1-pointer-left }}%; top:{{ block.settings.item1-pointer-top }}%;">
+                <div class="item-card">
+                    <div class="item-card-row">
+                        <div class="item-image">
+                            <img src="{{block.settings.item1-card-image | img_url: 'master' }}">
+                        </div>
+                        <div class="item-description">
+                            <h3 class="item-title">{{ block.settings.item1-card-title  }}</h3>
+                            <a href="{{ block.settings.item1-link }}" target="_blank">PRODUCT DETAIL</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+            <img src="https://cdn.shopify.com/s/files/1/0647/3151/3071/files/small.png?v=1657842917">
+        </div>
+
+        <div class="bbq-conf-img-item">
+            
+            {% for block in section.blocks %}
+                {% if block.settings.item2-pointer-left and block.settings.item2-pointer-top != blank %}
+                <div class="item-pointer" style="left:{{ block.settings.item2-pointer-left }}%; top:{{ block.settings.item2-pointer-top }}%;">
+                    <div class="item-card">
+                        <div class="item-card-row">
+                            <div class="item-image">
+                                <img src="{{block.settings.item2-card-image | img_url: 'master' }}">
+                            </div>
+                            <div class="item-description">
+                                <h3 class="item-title">{{ block.settings.item2-card-title  }}</h3>
+                                <a href="{{ block.settings.item2-link }}" target="_blank">PRODUCT DETAIL</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            {% endif %}
+            {% endfor %}
+            <img src="https://cdn.shopify.com/s/files/1/0647/3151/3071/files/medium.jpg?v=1657842917">
+        </div> 
+        <div class="bbq-conf-img-item">
+
+            {% for block in section.blocks %}
+                {% if block.settings.item3-pointer-left and block.settings.item3-pointer-top != blank %}
+                <div class="item-pointer" style="left:{{ block.settings.item3-pointer-left }}%; top:{{ block.settings.item3-pointer-top }}%;">
+                    <div class="item-card" style="margin-left:{{ block.settings.last-pointer-margin }}vw">
+                        <div class="item-card-row">
+                            <div class="item-image">
+                                <img src="{{block.settings.item3-card-image | img_url: 'master' }}">
+                            </div>
+                            <div class="item-description">
+                                <h3 class="item-title">{{ block.settings.item3-card-title }}</h3>
+                                <a href="{{ block.settings.item3-link }}" target="_blank">PRODUCT DETAIL</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            {% endif %}
+            {% endfor %}
+            <img src="https://cdn.shopify.com/s/files/1/0647/3151/3071/files/large.jpg?v=1657842917">
+        </div> 
+    </div>
+</div>
+</div>
+         
+
+         {% schema %} 
+         {
+           "blocks": [
+                         {
+                           "type": "first-section",
+                           "name": "Flashing Pointer",
+                           "settings": [
+                                        {
+                                            "type": "header",
+                                            "content": "1st Image Pointer"
+                                        },
+                                         {
+                                         "id": "item1-pointer-top",
+                                         "type": "text",
+                                         "label": "Top"
+                                         },
+                                         {
+                                         "id": "item1-pointer-left",
+                                         "type": "text",
+                                         "label": "Left"
+                                         },
+                                         {
+                                         "id":"item1-card-image",
+                                         "type":"image_picker",
+                                         "label":"Image"
+                                         },
+                                         {
+                                         "id":"item1-card-title",
+                                         "type":"text",
+                                         "label":"Title"
+                                         },
+                                         {
+                                         "id":"item1-link",
+                                         "type":"url",
+                                         "label":"Link"
+                                         },
+                                         {
+                                            "type": "header",
+                                            "content": "2nd Image Pointer"
+                                        },
+                                         {
+                                         "id": "item2-pointer-top",
+                                         "type": "text",
+                                         "label": "Top"
+                                         },
+                                         {
+                                         "id": "item2-pointer-left",
+                                         "type": "text",
+                                         "label": "Left"
+                                         },
+                                         {
+                                         "id":"item2-card-image",
+                                         "type":"image_picker",
+                                         "label":"Image"
+                                         },
+                                         {
+                                         "id":"item2-card-title",
+                                         "type":"text",
+                                         "label":"Title"
+                                         },
+                                         {
+                                         "id":"item2-link",
+                                         "type":"url",
+                                         "label":"Link"
+                                         },
+                                         {
+                                        "type": "header",
+                                        "content": "3rd Image Pointer"
+                                        },
+                                         {
+                                         "id": "item3-pointer-top",
+                                         "type": "text",
+                                         "label": "Top"
+                                         },
+                                         {
+                                         "id": "item3-pointer-left",
+                                         "type": "text",
+                                         "label": "Left"
+                                         },
+                                         {
+                                         "id":"item3-card-image",
+                                         "type":"image_picker",
+                                         "label":"Image"
+                                         },
+                                         {
+                                         "id":"item3-card-title",
+                                         "type":"text",
+                                         "label":"Title"
+                                         },
+                                         {
+                                         "id":"item3-link",
+                                         "type":"url",
+                                         "label":"Link"
+                                         },
+                                        { 
+                                            "id":"last-pointer-margin",
+                                         "type":"text",
+                                         "label":"Card margin left"
+                                        }
+
+                                       ]
+                          }
+                       ],
+            "presets": [
+                             {
+                             "name": "Cucine slick images",
+                             "category": "Advanced Layout"	
+                             }
+                        ]
+         }
+       {% endschema %}
+
+
+
+       {% style %}
+
+       .bbq-conf-container{
+        background-color:#232323;
+        margin-top:-20px;
+        padding-bottom:2rem;
+       }
+
+       .bbq-conf-size-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       }
+       .btn--tertiary-cucine{
+        color:white;
+        margin:15px;
+        padding:15px 40px;
+       }
+
+       .btn--tertiary-cucine:hover{
+        color:black;
+        background:white;
+       }
+
+       .bbq-conf-img-item{
+        position:relative;
+       }
+
+
+       .item-pointer{
+        background-color:#FF7063;
+        height:15px;
+        width:15px;
+        border-radius:50%;
+        position:absolute;  
+        cursor:pointer;    
+        -webkit-animation: blink 7s infinite;  
+        -moz-animation: blink 5s infinite;  
+        -o-animation: blink 5s infinite;  
+        animation: blink 7s infinite;  
+        border: 1px solid white;
+        overflow:visible;
+       }
+
+       .item-pointer:hover .item-card{
+        display:block;
+       }
+
+       .item-pointer:hover{
+        -webkit-animation: none;  
+        -moz-animation: none;  
+        -o-animation: none;  
+        animation: none;
+        overflow:visible;
+       }
+        
+
+       .item-card{
+        display:none;
+        background-color:white;
+        width:400px;
+        cursor:auto;
+        position:absolute;
+       margin-top:-16vh;
+       margin-left:0.7vw;
+       z-index:9999;
+       border-radius:11px;
+       overflow:visible !important;
+       }
+
+       .item-card-row{
+        display:flex;
+       }
+
+       .item-image img {
+        padding:14px 20px 30px 40px;
+        width:190px;
+       }
+
+       .item-description {
+        padding:60px 10px 40px 0;
+       }
+
+       .item-title{
+        font-weight:bold;
+       }
+
+       .item-description a{
+        color:red;
+        text-decoration:underline;
+       }
+
+       
+       .bbq-conf-img-item img {
+         margin: 0 auto; 
+    }
+
+       @keyframes blink {
+        0%{
+            transform:scale(1.1);
+        }
+        25%{
+            transform:scale(.65);
+        }
+        50%{
+            transform:scale(1.1);
+            }
+        75%{
+            transform:scale(.65);
+             }
+        100%{
+            transform:scale(1.1);
+        }
+       }
+
+    @media screen and (max-width:992px){
+        
+        .item-pointer{
+       display:none;
+       }
+
+    @media screen and (max-width:600px){
+        
+        .btn--tertiary-cucine{
+        padding:5px;
+       }
+
+
+    }
+
+       {% endstyle %}
+
+
+<script>
+
+    $('.bbq-conf-img').slick({
+        arrows: false,
+        fade: false,
+        slidesToShow: 1,
+        speed:0,
+        draggable:false,
+        infinite: true
+    });
+
+    $('div[data-slide]').click(function() {
+        var slideno = $(this).data('slide');
+        console.log(slideno)
+        $('.bbq-conf-img').slick('slickGoTo', slideno);
+    });
+        
+</script>

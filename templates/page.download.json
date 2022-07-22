@@ -1,0 +1,667 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16546013724c629d62": {
+      "type": "download",
+      "blocks": {
+        "1ce45892-469e-4850-b2fc-c8b707b2820d": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ASCOT UPRIGHT COOKERS",
+            "align_text": "left"
+          }
+        },
+        "fc699f5e-8f24-4d8d-b401-e8fe90ad5c7e": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Combi-Steam Enamel Upright Cooker with 1 Wok & 1 Teppanyaki Grill Plate - A12SEF-6T OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A12SEF-6T-OT_4349f410-0845-4192-8e84-86496857d3b9.pdf?v=1654662262"
+          }
+        },
+        "d21adb0b-1322-4f7c-ac8e-d24b71c63dac": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Combi-Steam Upright Cooker with 1 Mega-Wok burner - A12SEF-6M OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A12SEF-6M-OT_b0627144-b25d-4cec-a5dd-ab9b0d7e5b78.pdf?v=1654662360"
+          }
+        },
+        "69f6fff0-cb5f-4a9b-92aa-1939e7ebc8e2": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Combi Steam Upright Cooker with 2 Wok - A10SEF-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A10SEF-6W-OT_c8c22f8d-fb55-45bc-8ce5-1b816cc3605a.pdf?v=1654662423"
+          }
+        },
+        "548b3ef2-2ae3-4ba4-a26b-2763335df555": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi-Steam Upright Cooker with 2 Wok - A9SE-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A9SE-6W-OT-1_4851d082-ae65-46e9-91ae-f2caff552a49.pdf?v=1654662475"
+          }
+        },
+        "62ec5851-f2ed-4838-9b35-2e6250ff7b21": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi-Steam Upright Cooker with 5 Induction Zones - A9SE-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A9SE-5FI_bf6ae5c2-728c-48ab-87fc-1a153dcd8e3d.pdf?v=1654662537"
+          }
+        },
+        "603fd3c4-b93b-4d20-8f50-fa68e211ed9f": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Combi-Steam Upright Cooker With 5 Induction zones - A10SEF-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A10SEF-5FI_4efabd2d-cab5-436f-ac9b-7e2ca94b95f7.pdf?v=1654662601"
+          }
+        },
+        "4dc796d6-a97e-4186-98f2-bbe084ce2197": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ASCOT UPRIGHT COOKERS",
+            "align_text": "left"
+          }
+        },
+        "4ba847fe-14fd-4cc3-b11f-c887f4f530f0": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Combi-Steam Enamel Upright Cooker with 1 Wok & 1 Teppanyaki Grill Plate - A12SEF-6T OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A12SEF-6T-OT_1.pdf?v=1654662683"
+          }
+        },
+        "4bb09de1-fe44-46d0-a07d-1848b59bcb57": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Combi-Steam Upright Cooker with 1 Mega-Wok burner - A12SEF-6M OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A12SEF-6M-OT_1.pdf?v=1654662752"
+          }
+        },
+        "19519da6-eae0-477c-beb3-38198be35abd": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Combi Steam Upright Cooker with 2 Wok - A10SEF-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A10SEF-6W-OT_1.pdf?v=1654662810"
+          }
+        },
+        "9ac752f0-2454-456c-97da-35f20ca5e1ad": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi-Steam Upright Cooker with 2 Wok - A9SE-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A9SE-6W-OT-1_1.pdf?v=1654662863"
+          }
+        },
+        "fc8b3c12-6004-48f7-adb1-a1454a88dda3": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi-Steam Upright Cooker with 5 Induction Zones - A9SE-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A9SE-5FI_1.pdf?v=1654662939"
+          }
+        },
+        "a998960d-417b-4da4-a629-9eca74f1726b": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Combi-Steam Upright Cooker With 5 Induction zones - A10SEF-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A10SEF-5FI_2.pdf?v=1654663101"
+          }
+        },
+        "48065972-6fe3-4030-85ae-c04b0dbf275e": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ASCOT RANGEHOODS",
+            "align_text": "left"
+          }
+        },
+        "7b2c62b0-0a6f-46a5-9884-763cb96127ed": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Rangehood - AKL120",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/ASCOT-120CM-RANGEHOOD-AKL120_8e8c4d09-6698-4e73-80ab-e182b7b2046c.pdf?v=1654663244"
+          }
+        },
+        "52de038c-a751-461a-b045-28675760712e": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Rangehood - AKL100",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/ASCOT-100CM-RANGEHOOD-AKL100_3700d41c-02f6-41fb-af59-cb0dfc44a742.pdf?v=1654663295"
+          }
+        },
+        "c5dfa928-a2bd-4065-b736-95c48f6d3c10": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Rangehood - AKL90",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/ASCOT-90CM-RANGEHOOD-AKL90_b007bccc-614c-4930-85a1-9ed11812aa64.pdf?v=1654663341"
+          }
+        },
+        "d2eaceba-336c-41d0-9284-d2502a701681": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ASCOT COOKTOPS",
+            "align_text": "left"
+          }
+        },
+        "5526c685-6e84-4650-82fe-a99f9610bc0b": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm 6 Gas Burner Hob - A9-6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A9-6_8cce42ac-ede8-401d-8c48-f43d6fdb0d50.pdf?v=1654663382"
+          }
+        },
+        "58c6b708-0c04-4cb9-aab2-c9eb909b80eb": {
+          "type": "rich-text",
+          "settings": {
+            "title": "GENESI UPRIGHT COOKERS",
+            "align_text": "left"
+          }
+        },
+        "18aba6e6-b357-4d2e-b7b4-09c1e0464e6d": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi Steam Upright Cooker with 1 Wok & 1 Teppanyaki Grill Plate - G12SEF-6T OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G12SEF-6T-OT_090715ef-bbe2-4f31-b7c2-0924d6dd8e66.pdf?v=1654663436"
+          }
+        },
+        "cb9839d0-7fa8-4325-98a4-d5b672aef7d7": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi-Steam Upright Cooker with 1 Mega-Wok burner - G12SEF-6M OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G12SEF-6M-OT_878f3c0b-ad40-4db0-9895-b55392c843f3.pdf?v=1654663488"
+          }
+        },
+        "9c48a8e3-975f-42b7-8db3-41fc34123d88": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Combi-Steam Upright Cooker Dual with 5 Induction zones - G10SEF-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G10SEF-5FI_fc43057f-a327-4462-be4a-e0b3703f5043.pdf?v=1654663525"
+          }
+        },
+        "a0c6b652-26f1-4337-befe-0f0ad5bc18dd": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Combi-Steam Upright Cooker (2 Wok) - G10SEF-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G10SEF-6W-OT_2cdf562e-649b-415f-b85f-884a7f1e55b1.pdf?v=1654663598"
+          }
+        },
+        "5160fb4e-5506-439b-87e0-dda90af07a6f": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi-Steam Upright Cooker with 5 Induction zones - G9SE-5FI",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G9SE-5FI_d503258e-1cc0-4369-8cfc-0bd71608b8b0.pdf?v=1654663642"
+          }
+        },
+        "51f23e25-4214-4cb2-8238-358b14f5a9ff": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi-Steam Upright Cooker (2 Wok) - G9SE-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G9SE-5FI_d503258e-1cc0-4369-8cfc-0bd71608b8b0.pdf?v=1654663642"
+          }
+        },
+        "b329e0c0-be82-4cab-8588-06e2142a0bfa": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi-Steam Upright Cooker (2 Wok) - G9S-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-90cm-Combination-Steam-Cooker-G9S-6W-OT_18c099a6-d4a3-4166-934a-a4bff96edfe3.pdf?v=1654663726"
+          }
+        },
+        "60feb3e7-a51c-4478-b0dc-efa52942656b": {
+          "type": "rich-text",
+          "settings": {
+            "title": "GENESI BUILT IN OVENS",
+            "align_text": "left"
+          }
+        },
+        "7f192678-7af5-4499-b444-f647c0554688": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm x 45cm Built-In Pizza Oven with Intergrated Pizza Stone - GFE6-P",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-60cm-Built-In-Pizza-Oven-GFE6-P_5525876c-d4c5-4fa8-8329-6a12d8c6c99f.pdf?v=1654663793"
+          }
+        },
+        "1b5de84b-6638-4448-8c89-2783cf32f8aa": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi-Steam Built In Oven - GFE9-S",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/90cm-Combi-Steam-Built-In-Oven-GFE9-S_98f71d2e-6086-4e8e-b482-9b096e336e93.pdf?v=1654663851"
+          }
+        },
+        "fd40f0cf-a766-484f-8db7-c0fd4e002b8c": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm Combi-Steam Built In Oven Plus Pizza Oven - GFFE6-S",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-Combi-Steam-Built-In-Oven-GFFE6-S_fd31f16c-9388-4ad7-a8b8-250a2436f781.pdf?v=1654663894"
+          }
+        },
+        "8db7d289-9039-482c-8cf1-663c5a2dd1a2": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm Combi-Steam Built-In Oven - GFE6-S",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-60cm-Combi-Steam-Built-In-Oven-GFE6-S_fac89276-bdb2-4c56-b30a-e51ab2525e1e.pdf?v=1654664026"
+          }
+        },
+        "15681929-7aee-4c91-9cef-23f8ceae62f2": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm Multi-Function Built-In Oven - GFE6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-60cm-multi-function-built-in-oven-GFE6_13348101-0d31-4a7f-a965-21539297cac9.pdf?v=1654664079"
+          }
+        },
+        "07a18d77-b213-4e15-9430-70abec178057": {
+          "type": "rich-text",
+          "settings": {
+            "title": "GENESI COOKTOPS",
+            "align_text": "left"
+          }
+        },
+        "d3e76d0b-f788-45b6-9bb0-68aac49d514e": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 110cm 4 Gas Burner Hob - GP11F-4",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/genesi-110cm-gas-cooktop-gp11f-4_be9daf34-b93a-45d1-bbec-c1d4326ef8dd.pdf?v=1654664186"
+          }
+        },
+        "2662b3d8-99b2-46c7-81b5-067cd5f04986": {
+          "type": "rich-text",
+          "settings": {
+            "title": "GENESI FRIDGE",
+            "align_text": "left"
+          }
+        },
+        "29733f3d-6077-46a0-9da2-e93d972168b3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ENFASI UPRIGHT COOKER",
+            "align_text": "left"
+          }
+        },
+        "54f5289e-5ef6-4b17-b861-d56f23386461": {
+          "type": "download",
+          "settings": {
+            "title": "Enfasi 90cm Multi-Function Upright Cooker with 5 Induction zones - E9F-5FI NF",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/E9F-5FI-NF-specsheet-11-2021_522b89e0-32df-47c2-8015-83557e5dad5a.pdf?v=1654664294"
+          }
+        },
+        "97fe58bc-dbfe-4d4a-af9f-d8068de63913": {
+          "type": "download",
+          "settings": {
+            "title": "Enfasi 90cm Multi-Function Upright Cooker (1 Wok Burner) - E9F-5 NF",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/E9F-5-NF-specs_a981ebc0-01fa-45dd-a604-05b2491684b6.pdf?v=1654664341"
+          }
+        },
+        "7973573c-182f-4550-a57e-2a8e64ab800f": {
+          "type": "rich-text",
+          "settings": {
+            "title": "OXFORD UPRIGHT COOKER",
+            "align_text": "left"
+          }
+        },
+        "a8f9b3cf-fc7f-43eb-b66b-d75e1e4b5f20": {
+          "type": "download",
+          "settings": {
+            "title": "Oxford 90cm Multi-Function Upright Cooker (1 Wok) - X9F-5",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/90cm-Multifunction-Upright-Cooker-Oxford-X9F-5-specsheet_c200a1c4-2dbd-4e3e-84fc-9b3627a7256a.pdf?v=1654664406"
+          }
+        },
+        "69d230f5-8550-40fe-93e2-14dfd9c1aba1": {
+          "type": "rich-text",
+          "settings": {
+            "title": "STEEL BARBECUE",
+            "align_text": "left"
+          }
+        },
+        "ad6c3123-6e7b-4203-8d38-76a96d1474c6": {
+          "type": "download",
+          "settings": {
+            "title": "Steel Built-In BBQ with Four Burner Grill - I9-4",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/I9-4-spec-sheet_3b85eb65-d959-48e0-a223-d96cb026cc01.pdf?v=1654664461"
+          }
+        },
+        "0a86dad1-7468-4182-b41e-6147a106bbab": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ARCHIVE MODELS",
+            "align_text": "left"
+          }
+        },
+        "27a11f89-f299-462c-b8d3-2f8d844a0a6a": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi-Steam Upright Cooker with 1 Wok & 1 Barbecue Grill Plate - G12SEF-6B OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G12SEF-6B-OT_25482220-8733-4c4e-8a11-5c01cd6105d9.pdf?v=1654664590"
+          }
+        },
+        "8da69fe5-ffd0-4bdb-a9c3-d31f774809c8": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 120cm Combi-Steam Upright Cooker with 1 Wok & 1 Barbeque Grill Plate - A12SEF-6B OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/A12SEF-6B-OT_3d6a6108-6e15-4a27-8c7a-5c47b9b88e3d.pdf?v=1654664652"
+          }
+        },
+        "4903acb0-1fa7-4d24-8c69-c7c14f40f777": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Multi function Upright Cooker with 5 Induction Zones - A10FF-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Ascot-100cm-Multifunction-Upright-Cooker-A10FF-6I_5d7c05ac-dcd9-4559-804f-44c9e1f05e30.pdf?v=1654664703"
+          }
+        },
+        "6985a0d7-14f6-4bc7-a44f-8a7ccdd60efc": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi Steam Upright Cooker A9S-4T",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Ascot-90cm-Combi-Steam-Upright-Cooker-A9S-4T_93d61e65-15f1-4f7e-bf51-f9dc827d44bd.pdf?v=1654664747"
+          }
+        },
+        "da4d2d23-7a51-457c-8dcd-8a9e456b744c": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi Steam Upright Cooker G9S-4T",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-90cm-Combi-Steam-Upright-Cooker-G9S-4T_c7f37011-497d-4c90-8c0c-dea38a4b0952.pdf?v=1654664793"
+          }
+        }
+      },
+      "block_order": [
+        "1ce45892-469e-4850-b2fc-c8b707b2820d",
+        "fc699f5e-8f24-4d8d-b401-e8fe90ad5c7e",
+        "d21adb0b-1322-4f7c-ac8e-d24b71c63dac",
+        "69f6fff0-cb5f-4a9b-92aa-1939e7ebc8e2",
+        "548b3ef2-2ae3-4ba4-a26b-2763335df555",
+        "62ec5851-f2ed-4838-9b35-2e6250ff7b21",
+        "603fd3c4-b93b-4d20-8f50-fa68e211ed9f",
+        "4dc796d6-a97e-4186-98f2-bbe084ce2197",
+        "4ba847fe-14fd-4cc3-b11f-c887f4f530f0",
+        "4bb09de1-fe44-46d0-a07d-1848b59bcb57",
+        "19519da6-eae0-477c-beb3-38198be35abd",
+        "9ac752f0-2454-456c-97da-35f20ca5e1ad",
+        "fc8b3c12-6004-48f7-adb1-a1454a88dda3",
+        "a998960d-417b-4da4-a629-9eca74f1726b",
+        "48065972-6fe3-4030-85ae-c04b0dbf275e",
+        "7b2c62b0-0a6f-46a5-9884-763cb96127ed",
+        "52de038c-a751-461a-b045-28675760712e",
+        "c5dfa928-a2bd-4065-b736-95c48f6d3c10",
+        "d2eaceba-336c-41d0-9284-d2502a701681",
+        "5526c685-6e84-4650-82fe-a99f9610bc0b",
+        "58c6b708-0c04-4cb9-aab2-c9eb909b80eb",
+        "18aba6e6-b357-4d2e-b7b4-09c1e0464e6d",
+        "cb9839d0-7fa8-4325-98a4-d5b672aef7d7",
+        "9c48a8e3-975f-42b7-8db3-41fc34123d88",
+        "a0c6b652-26f1-4337-befe-0f0ad5bc18dd",
+        "5160fb4e-5506-439b-87e0-dda90af07a6f",
+        "51f23e25-4214-4cb2-8238-358b14f5a9ff",
+        "b329e0c0-be82-4cab-8588-06e2142a0bfa",
+        "60feb3e7-a51c-4478-b0dc-efa52942656b",
+        "7f192678-7af5-4499-b444-f647c0554688",
+        "1b5de84b-6638-4448-8c89-2783cf32f8aa",
+        "fd40f0cf-a766-484f-8db7-c0fd4e002b8c",
+        "8db7d289-9039-482c-8cf1-663c5a2dd1a2",
+        "15681929-7aee-4c91-9cef-23f8ceae62f2",
+        "07a18d77-b213-4e15-9430-70abec178057",
+        "d3e76d0b-f788-45b6-9bb0-68aac49d514e",
+        "2662b3d8-99b2-46c7-81b5-067cd5f04986",
+        "29733f3d-6077-46a0-9da2-e93d972168b3",
+        "54f5289e-5ef6-4b17-b861-d56f23386461",
+        "97fe58bc-dbfe-4d4a-af9f-d8068de63913",
+        "7973573c-182f-4550-a57e-2a8e64ab800f",
+        "a8f9b3cf-fc7f-43eb-b66b-d75e1e4b5f20",
+        "69d230f5-8550-40fe-93e2-14dfd9c1aba1",
+        "ad6c3123-6e7b-4203-8d38-76a96d1474c6",
+        "0a86dad1-7468-4182-b41e-6147a106bbab",
+        "27a11f89-f299-462c-b8d3-2f8d844a0a6a",
+        "8da69fe5-ffd0-4bdb-a9c3-d31f774809c8",
+        "4903acb0-1fa7-4d24-8c69-c7c14f40f777",
+        "6985a0d7-14f6-4bc7-a44f-8a7ccdd60efc",
+        "da4d2d23-7a51-457c-8dcd-8a9e456b744c"
+      ],
+      "settings": {
+        "title": "DOWNLOAD SPECIFICATION SHEET"
+      }
+    },
+    "1654662072142d1bf4": {
+      "type": "download",
+      "blocks": {
+        "51afe6b5-c7b3-46c7-b476-4ba3531f686e": {
+          "type": "download",
+          "settings": {
+            "title": "Primo 90cm Multi Function Upright Cooker with 5 Zone Induction Hob - P9F-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Primo-Multi-Function-Upright-Cooker-P9F-6I_32123908-c1e4-49cd-8705-8361f9f0f42a.pdf?v=1654664981"
+          }
+        },
+        "d05fcf0f-6281-4657-b473-7b9385bfa6ce": {
+          "type": "download",
+          "settings": {
+            "title": "Primo 90cm Multi Function Upright Cooker with 5 Burner Gas Hob (1 Wok) - P9F-5",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Primo-Multifunction-Cooker-1-wok-P9F-5_22e8d914-232e-47e0-9526-ec196cedad35.pdf?v=1654665056"
+          }
+        },
+        "84420bd9-abc5-4790-9e82-64df3fc5ecbd": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Stainless Steel Rangehood - GK120",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-120cm-Rangehood-GK120_7bd1b5d4-e53b-429e-a2d4-5252fe454da5.pdf?v=1654665113"
+          }
+        },
+        "2cf65238-0b6d-4d5e-afd3-0c66422fcc68": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 80cm 6 Zone Induction Hob - GP8I-6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-80cm-Induction-Cooktop-GP8I-6.pdf?v=1654665175"
+          }
+        },
+        "f9683a83-b1ec-45df-b839-f5b79462bf42": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Stainless Steel Rangehood - GK100",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-Rangehood-GK100_9d1c6a97-c0b1-448d-9a72-e47a0ea2c8b8.pdf?v=1654665231"
+          }
+        },
+        "a05e99cb-2890-49af-99fa-f47adb9b3719": {
+          "type": "download",
+          "settings": {
+            "title": "G10SF-6 SS",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-Combi-Steam-Upright-Cooker-2-Work-G10SF-6W-OT_fdb937bd-71d3-4246-b554-ed8afd76ff3f.pdf?v=1654665289"
+          }
+        },
+        "c6c49186-0a6c-4d1c-bfe1-613e040c2fe6": {
+          "type": "download",
+          "settings": {
+            "title": "Steel Cart BBQ with Four Burner Grill - I9C-4",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/I9C-4-specs.pdf?v=1654665353"
+          }
+        },
+        "a352f04e-4d95-45b8-8323-6e21e0d90e5e": {
+          "type": "download",
+          "settings": {
+            "title": "Enfasi 90cm Multi-Function Upright Cooker with 5 Induction zones - E9F-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Enfasi-90cm-Multifunction-Induction-Upright-Cooker-E9F-6I_c73a1411-7f6a-491c-bebe-9291cbe476ce.pdf?v=1654665421"
+          }
+        },
+        "0b4e1e96-0c6e-47d7-ac14-a540a675a0b5": {
+          "type": "download",
+          "settings": {
+            "title": "Enfasi 90cm Multi-Function Upright Cooker (1 Wok) - E9F-6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Enfasi-90cm-Multifunction-Upright-Cooker-E9F-6_ffe96e18-4565-4356-9746-966f4a473671.pdf?v=1654665501"
+          }
+        },
+        "c3274e35-3ecd-4746-9d91-6ac922ec48ad": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi-Steam Upright Cooker with 1 Mega-Wok burner - G12SF-6M OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-120cm-Combi-Steam-Upright-Cooker-G12Sf-6M-OT_1efbe1cb-6d70-4d1b-92fb-79d1e046fbd8.pdf?v=1654665575"
+          }
+        },
+        "7dbb906a-8808-4415-ba70-0f150be996a2": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi Steam Upright Cooker with 1 Wok & 1 Teppanyaki Grill Plate - G12SF-6T OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-120cm-combi-steam-cooker-with-1-wok-teppanyaki-grill-G12SF-6T-OT_b78ba10f-82d7-4937-a61a-e1985f3ce0ae.pdf?v=1654665659"
+          }
+        },
+        "dd7a9c95-101f-4840-8997-0c894aa42c40": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 120cm Combi-Steam Upright Cooker with 1 Wok & 1 Barbeque Grill Plate - G12SF-6B OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-120cm-Combi-Steam-upright-Cooker-with-Wok-BBQ-Grill-G12SF-6B-OT.pdf?v=1654665717"
+          }
+        },
+        "15509e51-59cc-4e55-86b4-08da14972894": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Combi-Steam Upright Cooker with 1 Wok & 1 Teppanyaki Grill Plate - G10SF-4T",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-combi-steam-upright-cooker-with-work-teppanyaki-grill-G10SF-4T.pdf?v=1654586016"
+          }
+        },
+        "2d395361-40cd-401d-bedb-ad7fcd2d8ae0": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Combi-Steam Upright Cooker (2 Wok) - G10SF-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-Combi-Steam-Upright-Cooker-2-Work-G10SF-6W-OT.pdf?v=1654585336"
+          }
+        },
+        "6633843e-5e05-43bf-8a52-77541a772174": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Multi-Function Enamel Upright Cooker Dual with 6 Induction zones - G10FF-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/G10FF-6I.pdf?v=1654585799"
+          }
+        },
+        "505e6203-212d-418d-83bf-109fc8f87cfd": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Combi-Steam Upright Cooker Dual with 6 Induction zones - G10SF-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-Combi-Steam-Upright-Cooker-G10SF-6I.pdf?v=1654585704"
+          }
+        },
+        "8c68444a-96fe-4f0f-98ab-f9366097ac50": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 100cm Multi-Function Enamel Upright Cooker (2 Wok) - G10FF-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-100cm-Multi-function-upright-cooker-G10FF-6W-OT.pdf?v=1654585570"
+          }
+        },
+        "da0db9ae-243d-4d1f-8e9b-ee92512f5e29": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Combi-Steam Upright Cooker with 6 Induction zones - G9S-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-90cm-combination-steam-Induction-Upright-Cooker-G9S-6I.pdf?v=1654585454"
+          }
+        },
+        "31a51179-1fff-4cd0-933d-614af49fbd16": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Multi-Function Enamel Upright Cooker (2 Wok) - G9F-6W OT",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/90cm-Multifunction-Enamel-Cooker-2-wok-G9F-6W-OT.pdf?v=1654586926"
+          }
+        },
+        "2ce42c76-0ecf-47b4-9a72-1a7896df2142": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Multi-Function Enamel Upright Cooker with 6 Induction zones - G9F-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/90cm-Multifunction-Induction-Upright-Cooker-G9F-6I.pdf?v=1654586840"
+          }
+        },
+        "78943b19-aa19-480e-ab30-27d96188319d": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm Freestanding French-Door Refrigerator - GFR-9F",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/GFR-9F-spec-sheet.pdf?v=1654586747"
+          }
+        },
+        "cacfb57e-79e8-47f0-8b35-4681d4015af5": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm 6 Gas Burner Hob - G9-6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-90cm-6-Gas-Burner-Hob-G9-6.pdf?v=1654586549"
+          }
+        },
+        "c085f33a-9f66-4a4a-a575-e7ca973dcac2": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm 6 Zone Induction Hob - GP9I-6",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-90cm-6-Zone-Induction-Hob-GP9I-6.pdf?v=1654666743"
+          }
+        },
+        "fa76a0d0-1785-488c-bcfd-d1ed4c7ad8b6": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 90cm 5 Gas Burner Hob - GP9F-5",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/90cm-Gas-Cooktop-5-Burner-GP9F-5.pdf?v=1654586436"
+          }
+        },
+        "dcfd29e9-4671-4681-874c-d3d45269aafe": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 75cm 5 Gas Burner Hob - GP7F-5",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/75cm-Gas-Cooktop-GP7F-5.pdf?v=1654587793"
+          }
+        },
+        "75828c36-b33c-488b-a026-e80a278ef57b": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm 4 Gas Burner Hob - GP6F-4",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-60cm-Gas-Cooktop.pdf?v=1654587676"
+          }
+        },
+        "1dfbc913-d342-4405-ae8a-99c0699cf60a": {
+          "type": "download",
+          "settings": {
+            "title": "Genesi 60cm 4 Zone Induction Hob - GP6I-4",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Genesi-60cm-Induction-Cooktop-GP6I-4.pdf?v=1654666981"
+          }
+        },
+        "4fb080cc-72be-4128-8018-1e3e20fe31b9": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 90cm Combi-Steam Upright Cooker with 6 Induction Zones - A9S-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Ascot-90cm-Upright-Cooker-with-Combi-Steam-A9S-6I.pdf?v=1654587519"
+          }
+        },
+        "6470d926-a7d0-4820-b07e-834e704e2f76": {
+          "type": "download",
+          "settings": {
+            "title": "Ascot 100cm Combi-Steam Upright Cooker With 6 Induction zones - A10SF-6I",
+            "download_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0647\/3151\/3071\/files\/Ascot-100cm-Combi-Steam-Upright-Cooker-A10SF-6I.pdf?v=1654587315"
+          }
+        }
+      },
+      "block_order": [
+        "51afe6b5-c7b3-46c7-b476-4ba3531f686e",
+        "d05fcf0f-6281-4657-b473-7b9385bfa6ce",
+        "84420bd9-abc5-4790-9e82-64df3fc5ecbd",
+        "2cf65238-0b6d-4d5e-afd3-0c66422fcc68",
+        "f9683a83-b1ec-45df-b839-f5b79462bf42",
+        "a05e99cb-2890-49af-99fa-f47adb9b3719",
+        "c6c49186-0a6c-4d1c-bfe1-613e040c2fe6",
+        "a352f04e-4d95-45b8-8323-6e21e0d90e5e",
+        "0b4e1e96-0c6e-47d7-ac14-a540a675a0b5",
+        "c3274e35-3ecd-4746-9d91-6ac922ec48ad",
+        "7dbb906a-8808-4415-ba70-0f150be996a2",
+        "dd7a9c95-101f-4840-8997-0c894aa42c40",
+        "15509e51-59cc-4e55-86b4-08da14972894",
+        "2d395361-40cd-401d-bedb-ad7fcd2d8ae0",
+        "6633843e-5e05-43bf-8a52-77541a772174",
+        "505e6203-212d-418d-83bf-109fc8f87cfd",
+        "8c68444a-96fe-4f0f-98ab-f9366097ac50",
+        "da0db9ae-243d-4d1f-8e9b-ee92512f5e29",
+        "31a51179-1fff-4cd0-933d-614af49fbd16",
+        "2ce42c76-0ecf-47b4-9a72-1a7896df2142",
+        "78943b19-aa19-480e-ab30-27d96188319d",
+        "cacfb57e-79e8-47f0-8b35-4681d4015af5",
+        "c085f33a-9f66-4a4a-a575-e7ca973dcac2",
+        "fa76a0d0-1785-488c-bcfd-d1ed4c7ad8b6",
+        "dcfd29e9-4671-4681-874c-d3d45269aafe",
+        "75828c36-b33c-488b-a026-e80a278ef57b",
+        "1dfbc913-d342-4405-ae8a-99c0699cf60a",
+        "4fb080cc-72be-4128-8018-1e3e20fe31b9",
+        "6470d926-a7d0-4820-b07e-834e704e2f76"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16546013724c629d62",
+    "1654662072142d1bf4"
+  ]
+}

@@ -1,0 +1,290 @@
+{%- liquid
+  assign swatch_file_extension = 'png'
+  assign option_index = forloop.index
+-%}
+
+{%- capture size_chart_title -%}
+  {{ 'products.general.size_chart' | t }} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class="a" d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path class="a" d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39M46.78 33.53v7.44M38.65 33.53v7.44M30.52 33.53v7.44M22.39 33.53v7.44"/></svg>
+{%- endcapture -%}
+
+{%- liquid
+  assign is_size = false
+  assign size_trigger = 'products.general.size_trigger' | t | downcase
+  assign downcased_option = option.name | downcase
+
+  if downcased_option contains size_trigger
+    assign is_size = true
+  endif
+-%}
+
+<div class="variant-wrapper js" data-type="button">
+  <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
+    for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+    <span style="font-weight:500; font-size:22px; line-height:25px; text-transform:none; letter-spacing:0;"> 
+    Choose your  <span style="font-weight:bold;">{{ option.name }} </span></span>
+    {%- if connect_to_sizechart and is_size -%}
+      <span class="variant__label-info">
+        &mdash;
+        {%- render
+          'tool-tip-trigger',
+          title: size_chart_title,
+          content: section.blocks[sizechart_index].settings.size_chart.content,
+          context: 'size-chart'
+        -%}
+      </span>
+    {%- endif -%}
+
+    {%- if is_color -%}
+      <span class="variant__label-info">
+        &mdash;
+        <span
+          data-variant-color-label
+          data-index="{{ forloop.index0 }}"
+          data-option-index="{{ color_option_index }}">
+          {{ option.selected_value }}
+        </span>
+      </span>
+
+      {% else %}
+
+      <span class="variant__label-info">
+        {% comment %} &mdash; {% endcomment %}
+        <span>
+          {% comment %} {{ option.name }} {% endcomment %}
+        </span>
+      </span>
+
+    {%- endif -%}
+  </label>
+
+  <fieldset class="variant-input-wrap cucine-{{ option.name }}-fieldset"
+    name="{{ option.name }}"
+    data-index="option{{ option_index }}"
+    data-handle="{{ option.name | handleize }}"
+    id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+    <legend class="hide">{{ option.name }}</legend>
+    {%- for value in option.values -%}
+      {%- liquid
+        assign product_available = true
+        if product.options.size == 1
+          assign product_available = product.variants[forloop.index0].available
+        endif
+      -%}
+      <div
+        class="variant-input"
+        data-index="option{{ option_index }}"
+        data-value="{{ value | escape }}">
+        <input type="radio"
+          {% if option.selected_value == value %} checked="checked"{% endif %}
+          form="{{ form_id }}"
+          value="{{ value | escape }}"
+          data-index="option{{ option_index }}"
+          name="{{ option.name }}"
+          data-variant-input
+          class="{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch{% endif %}"
+          {% if is_color %} data-color-name="{{ value | escape }}"{% endif %}
+          {% if is_color %} data-color-index="{{ color_option_index }}"{% endif %}
+          id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}">
+        {%- if is_color -%}
+          {%- liquid
+            assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+            assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+            assign color_swatch_fallback = value | split: ' ' | last | handle
+          -%}
+          <label
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            class="color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+            style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+          >
+            
+          </label>
+
+        {%- elsif option.name == "Trim"  -%}
+        {% if value == "Brass"%}
+
+           <label 
+            style = "background-image:url(
+              {{ product.metafields.custom.brass_trim | img_url:"master" }}
+            )"
+            title = "{{ value | escape }}" 
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+            class="label-bg-img"
+            {% unless product_available %} class="disabled"{% endunless %}>
+
+           
+            
+            </label>
+
+          {% elsif  value == "Bronze"%}
+
+              <label 
+               style = "background-image:url(
+                 {{ product.metafields.custom.bronze_trim | img_url:"master" }}
+               )"
+               title = "{{ value | escape }}" 
+               for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+               class="label-bg-img"
+               {% unless product_available %} class="disabled"{% endunless %}>
+   
+              
+               
+               </label>
+
+          {% elsif  value == "Chrome"%}
+
+          <label 
+            style = "background-image:url(
+              {{ product.metafields.custom.chrome_trim | img_url:"master" }}
+            )"
+            title = "{{ value | escape }}" 
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+            class="label-bg-img"
+            {% unless product_available %} class="disabled"{% endunless %}>
+
+           
+            
+            </label>
+
+            {% elsif  value == "Nickel"%}
+
+            <label 
+              style = "background-image:url(
+                {{ product.metafields.custom.nickel_trim | img_url:"master" }}
+              )"
+              title = "{{ value | escape }}" 
+              for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+              class="label-bg-img"
+              {% unless product_available %} class="disabled"{% endunless %}>
+  
+             
+              
+              </label>
+
+          {% endif %}
+
+          
+          {%- elsif option.name == "Cooktop"  -%}
+          
+          <div class="cooktop">
+
+          {% if  value == "5FI"%}
+
+            <div class="cooktop-5fi flex" id="cooktop-5fi">
+              <label 
+              
+              style = "background-image:url(
+                {{ product.metafields.custom.cooktop_5fi | img_url:"master" }}
+              )"
+              title = "{{ value | escape }}" 
+              for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+              class="label-bg-img--cooktop"
+              {% unless product_available %} class="disabled"{% endunless %}
+              onclick="Cooktop5FIBackground()"
+            >
+              
+            </label>
+            <div class="cooktop-description">
+              <strong> {{ value | escape }}</strong><br/>
+            <span> {{ product.metafields.custom.description_5fi }} </span>
+            </div>
+          </div>
+        
+          {% elsif  value == "6W"%}
+
+          <div class="cooktop-6w flex" id="cooktop-6w">
+          <label 
+            
+            style = "background-image:url(
+              {{ product.metafields.custom.cooktop_6w | img_url:"master" }}
+            )"
+            title = "{{ value | escape }}" 
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" 
+            class="label-bg-img--cooktop"
+            {% unless product_available %} class="disabled"{% endunless %}
+            onclick="Cooktop6WBackground()"
+          >
+          </label>
+          <div class="cooktop-description">
+          <strong> {{ value | escape }}</strong><br/>
+          <span> {{ product.metafields.custom.description_6w }} </span>
+        </div>
+      </div>
+
+        {%- endif -%}
+      </div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </fieldset>
+</div>
+
+
+{% style %}
+ 
+.color-swatch {
+  width: 74px;;
+  height: 74px;
+  border: none;
+  margin-left: -10px !important;
+  margin-bottom: 5px !important;
+}
+
+.color-swatch:before {
+  border: 1px solid white !important;
+}
+
+
+  .label-bg-img{
+    height:41px;
+    width:103px;
+    margin-left: -10px !important;
+  }
+
+ 
+  .label-bg-img--cooktop{
+  width: 200px;
+  height: 150px;
+  background-repeat: no-repeat;
+  }
+
+  .cooktop-description{
+  max-width: 250px;
+  height: 150px;
+  padding: 20px;
+  }
+
+  .variant-input{
+    margin-left:15px !important;
+  }
+
+  .variant-input-wrap {
+    margin: 0 0 20px;
+  }
+
+  .cucine-Color-fieldset{
+    max-width:70%;
+  }
+  
+  .cooktop{
+   }
+
+  .cooktop-focusable{
+    background-color: #E5E5E5;
+  }
+
+ 
+
+{% endstyle %}
+
+<script>
+
+var Cooktop5FIBackground = () => {
+  document.getElementById("cooktop-5fi").classList.add('cooktop-focusable');
+  document.getElementById("cooktop-6w").classList.remove('cooktop-focusable');
+}
+var Cooktop6WBackground = () => {
+  document.getElementById("cooktop-6w").classList.add('cooktop-focusable');
+  document.getElementById("cooktop-5fi").classList.remove('cooktop-focusable');
+}
+
+</script>
