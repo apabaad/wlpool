@@ -6,13 +6,7 @@
     data-zoom="{{ product_zoom_enable }}"
     data-has-slideshow="{% if product.media.size > 1 %}true{% else %}false{% endif %}">
 
-    
-    {% comment %}
-      product page thumbnails
-      ------------------------------------------------------------------------------------------------------ 
-      <div class="product__photos product__photos--{{ thumbnail_position }}"> {% endcomment %}
-    <div class="product__photos ">  
-    
+    <div class="product__photos product__photos--{{ thumbnail_position }}">
 
       <div class="product__main-photos" data-aos data-product-single-media-group>
         <div data-product-photos class="product-slideshow" id="ProductPhotos-{{ section_id }}">

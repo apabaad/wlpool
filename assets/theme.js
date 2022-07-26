@@ -3536,8 +3536,8 @@ lazySizesConfig.expFactor = 2.2;
       childNavScroller: null, // element
       childVertical: false,
       dragThreshold: 7,
-      fade: true, // custom by Arisit to change slideshow transition
-      friction: 0.1,
+      // fade: true, custom by Arisit to change slideshow transition
+      friction: 1,
       initialIndex: 0,
       pageDots: false,
       pauseAutoPlayOnHover: false,

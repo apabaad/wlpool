@@ -60,25 +60,14 @@
 
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
 
-  <div class="page-content page-width" id="product-overview">
-
-      <div style="margin-bottom:50px;">
-
-      {% if product.metafields.custom.model == blank %}
-      <span class="cucine-product-model" style="margin-left:10%; font-size:1.5rem;">{{ product.title }}</span><br/>
-      {% else %}
-      <span class="cucine-product-model" style="margin-left:10%; font-size:3rem;">{{ product.metafields.custom.model }}</span><br/>
-      <span class="cucine-product-collection" style="margin-left:10%;">{{ product.metafields.custom.collection }}</span>
-      {% endif %}
-
-      </div>
+  <div class="page-content" id="product-overview">
+    <div class="page-width">
 
       {%- if settings.show_breadcrumbs and isModal != true -%}
         {%- render 'breadcrumbs' -%}
       {%- endif -%}
 
-      <div class="grid-view grid-view-cucine">
-        
+      <div class="grid-view">
         <div class="grid__item {{ product_image_width }} product-single__sticky">
           {%- render 'product-images',
             section_id: section_id,
@@ -96,7 +85,7 @@
 
         <div class="grid__item {{ product_description_width }}">
 
-          <div class="product-single__meta product-single__meta--cucine ">
+          <div class="product-single__meta">
             <div class="product-block product-block--header">
               {%- if settings.vendor_enable -%}
                 <div class="product-single__vendor">
@@ -111,24 +100,11 @@
                 </div>
               {%- endif -%}
 
-              {% comment %} 
-              ----------------------------------------------------------------------
-              product title
-              ----------------------------------------------------------------------
               {%- if isModal -%}
                 <p class="h2 product-single__title">
                   {{ product.title }}
                 </p>
               {%- else -%}
-                <h1 class="h2 product-single__title">
-                  {%- unless product.empty? -%}
-                    {{ product.title }}
-                  {%- else -%}
-                    {{ 'home_page.onboarding.product_title' | t }}
-                  {%- endunless -%}
-                </h1>
-              {%- endif -%} {% endcomment %}
-
               {%- if sku_enable -%}
                 <p data-sku class="product-single__sku">
                   {%- if current_variant.sku -%}
@@ -136,6 +112,16 @@
                   {%- endif -%}
                 </p>
               {%- endif -%}
+                <h1 class="h2 product-single__title">
+                  {%- unless product.empty? -%}
+                    {{ product.title }}
+                  {%- else -%}
+                    {{ 'home_page.onboarding.product_title' | t }}
+                  {%- endunless -%}
+                </h1>
+              {%- endif -%}
+
+              
             </div>
 
             <div data-product-blocks>
@@ -151,7 +137,7 @@
                       {{ block.settings.text }}
                     </div>
                   {%- when 'tab' -%}
-                    <div class="product-block product-block--tab" {{ block.shopify_attributes }} >
+                    <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {% assign tab_id = block.id | append: product.id %}
                       {% capture tab_content %}
                         {{ block.settings.content }}
@@ -266,7 +252,6 @@
                     {% endif %}
                   {%- when 'variant_picker' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
-                      
                       {% unless product.has_only_default_variant %}
                         {%- for option in product.options_with_values -%}
 
@@ -299,7 +284,6 @@
                               connect_to_sizechart: connect_to_sizechart,
                               sizechart_index: sizechart_index
                             -%}
-                            
                           {% else %}
                             {%- render 'variant-dropdown',
                               product: product,
@@ -386,7 +370,19 @@
                         </div>
                       </div>
                     </div>
-                 
+                  {%- when 'product_downloads' -%}
+                  <div class="product-block" {{ block.shopify_attributes }}>
+                    {% if product.metafields.my_fields.downloads_pdf != blank and block.settings.enable_specification_sheet != blank %}
+                      <a href="{{product.metafields.my_fields.downloads_pdf | file_url  }}" target="_blank" class="bg-black px-4 py-2 rounded text-white mr-2 hover:text-white hover:!bg-[#282828] inline-flex items-center">
+                        {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
+                        Specification Sheet</a>
+                    {% endif %}
+                    {% if product.metafields.my_fields.user_manual != blank and block.settings.enable_user_manual != blank %}
+                      <a href="{{product.metafields.my_fields.user_manual | file_url }}" target="_blank" class="bg-black px-4 py-2 rounded text-white hover:text-white inline-flex items-center hover:!bg-[#282828]">
+                        {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
+                        User Manual</a>
+                    {% endif %}
+                  </div>
                   {%- when 'custom' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.code }}
@@ -404,4 +400,5 @@
         </div>
       </div>
     </div>
+  </div>
 </div>
