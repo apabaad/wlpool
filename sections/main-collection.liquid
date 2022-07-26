@@ -54,7 +54,7 @@
     </div>
   {%- endif -%}
 
-  <div class=" page-content">
+  <div class="page-width page-content">
     {%- render 'breadcrumbs' -%}
     {%- render 'collection-sidebar', section: section -%}
 
@@ -68,11 +68,11 @@
       {% endif %}
     {%- endunless -%}
 
-    {% comment %} {% render 'collection-filters',
+    {% render 'collection-filters',
       collection: collection,
       enable_sort: section.settings.enable_sort,
       collection_tags_style: section.settings.collection_tags_style
-    %} {% endcomment %}
+    %}
 
     {%- for block in section.blocks -%}
       {%- assign block_index = forloop.index -%}
@@ -95,11 +95,8 @@
           {%- endunless -%}
         {%- endif -%}
       {%- when 'product_grid' -%}
-      <div class="flex flex-wrap md:flex-nowrap" style="margin-left: 27px;">
-
-        {% comment %} collection filter balbir -- commented {% endcomment %}
-
-        {% comment %} <div class="w-full md:w-4/12 lg:w-3/12">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <div class="w-full md:w-4/12 lg:w-3/12">
           {%- if section.settings.enable_sidebar -%}
           <!-- <a href="#" class="inline-block md:hidden">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM7 42h31M16 22H6M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5zM57 22H26"/></svg>
@@ -120,15 +117,10 @@
 
           <div id="CollectionSidebar" class="collectionSidebar">
             {%- render 'sidebar-drawer-ctm', section: section, collection: collection -%}
-          </div> 
-          
+          </div>
         {%- endif -%}
-        </div> 
-      
-      {% endcomment %}
-
-
-        <div class="w-full md:12/12 lg:w-12/12">
+        </div>
+        <div class="w-full md:8/12 lg:w-9/12">
         {%- liquid
           assign per_row = block.settings.per_row
           assign paginate_by = per_row | times: 5

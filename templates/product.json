@@ -1,43 +1,10 @@
 {
   "sections": {
-    "1657159600dfe37b15": {
-      "type": "slideshow",
-      "blocks": {
-        "16571595990b278f71-0": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "title_bg_color": "#000000",
-            "title_bg_opacity": 0.5,
-            "image": "shopify:\/\/shop_images\/banner_steel_ascot.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
-          }
-        }
-      },
-      "block_order": [
-        "16571595990b278f71-0"
-      ],
-      "settings": {
-        "section_height": "550px",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "arrows",
-        "autoplay": false,
-        "autoplay_speed": 5
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
           }
         },
@@ -91,6 +58,11 @@
           "type": "separator",
           "settings": {
           }
+        },
+        "4bc503dd-43bf-43f8-bef9-98c9fb560ed8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -101,10 +73,11 @@
         "buy_buttons",
         "d24a80da-9a82-4a64-ad4c-73aef4e07900",
         "3aed184a-5ec4-447b-acf4-3aa11c27a1bd",
-        "separator"
+        "separator",
+        "4bc503dd-43bf-43f8-bef9-98c9fb560ed8"
       ],
       "settings": {
-        "sku_enable": false,
+        "sku_enable": true,
         "image_size": "medium",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
@@ -237,7 +210,6 @@
     }
   },
   "order": [
-    "1657159600dfe37b15",
     "main",
     "165715069135e58c2b",
     "sub",

@@ -306,7 +306,9 @@
           "settings": {
             "icon": "envelope",
             "title": "Downloads",
-            "text": "<p>Access or download your product manuals.<\/p>"
+            "text": "<p>Access or download your product manuals.<\/p>",
+            "button_label": "DISCOVER MORE",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "1658459195335a5891-1": {
@@ -314,7 +316,9 @@
           "settings": {
             "icon": "phone",
             "title": "Contact Us",
-            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>"
+            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },

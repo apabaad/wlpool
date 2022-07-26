@@ -49,7 +49,7 @@
                   endif
                 -%}
 
-                <ul class="no-bullets tag-list">
+                <ul class="no-bullets tag-list" style="column-count:2" >
                   {%- assign tag_count = filter.values.size -%}
                   {%- for filter_value in filter.values -%}
                     {%- liquid
@@ -62,7 +62,7 @@
                     -%}
 
                     <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if is_color %} tag--swatch{% endif %}{% if filter_value.count == 0%} hide{% endif %}">
-                      <label class="text-label">
+                      <label class="text-label wpool-filter-label">
                         <input
                           type="checkbox"
                           name="{{ filter_value.param_name }}"

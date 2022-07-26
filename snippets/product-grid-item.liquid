@@ -27,7 +27,7 @@
 -%}
 
 <div class="grid__item grid-product {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
-  <div class="grid-product__content  relative p-1 pb-14 cucine-product-item-padding">
+  <div class="grid-product__content  relative p-1 pb-14">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
         {{ custom_label }}
@@ -80,7 +80,7 @@
                 alt="{{ preview_image.alt | escape }}">
           </div>
         {%- else -%}
-          <div class="image-wrap cucine-product-image"
+          <div class="image-wrap"
             style="height: 0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio }}%;"
             >
             {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -95,9 +95,7 @@
                 src="{{ preview_image | img_url: '400x' }}"
                 alt="{{ preview_image.alt | escape }}">
             </noscript>
-            
           </div>
-         
         {%- endif -%}
 
         {%- if settings.product_hover_image and product.images.size > 1 -%}
@@ -116,39 +114,67 @@
         {%- endif -%}
       </div>
 
-      
-    </a>
-
-    <div class="cucine-product-title image-card__content flex z-10  pointer-events-none absolute p-5 sm:p-10 inset-0 items-center justify-center">
-      <div class="image-card__content-inner  !text-center">
-
-        {% if product.metafields.custom.model == blank %}
-          <span class="cucine-product-model text-xl sm:text-2xl md:text-3xl  mb-4">{{ product.title | truncatewords: 2, "" }}</span><br/>
-          {% else %}
-          <span class="cucine-product-model text-xl sm:text-2xl md:text-3xl  mb-4"> {{ product.metafields.custom.model | upcase }}</span> <br>
-          <span class="cucine-product-collection text-xl sm:text-2xl md:text-3xl  mb-4"> {{ product.metafields.custom.collection | upcase }} </span>
+      <div class="grid-product__meta" data-mh="items-b">
+        {% comment %} <small>{{ product.title }}</small> {% endcomment %}
+        <div class="grid-product__title !text-[14px] font-bold">{{ product.title }}</div>
+        {%- if settings.vendor_enable -%}
+          <div class="grid-product__vendor">{{ product.vendor }}</div>
+        {%- endif -%}
+        {%- if settings.sku_enable -%}
+        <div class="grid-product__sku font-bold text-sm mt-1">{{ product.selected_or_first_available_variant.sku | default: 'N/A' }}</div>
         {% endif %}
-    </div>
-    </div>
-    
-    {% comment %} 
-    add to cart / read more commented 
+        {% if product.price > 0 and settings.enable_shop_price  != blank %}
+        <div class="grid-product__price 1">
+          {%- if on_sale -%}
+            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+            <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
+            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+          {%- endif -%}
+          {%- if product.price_varies -%}
+            {%- assign price = product.price_min | money -%}
+            <span {% if on_sale %}class="sale-price"{% endif %}>
+              {{ 'products.general.from_text_html' | t: price: price }}
+            </span>
+          {%- else -%}
+            <span {% if on_sale %}class="sale-price"{% endif %}>
+              {{ product.price  | money }}
+            </span>
+          {%- endif -%}
 
+          {%- assign product_variant = product.selected_or_first_available_variant -%}
+          {%- if product_variant.unit_price_measurement -%}
+            <div class="product__unit-price">
+              {%- capture unit_price_base_unit -%}
+                {%- if product_variant.unit_price_measurement -%}
+                  {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
+                    {{ product_variant.unit_price_measurement.reference_value }}
+                  {%- endif -%}
+                  {{ product_variant.unit_price_measurement.reference_unit }}
+                {%- endif -%}
+              {%- endcapture -%}
+
+              {{ product_variant.unit_price | money }}/{{ unit_price_base_unit }}
+            </div>
+          {%- endif -%}
+        </div>
+        {% endif %}
+      </div>
+    </a>
     {% if product.price > 0 and settings.enable_add_to_cart %} 
 
         <div id="variant-inventory">
-          {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
-          We currently have {{ product.variants.first.inventory_quantity }} in stock.
+          
+          {% comment %}We currently have {{ product.variants.first.inventory_quantity }} in stock.{% endcomment %}
           <form method="post" action="/cart/add">
             <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-             <input type="submit" value="Add to cart" class="absolute bottom-0 sf__btn sf__btn-secondary sf__btn-black js-no-transition mt-4" />
+            <input type="submit" value="Add to cart" class="absolute bottom-0 sf__btn sf__btn-wpool-primary js-no-transition mt-4" style="width:100%" />
           </form>
-          {% endif %}
+          
           </div>
     {% elsif settings.enable_add_to_cart %}
-    <a href="{{product.url}}" class="sf__btn absolute bottom-0 sf__btn-secondary sf__btn-black js-no-transition mt-4 !text-14px">Read more</a> 
+    <a href="{{product.url}}" class="sf__btn absolute bottom-0  sf__btn-wpool-primary js-no-transition mt-4" style="width:100%; text-align:center">Discover more</a>
     {% else %}
-    {% endif %} {% endcomment %}
+    {% endif %}
 
     {%- if settings.enable_swatches -%}
       {%- assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase -%}

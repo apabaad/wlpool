@@ -43,10 +43,11 @@
     "animate_images_style": "zoom-fade",
     "animate_buttons": true,
     "animate_underlines": true,
+    "product_grid_image_size": "natural",
     "product_grid_image_fill": false,
     "product_hover_image": false,
     "quick_shop_enable": false,
-    "enable_shop_price": false,
+    "enable_shop_price": true,
     "enable_add_to_cart": true,
     "enable_swatches": false,
     "enable_product_reviews": false,
@@ -150,27 +151,34 @@
           },
           "44bf7313-53cb-45a7-97b4-19d28eb511e2": {
             "type": "menu",
-            "disabled": true,
             "settings": {
               "show_footer_title": true,
-              "menu": "",
+              "menu": "whirlpool-products",
               "container_width": 33
             }
           },
           "468f7e53-8c72-4a9b-b724-266350773348": {
             "type": "menu",
-            "disabled": true,
             "settings": {
               "show_footer_title": true,
-              "menu": "",
+              "menu": "footer",
               "container_width": 15
+            }
+          },
+          "cf28f5bc-118f-4e97-8569-665de362e7fc": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "service-support",
+              "container_width": 20
             }
           }
         },
         "block_order": [
           "1494292485313",
           "44bf7313-53cb-45a7-97b4-19d28eb511e2",
-          "468f7e53-8c72-4a9b-b724-266350773348"
+          "468f7e53-8c72-4a9b-b724-266350773348",
+          "cf28f5bc-118f-4e97-8569-665de362e7fc"
         ],
         "settings": {
           "show_locale_selector": true,
