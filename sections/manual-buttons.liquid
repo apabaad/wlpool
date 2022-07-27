@@ -1,12 +1,12 @@
 <section class="page-width">
 <div class="manual-buttons-container" {{ block.shopify_attributes }}>
-  {% if product.metafields.my_fields.downloads_pdf != blank %}
-    <a href="{{product.metafields.my_fields.downloads_pdf | file_url  }}" target="_blank" class=" manual-buttons inline-flex items-center">
+  {% if product.metafields.custom.specification_sheet != blank %}
+    <a href="{{product.metafields.custom.specification_sheet | file_url  }}" target="_blank" class=" manual-buttons inline-flex items-center">
       {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
       Specification Sheet</a>
   {% endif %}
-  {% if product.metafields.my_fields.user_manual != blank %}
-    <a href="{{product.metafields.my_fields.user_manual | file_url }}" target="_blank" class="manual-buttons inline-flex items-center">
+  {% if product.metafields.custom.user_manual != blank %}
+    <a href="{{product.metafields.custom.user_manual | file_url }}" target="_blank" class="manual-buttons inline-flex items-center">
       {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
       User Manual</a>
   {% endif %}

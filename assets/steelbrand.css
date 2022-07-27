@@ -2109,3 +2109,11 @@ cucine  collection page
   background-color: #f9f9f9;
   padding: 10px 20px;
 }
+
+.add-to-cart--secondary {
+  border: 2px solid #fdc100 !important;
+}
+
+.add-to-cart--secondary span {
+  color: #fdc100 !important;
+}
