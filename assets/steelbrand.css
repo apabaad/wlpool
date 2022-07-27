@@ -2112,8 +2112,13 @@ cucine  collection page
 
 .add-to-cart--secondary {
   border: 2px solid #fdc100 !important;
+  border-radius: 5px !important;
 }
 
 .add-to-cart--secondary span {
   color: #fdc100 !important;
+}
+
+.shopify-payment-button__button {
+  border-radius: 5px !important;
 }
