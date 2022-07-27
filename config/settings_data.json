@@ -144,7 +144,7 @@
           "1494292485313": {
             "type": "menu",
             "settings": {
-              "show_footer_title": false,
+              "show_footer_title": true,
               "menu": "main-menu",
               "container_width": 33
             }

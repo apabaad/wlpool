@@ -1,0 +1,45 @@
+<div style="background-color:#f9f9f9; height:250px;">
+     {% for block in section.blocks %}
+    <h2 align="center" style="padding:1rem 0">
+       
+             {{ block.settings.title }}
+    <h2>
+    <div class ="wlpool-award-logos">
+        <img src="{{block.settings.logo | img_url: 'master' }}">
+    </div>
+{% endfor %}
+    
+</div>
+
+
+{% schema %}
+
+{
+    "name":"Text with logos",
+    "blocks": [
+                  {
+                    "type": "Text",
+                    "name": "Text with logos",
+                    "settings": [
+                                  {
+                                  "id": "title",
+                                  "type": "text",
+                                  "label": "Button name"
+                                  },
+                                  {
+                                    "id": "logo",
+                                    "type":"image_picker",
+                                    "label":"choose image"    
+                                }
+                                ]
+                   }
+                ],
+     "presets": [
+                      {
+                      "name": "Text with logos",
+                      "category": "Custom layout"	
+                      }
+                 ]
+  }
+
+{% endschema %}

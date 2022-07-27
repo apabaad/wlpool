@@ -20,28 +20,8 @@
             "code": "{{product.metafields.custom.features}}"
           }
         },
-        "7d5ba1dd-b1b6-490b-8f6c-d48dcd9fca53": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Description",
-            "content": "",
-            "custom_liquid": "{{product.description}}",
-            "page": ""
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "color_swatches": true
-          }
-        },
-        "4bc503dd-43bf-43f8-bef9-98c9fb560ed8": {
-          "type": "quantity_selector",
-          "disabled": true,
+        "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8": {
+          "type": "separator",
           "settings": {
           }
         },
@@ -56,26 +36,15 @@
             "show_dynamic_checkout": true,
             "surface_pickup_enable": true
           }
-        },
-        "3aed184a-5ec4-447b-acf4-3aa11c27a1bd": {
-          "type": "product_downloads",
-          "disabled": true,
-          "settings": {
-            "enable_specification_sheet": true,
-            "enable_user_manual": true
-          }
         }
       },
       "block_order": [
         "description",
         "separator",
         "d24a80da-9a82-4a64-ad4c-73aef4e07900",
-        "7d5ba1dd-b1b6-490b-8f6c-d48dcd9fca53",
-        "variant_picker",
-        "4bc503dd-43bf-43f8-bef9-98c9fb560ed8",
+        "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8",
         "price",
-        "buy_buttons",
-        "3aed184a-5ec4-447b-acf4-3aa11c27a1bd"
+        "buy_buttons"
       ],
       "settings": {
         "sku_enable": true,
@@ -105,7 +74,6 @@
     },
     "sub": {
       "type": "product-full-width",
-      "disabled": true,
       "settings": {
         "max_width": true
       }
@@ -185,29 +153,184 @@
         "space_around": true
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
-      "settings": {
-        "show_product_recommendations": true,
-        "product_recommendations_heading": "You may also like",
-        "related_count": 5
-      }
-    },
     "collection-return": {
       "type": "collection-return",
       "disabled": true,
       "settings": {
       }
     },
-    "1657150753ebe8393d": {
-      "type": "contact-form",
-      "disabled": true,
+    "16589022534ade1920": {
+      "type": "wlpool-text-with-logos",
+      "blocks": {
+        "a8a48c23-2c3b-4314-aa56-278cf37040b9": {
+          "type": "Text",
+          "settings": {
+            "title": "Product Awards"
+          }
+        }
+      },
+      "block_order": [
+        "a8a48c23-2c3b-4314-aa56-278cf37040b9"
+      ],
       "settings": {
-        "title": "Ask for more info about this product",
-        "text": "",
-        "show_phone": false,
-        "narrow_column": false
+      }
+    },
+    "1658897706b5049edb": {
+      "type": "custom-content",
+      "blocks": {
+        "16588977063cce17ab-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "16588977063cce17ab-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#f9f9f9",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "6th SENSE technology",
+            "subheading": "",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16588977063cce17ab-1",
+        "16588977063cce17ab-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "1658897719a887950c": {
+      "type": "custom-content",
+      "blocks": {
+        "16588977197c8711ff-0": {
+          "type": "text",
+          "settings": {
+            "BgColor": "#f9f9f9",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "title": "6th SENSE technology",
+            "subheading": "",
+            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend.<\/p>",
+            "width": "50%",
+            "inner_width": 500,
+            "alignment": "center",
+            "horizontal_alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_color": "sf__btn-black",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        },
+        "16588977197c8711ff-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "mobile_order": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16588977197c8711ff-0",
+        "16588977197c8711ff-1"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Recommended Products",
+        "related_count": 5
+      }
+    },
+    "16588979564e01c4d4": {
+      "type": "text-with-icons",
+      "blocks": {
+        "165889795644bc2b55-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "envelope",
+            "title": "Downloads",
+            "text": "<p>Access or download your product manuals.<\/p>",
+            "button_label": "DISCOVER MORE",
+            "button_link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "165889795644bc2b55-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "phone",
+            "title": "Contact Us",
+            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165889795644bc2b55-0",
+        "165889795644bc2b55-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
       }
     }
   },
@@ -217,8 +340,11 @@
     "sub",
     "1655372404eeb81c88",
     "165544510106ce9654",
-    "product-recommendations",
     "collection-return",
-    "1657150753ebe8393d"
+    "16589022534ade1920",
+    "1658897706b5049edb",
+    "1658897719a887950c",
+    "product-recommendations",
+    "16588979564e01c4d4"
   ]
 }
