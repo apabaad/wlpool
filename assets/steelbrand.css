@@ -2122,5 +2122,11 @@ cucine  collection page
 .shopify-payment-button__button,
 .add-to-cart--secondary {
   border-radius: 5px !important;
-  width: 85% !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .shopify-payment-button__button,
+  .add-to-cart--secondary {
+    width: 85% !important;
+  }
 }

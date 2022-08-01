@@ -78,62 +78,6 @@
         "max_width": true
       }
     },
-    "1655372404eeb81c88": {
-      "type": "metafield-content",
-      "disabled": true,
-      "blocks": {
-        "eb3ea5d7-216c-46ce-9990-1260ed53bc99": {
-          "type": "overview",
-          "settings": {
-            "name": "Overview"
-          }
-        },
-        "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5": {
-          "type": "benefits",
-          "settings": {
-            "name": "Benefits"
-          }
-        },
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
-          "type": "keyfeatures",
-          "settings": {
-            "name": "Key features"
-          }
-        },
-        "2b9ec5d7-5b8a-462e-9bca-2646f8543921": {
-          "type": "specifications",
-          "settings": {
-            "name": "Specifications"
-          }
-        },
-        "a5d28bcb-e528-4d1f-aea2-5c8324d7536c": {
-          "type": "user_manual",
-          "settings": {
-            "name": "User manual & Downloads"
-          }
-        },
-        "285a322d-9d15-4dd2-881b-9dae307f19de": {
-          "type": "product-recommendations",
-          "settings": {
-            "show_product_recommendations": true,
-            "product_recommendations_heading": "Related products",
-            "related_count": 5
-          }
-        }
-      },
-      "block_order": [
-        "eb3ea5d7-216c-46ce-9990-1260ed53bc99",
-        "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5",
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
-        "2b9ec5d7-5b8a-462e-9bca-2646f8543921",
-        "a5d28bcb-e528-4d1f-aea2-5c8324d7536c",
-        "285a322d-9d15-4dd2-881b-9dae307f19de"
-      ],
-      "settings": {
-        "btn_text": "",
-        "link": "shopify:\/\/pages\/store-locator"
-      }
-    },
     "165544510106ce9654": {
       "type": "apps",
       "disabled": true,
@@ -165,7 +109,9 @@
         "a8a48c23-2c3b-4314-aa56-278cf37040b9": {
           "type": "Text",
           "settings": {
-            "title": "Product Awards"
+            "title": "Product Awards",
+            "logo1": "shopify:\/\/shop_images\/logo1.png",
+            "logo2": "shopify:\/\/shop_images\/logo2.png"
           }
         }
       },
@@ -287,6 +233,53 @@
         "custom_class": ""
       }
     },
+    "1655372404eeb81c88": {
+      "type": "metafield-content",
+      "blocks": {
+        "eb3ea5d7-216c-46ce-9990-1260ed53bc99": {
+          "type": "overview",
+          "disabled": true,
+          "settings": {
+            "name": "Overview"
+          }
+        },
+        "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5": {
+          "type": "benefits",
+          "settings": {
+            "name": "Description"
+          }
+        },
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
+          "type": "keyfeatures",
+          "settings": {
+            "name": "Key features"
+          }
+        },
+        "2b9ec5d7-5b8a-462e-9bca-2646f8543921": {
+          "type": "specifications",
+          "settings": {
+            "name": "Specifications"
+          }
+        },
+        "a5d28bcb-e528-4d1f-aea2-5c8324d7536c": {
+          "type": "user_manual",
+          "settings": {
+            "name": "User manual & Downloads"
+          }
+        }
+      },
+      "block_order": [
+        "eb3ea5d7-216c-46ce-9990-1260ed53bc99",
+        "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5",
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
+        "2b9ec5d7-5b8a-462e-9bca-2646f8543921",
+        "a5d28bcb-e528-4d1f-aea2-5c8324d7536c"
+      ],
+      "settings": {
+        "btn_text": "",
+        "link": "shopify:\/\/pages\/store-locator"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -338,12 +331,12 @@
     "main",
     "165715069135e58c2b",
     "sub",
-    "1655372404eeb81c88",
     "165544510106ce9654",
     "collection-return",
     "16589022534ade1920",
     "1658897706b5049edb",
     "1658897719a887950c",
+    "1655372404eeb81c88",
     "product-recommendations",
     "16588979564e01c4d4"
   ]

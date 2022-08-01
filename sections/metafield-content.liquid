@@ -1,30 +1,30 @@
 {% assign len = product.metafields.title.title.size | minus: 1 %}
 
-<nav class="page-width product-sticky-nav">
+<nav class="product-sticky-nav">
     <ul>
         {% for block in section.blocks %}  
             {% case block.type %}
                 {% when 'overview' %}
-                    <li {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}><a href="#product-overview">{{block.settings.name}}</a></li>
+                    <li {% if forloop.first %}class="active"{% endif %}><a href="#product-overview">{{block.settings.name}}</a></li>
                 {% when 'benefits' %}
                     {% if product.metafields.benefit_content.benefit_conten != blank or product.metafields.benefit_image.benefit_image != blank %}
-                        <li {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}  ><a href="#benefits">{{block.settings.name}}</a></li>          
+                        <li {% if forloop.first %}class="active"{% endif %}><a href="#benefits">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
-                        <li  {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
+                        <li {% if forloop.first %}class="active"{% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'specifications' %}
                     {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-detail.specification-detail != blank %}
-                        <li {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}><a href="#specifications">{{block.settings.name}}</a></li>          
+                        <li {% if forloop.first %}class="active"{% endif %}><a href="#specifications">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'user_manual' %}
                     {% if product.metafields.manual-description.manual-description != blank %}
-                        <li {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}><a href="#userManual">{{block.settings.name}}</a></li>          
+                        <li {% if forloop.first %}class="active"{% endif %}><a href="#userManual">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'product-recommendations' %}
                 
-                    <li {% if forloop.first %} class="active" {% else %} class="not-active" {% endif %}><a href="#Recommendations-{{ product.id }}">
+                    <li {% if forloop.first %}class="active"{% endif %}><a href="#Recommendations-{{ product.id }}">
                         {{block.settings.product_recommendations_heading}}</a></li>
             {% endcase %}
         {% endfor %}
@@ -35,8 +35,7 @@
  
   </nav>
   
-<nav class="page-width product-sticky-nav">
-  <main class="page-width ">
+  <main>
     {% for block in section.blocks %}  
             {% case block.type %}
                 {% when 'benefits' %}
@@ -44,7 +43,7 @@
 					<section id="benefits" class="py-[40px] md:py-[60px] lg:py-[80px]">
 						<div class="container mx-auto">
 							<div class="px-4">
-								<h4 class="pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 								<div class="benefit-slider max-w-7xl mx-auto">
 									{% assign benefits = product.metafields.benefit_content.benefit_conten.size | minus: 1 %}
 									{% for i in (0..benefits) %}
@@ -70,10 +69,10 @@
 					{% endif %}
                 {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
-					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px]">
+					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 						<div class="container mx-auto">
 							<div class="px-4">
-								<h4 class="pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 								<div class="features">
 									<div class="feature-content">
 										{{product.metafields.features-list.feature-list}}
@@ -84,11 +83,11 @@
 					</section>
 				{% endif %}
                 {% when 'specifications' %}
-                     {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-detail.specification-detail != blank %}
+                     {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-title.specification-detail != blank %}
 						<section id="specifications" class="py-[40px] md:py-[60px] lg:py-[80px]">
 							<div class="container mx-auto">
 								<div class="px-4">
-									<h4 class="pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 									{% assign specifications = product.metafields.specification-title.specification-title.size | minus: 1 %}
 									{% for i in (0..specifications) %}
 										<div class="specification-block pt-6 border-b last:border-0 border-black flex flex-wrap"> 
@@ -99,7 +98,7 @@
 											</div>
 											<div class="w-full md:w-8/12 lg:w-9/12">
 												<div class="specification-keys">
-													{{product.metafields.specification-detail.specification-detail[i]}}
+													{{product.metafields.specification-title.specification-detail[i]}}
 												</div>
 											</div>
 										</div>
@@ -113,7 +112,7 @@
 						<section id="userManual" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 							<div class="container mx-auto">
 								<div class="px-4">
-									<h4 class="pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 									<div class="user-manual grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
 										{% assign manual = product.metafields.manual-description.manual-description.size | minus: 1 %}
 											{% for i in (0..manual) %}
@@ -131,97 +130,7 @@
 							</div>
 						</section>
 					{% endif %}
-                {% when 'product-recommendations' %}
-              
-
-                    {%- liquid
-                        assign recommend_products = true
-                      
-                        if recommendations.products and recommendations.products_count > 0
-                          assign related_collection = recommendations
-                        endif
-                      
-                        for tag in product.tags
-                          if tag contains '_related'
-                            assign include_collection_handle = tag | split: '_' | last
-                            assign include_collection = collections[include_collection_handle]
-                            if include_collection != empty and include_collection.products_count > 0
-                              assign related_collection = include_collection
-                              assign recommend_products = false
-                              break
-                            endif
-                          endif
-                        endfor
-                      
-                        assign number_of_products = section.settings.related_count
-                      -%}
-                      
-                      {%- if block.settings.show_product_recommendations -%}
-                        <div
-                          id="Recommendations-{{ product.id }}"
-                          data-section-id="{{ product.id }}"
-                          data-section-type="product-recommendations"
-                          data-enable="{{ recommend_products }}"
-                          data-product-id="{{ product.id }}"
-                          data-url="{{ routes.product_recommendations_url }}"
-                          data-limit="{{ number_of_products }}">
-                          <div
-                            data-section-id="{{ product.id }}"
-                            data-subsection
-                            data-section-type="collection-template"
-                            class="index-section">
-                            <div class="page-width">
-                              <header class="section-header">
-                                <h3 class="section-header__title">
-                                  {{ block.settings.product_recommendations_heading }}
-                                </h3>
-                              </header>
-                            </div>
-                      
-                            <div class="page-width page-width--flush-small">
-                              <div class="grid-overflow-wrapper">
-                                {%- if recommend_products -%}
-                                  <div class="product-recommendations-placeholder">
-                                    {% comment %}
-                                      This content is visually hidden and replaced when recommended products show up
-                                    {% endcomment %}
-                                    <div class="grid grid--uniform visually-invisible" aria-hidden="true">
-                                      {%- render 'product-grid-item', product: product, per_row: number_of_products -%}
-                                    </div>
-                                  </div>
-                                {%- endif -%}
-                                {%- if related_collection.products_count > 1 -%}
-                                  {%- liquid
-                                    case number_of_products
-                                      when 1
-                                        assign grid_item_width = ''
-                                      when 2
-                                        assign grid_item_width = 'medium-up--one-half'
-                                      when 3
-                                        assign grid_item_width = 'small--one-half medium-up--one-third'
-                                      when 4
-                                        assign grid_item_width = 'small--one-half medium-up--one-quarter'
-                                      when 5
-                                        assign grid_item_width = 'small--one-half medium-up--one-fifth'
-                                      when 6
-                                        assign grid_item_width = 'small--one-half medium-up--one-sixth'
-                                    endcase
-                                  -%}
-                      
-                                  <div class="product-recommendations">
-                                    <div class="product-single__related grid grid--uniform" data-aos="overflow__animation">
-                                      {%- for product in related_collection.products limit: number_of_products -%}
-                                        {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: number_of_products -%}
-                                      {%- endfor -%}
-                                    </div>
-                                  </div>
-                                {%- endif -%}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      {%- endif -%}
-
+                
             {% endcase %}
         {% endfor %}
   </main>
@@ -326,35 +235,6 @@
             "default": "User manual & Downloads"
           }
         ]
-    },
-    {
-        "type":"product-recommendations",
-        "name": "Product recommendations",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "show_product_recommendations",
-            "label": "t:sections.product-recommendations.settings.show_product_recommendations.label",
-            "info": "t:sections.product-recommendations.settings.show_product_recommendations.info",
-            "default": true
-          },
-          {
-            "type": "text",
-            "id": "product_recommendations_heading",
-            "label": "t:sections.product-recommendations.settings.product_recommendations_heading.label",
-            "default": "You may also like"
-          },
-          {
-            "type": "range",
-            "id": "related_count",
-            "label": "t:sections.product-recommendations.settings.related_count.label",
-            "default": 5,
-            "min": 2,
-            "max": 6,
-            "step": 1
-          }
-        ]
     }
     ],
     "presets": [
@@ -423,11 +303,11 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fff;
-  {% comment %} border-bottom: 1px solid black; {% endcomment %}
+  background: #f9f9f9;
   position: sticky;
   top: 0;
   z-index: 9999;
+  padding: 5px;
 }
 .product-sticky-nav ul {
     padding: 0 15px;
@@ -437,19 +317,14 @@
     max-width: 1560px;
 }
 .product-sticky-nav ul li{
+  font-size:1rem;
       text-align: center;
       position: relative;
       overflow: hidden;
       flex: 1 1 auto;
       max-width:250px;
       padding:15px 10px;
-      color:black !important;
 }
-
-.product-sticky-nav ul li a{
-      color:black !important;
-}
-
 @media(max-width:767px){
   .product-sticky-nav ul {
         overflow-x: auto;
@@ -462,13 +337,13 @@
 }
 }
 .product-sticky-nav ul li a{
-        color: #fff;
+        color: #black;
         text-decoration: none;
         display: block;
 }
 .product-sticky-nav ul li a:hover {
     opacity: 0.9;
-    color: #fff;
+    color: #fdc100;
 }
 .product-sticky-nav ul li a:before{
         content: "";
@@ -484,15 +359,6 @@
 .product-sticky-nav ul li.active a:before{
         right: 0;
 }
-
-.active{
-border-top: 1px solid black; 
-border-left: 1px solid black; 
-border-right: 1px solid black; 
-}
-
-.not-active{
-  border-bottom: 1px solid black; }
     
   {% endstylesheet %}
   

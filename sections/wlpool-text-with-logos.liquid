@@ -1,11 +1,12 @@
 <div style="background-color:#f9f9f9; height:250px;">
      {% for block in section.blocks %}
-    <h2 align="center" style="padding:1rem 0">
+    <h2 align="center" style="padding-top:1.3rem; padding-bottom:.2rem">
        
              {{ block.settings.title }}
     <h2>
     <div class ="wlpool-award-logos">
-        <img src="{{block.settings.logo | img_url: 'master' }}">
+        <img class="wlpool-logo-item" src="{{block.settings.logo1 | img_url: 'master' }}">
+        <img class="wlpool-logo-item" src="{{block.settings.logo2 | img_url: 'master' }}">
     </div>
 {% endfor %}
     
@@ -27,9 +28,14 @@
                                   "label": "Button name"
                                   },
                                   {
-                                    "id": "logo",
+                                    "id": "logo1",
                                     "type":"image_picker",
-                                    "label":"choose image"    
+                                    "label":"Image 1"    
+                                },
+                                  {
+                                    "id": "logo2",
+                                    "type":"image_picker",
+                                    "label":"Image 2"    
                                 }
                                 ]
                    }
@@ -43,3 +49,20 @@
   }
 
 {% endschema %}
+
+
+{% style %}
+
+.wlpool-award-logos{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.wlpool-logo-item{
+    width:75px;
+    margin-left:14px;
+
+}
+
+{% endstyle %}
