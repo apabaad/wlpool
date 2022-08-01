@@ -39,34 +39,28 @@
     {% for block in section.blocks %}  
             {% case block.type %}
                 {% when 'benefits' %}
-                    {% if product.metafields.benefit_content.benefit_conten != blank or product.metafields.benefit_image.benefit_image != blank %}
-					<section id="benefits" class="py-[40px] md:py-[60px] lg:py-[80px]">
+                   
+					<section id="benefits" class="py-[40px] md:py-[60px] lg:py-[80px]" style="padding-bottom:0;">
 						<div class="container mx-auto">
 							<div class="px-4">
 								<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 								<div class="benefit-slider max-w-7xl mx-auto">
-									{% assign benefits = product.metafields.benefit_content.benefit_conten.size | minus: 1 %}
-									{% for i in (0..benefits) %}
+									
 										<div>
 											<div class="benefit-blocks flex flex-wrap">
 												<div class="w-full md:7/12 lg:w-6/12">
-													<div class="benefit-content text-center p-5 bg-black text-white h-full flex items-center">
-														<div>{{ product.metafields.benefit_content.benefit_conten[i] }}</div>
+													<div class="benefit-content text-center p-5 text-black h-full flex items-center">
+														<div>{{ product.description }}{{ product.description }}</div>
 													</div>
 												</div>
-												<div class="w-full md:5/12 lg:w-6/12">
-													<div class="benefit-image">
-														<img class="max-w-full w-full" src="{{ product.metafields.benefit_image.benefit_image[i] }}" alt="{{ product.metafields.benefit_image.benefit_image[i].alt }}"/>
-													</div>
-												</div>
+												
 											</div>
 										</div>
-									{% endfor %}
 								</div>
 							</div>
 						</div>
 					</section>
-					{% endif %}
+					
                 {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
 					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
@@ -392,18 +386,18 @@
 
 // Slick slider
 
-$('.benefit-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    prevArrow: '<button class="slick-prev slick-arrow prev-arrow benefit-arrow"> <svg class="button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg> </button>',
-    nextArrow: '<button class="slick-next slick-arrow next-arrow benefit-arrow"> <svg class="button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg> </button>'
-  });
+// $('.benefit-slider').slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     arrows: true,
+//     prevArrow: '<button class="slick-prev slick-arrow prev-arrow benefit-arrow"> <svg class="button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg> </button>',
+//     nextArrow: '<button class="slick-next slick-arrow next-arrow benefit-arrow"> <svg class="button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg> </button>'
+//   });
 
-  });
+//   });
   {% endjavascript %}
