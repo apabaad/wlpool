@@ -11,6 +11,7 @@
         },
         "separator": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },
@@ -22,6 +23,7 @@
         },
         "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },

@@ -85,7 +85,7 @@
         "1658444034211766c6-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/country-road-with-tall-windmills-on-the-left.jpg",
+            "image": "shopify:\/\/shop_images\/6th-sense-2.jpg",
             "link": "",
             "width": "50%",
             "alignment": "center",
@@ -99,9 +99,9 @@
             "BgColor": "#f9f9f9",
             "text_padding_top": 40,
             "text_padding_bottom": 40,
-            "title": "Environment",
+            "title": "Innovation & Design",
             "subheading": "",
-            "text": "<p>Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.<\/p>",
+            "text": "<p>The latest in innovation and design by Whirlpool Australia. Advances in Technology for Cooking, Laundry, Dishwashing & Refrigeration.<\/p>",
             "width": "50%",
             "inner_width": 500,
             "alignment": "center",
@@ -304,11 +304,11 @@
         "1658459195335a5891-0": {
           "type": "text_block",
           "settings": {
-            "icon": "envelope",
+            "icon": "gift",
             "title": "Downloads",
             "text": "<p>Access or download your product manuals.<\/p>",
             "button_label": "DISCOVER MORE",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify:\/\/pages\/download-manuals"
           }
         },
         "1658459195335a5891-1": {
@@ -316,9 +316,9 @@
           "settings": {
             "icon": "phone",
             "title": "Contact Us",
-            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "text": "<p>Call us: <a href=\"tel:1300762219\" target=\"_blank\"> 1300 762 219 <\/a>Email: <a href=\"mailto:support@arisit.com\" title=\"mailto:support@arisit.com\">support@arisit.com<\/a><\/p>",
+            "button_label": "CONTACT FORM",
+            "button_link": "shopify:\/\/pages\/contact"
           }
         }
       },

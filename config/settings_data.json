@@ -240,6 +240,15 @@
           "image_size": "wide",
           "align_text": "left"
         }
+      },
+      "contact-form": {
+        "type": "contact-form",
+        "settings": {
+          "title": "",
+          "text": "",
+          "show_phone": true,
+          "narrow_column": true
+        }
       }
     },
     "content_for_index": [

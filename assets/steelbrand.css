@@ -2124,6 +2124,25 @@ cucine  collection page
   border-radius: 5px !important;
 }
 
+.product-block .rte ul {
+  list-style: disc;
+}
+
+.specification-keys {
+  color: #666;
+}
+
+.specification-keys tr {
+  border-bottom: 1px solid #ececec;
+  font-size: 1em;
+  line-height: 1.3;
+  color: #666;
+}
+
+.specification-keys tr td:first-child {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {

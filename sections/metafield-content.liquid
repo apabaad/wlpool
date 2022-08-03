@@ -7,9 +7,9 @@
                 {% when 'overview' %}
                     <li {% if forloop.first %}class="active"{% endif %}><a href="#product-overview">{{block.settings.name}}</a></li>
                 {% when 'benefits' %}
-                    {% if product.metafields.benefit_content.benefit_conten != blank or product.metafields.benefit_image.benefit_image != blank %}
+                   
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#benefits">{{block.settings.name}}</a></li>          
-                    {% endif %}
+                    
                 {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
@@ -43,14 +43,14 @@
 					<section id="benefits" class="py-[40px] md:py-[60px] lg:py-[80px]" style="padding-bottom:0;">
 						<div class="container mx-auto">
 							<div class="px-4">
-								<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 								<div class="benefit-slider max-w-7xl mx-auto">
 									
 										<div>
 											<div class="benefit-blocks flex flex-wrap">
 												<div class="w-full md:7/12 lg:w-6/12">
 													<div class="benefit-content text-center p-5 text-black h-full flex items-center">
-														<div>{{ product.description }}{{ product.description }}</div>
+														<div>{{ product.description }}</div>
 													</div>
 												</div>
 												
@@ -66,7 +66,7 @@
 					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 						<div class="container mx-auto">
 							<div class="px-4">
-								<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 								<div class="features">
 									<div class="feature-content">
 										{{product.metafields.features-list.feature-list}}
@@ -77,19 +77,15 @@
 					</section>
 				{% endif %}
                 {% when 'specifications' %}
-                     {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-title.specification-detail != blank %}
+                     {% if product.metafields.specification-title.specification-detail != blank %}
 						<section id="specifications" class="py-[40px] md:py-[60px] lg:py-[80px]">
 							<div class="container mx-auto">
 								<div class="px-4">
-									<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
-									{% assign specifications = product.metafields.specification-title.specification-title.size | minus: 1 %}
+									<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									{% assign specifications = product.metafields.specification-title.specification-detail.size | minus: 1 %}
 									{% for i in (0..specifications) %}
-										<div class="specification-block pt-6 border-b last:border-0 border-black flex flex-wrap"> 
-											<div class="w-full md:w-4/12 lg:w-3/12">
-												<div class="specification-title">
-													<h4>{{product.metafields.specification-title.specification-title[i]}}</h4>
-												</div>
-											</div>
+										<div class="specification-block pt-6 border-b last:border-0 border-wlpool flex flex-wrap" style="justify-content:center; align-items:center;"> 
+											
 											<div class="w-full md:w-8/12 lg:w-9/12">
 												<div class="specification-keys">
 													{{product.metafields.specification-title.specification-detail[i]}}
@@ -106,7 +102,7 @@
 						<section id="userManual" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 							<div class="container mx-auto">
 								<div class="px-4">
-									<h4 class="border-b border-black pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
 									<div class="user-manual grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
 										{% assign manual = product.metafields.manual-description.manual-description.size | minus: 1 %}
 											{% for i in (0..manual) %}
@@ -145,6 +141,12 @@
   .product-sticky-nav ul li a::before {
     display: none;
 }
+
+.border-wlpool {
+color: #fdc100;
+{% comment %} border-bottom: 1px solid #fdc100; {% endcomment %}
+}
+
 </style>
 
  {% schema %}
@@ -297,7 +299,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: #f9f9f9;
+  background: #fdc100;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -336,8 +338,7 @@
         display: block;
 }
 .product-sticky-nav ul li a:hover {
-    opacity: 0.9;
-    color: #fdc100;
+    opacity: 0.6;
 }
 .product-sticky-nav ul li a:before{
         content: "";
