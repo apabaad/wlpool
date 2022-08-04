@@ -2124,8 +2124,9 @@ cucine  collection page
   border-radius: 5px !important;
 }
 
-.product-block .rte ul {
+.product-block ul {
   list-style: disc;
+  margin-left: 50px;
 }
 
 .specification-keys {
