@@ -58,6 +58,14 @@
             "nav-item-link": "shopify:\/\/collections\/cooktops"
           }
         },
+        "c7899622-2dbb-40b0-96fb-a4e3dd339b0b": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Washers",
+            "nav-item-image": "shopify:\/\/shop_images\/wash.png",
+            "nav-item-link": "shopify:\/\/collections\/laundry"
+          }
+        },
         "17d3b550-6f14-4176-9554-a36c86ad630a": {
           "type": "image",
           "settings": {
@@ -73,6 +81,7 @@
         "4615c7ee-b834-4f85-9e0a-1beb362c8633",
         "79966ba0-e6e3-402c-914c-fc96b0d4c32e",
         "d646ee36-8998-48ab-91b9-e05e7dd03201",
+        "c7899622-2dbb-40b0-96fb-a4e3dd339b0b",
         "17d3b550-6f14-4176-9554-a36c86ad630a"
       ],
       "settings": {
