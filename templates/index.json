@@ -15,6 +15,69 @@
         "mobile_height": "auto"
       }
     },
+    "1660026063cfbc73d7": {
+      "type": "visual-navigation",
+      "blocks": {
+        "5dea94ad-a6ce-4845-ae6d-025c757f7d5f": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Refrigerators",
+            "nav-item-image": "shopify:\/\/shop_images\/fridge.png",
+            "nav-item-link": "shopify:\/\/collections\/fridges"
+          }
+        },
+        "5af93e8d-0add-4066-9cc2-fef61447ca19": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Ranges",
+            "nav-item-image": "shopify:\/\/shop_images\/range.png",
+            "nav-item-link": "shopify:\/\/collections\/rangehoods"
+          }
+        },
+        "4615c7ee-b834-4f85-9e0a-1beb362c8633": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Dishwashers",
+            "nav-item-image": "shopify:\/\/shop_images\/dish.png",
+            "nav-item-link": "shopify:\/\/collections\/dishwashers"
+          }
+        },
+        "79966ba0-e6e3-402c-914c-fc96b0d4c32e": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Microwaves",
+            "nav-item-image": "shopify:\/\/shop_images\/micro.png",
+            "nav-item-link": "shopify:\/\/collections\/microwaves"
+          }
+        },
+        "d646ee36-8998-48ab-91b9-e05e7dd03201": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Cooktops",
+            "nav-item-image": "shopify:\/\/shop_images\/cook.png",
+            "nav-item-link": "shopify:\/\/collections\/cooktops"
+          }
+        },
+        "17d3b550-6f14-4176-9554-a36c86ad630a": {
+          "type": "image",
+          "settings": {
+            "nav-title": "Dryers",
+            "nav-item-image": "shopify:\/\/shop_images\/dry.png",
+            "nav-item-link": "shopify:\/\/collections\/dryers"
+          }
+        }
+      },
+      "block_order": [
+        "5dea94ad-a6ce-4845-ae6d-025c757f7d5f",
+        "5af93e8d-0add-4066-9cc2-fef61447ca19",
+        "4615c7ee-b834-4f85-9e0a-1beb362c8633",
+        "79966ba0-e6e3-402c-914c-fc96b0d4c32e",
+        "d646ee36-8998-48ab-91b9-e05e7dd03201",
+        "17d3b550-6f14-4176-9554-a36c86ad630a"
+      ],
+      "settings": {
+      }
+    },
     "1654683750035958ea": {
       "type": "custom-content",
       "blocks": {
@@ -339,6 +402,7 @@
   },
   "order": [
     "16584440690057b786",
+    "1660026063cfbc73d7",
     "1654683750035958ea",
     "1658444034f1baadd9",
     "1658447237c1ccb236",
