@@ -371,7 +371,8 @@
                       </div>
                     </div>
                   {%- when 'product_downloads' -%}
-                  <div class="product-block" {{ block.shopify_attributes }}>
+                  
+                    {% comment %} <div class="product-block" {{ block.shopify_attributes }}>
                     {% if product.metafields.my_fields.downloads_pdf != blank and block.settings.enable_specification_sheet != blank %}
                       <a href="{{product.metafields.my_fields.downloads_pdf | file_url  }}" target="_blank" class="bg-black px-4 py-2 rounded text-white mr-2 hover:text-white hover:!bg-[#282828] inline-flex items-center">
                         {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
@@ -382,7 +383,28 @@
                         {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
                         User Manual</a>
                     {% endif %}
-                  </div>
+                  </div> {% endcomment %}
+
+                  {% if product.metafields.manual-description.manual-description != blank %}
+                    <section class="py-[40px] md:py-[60px] lg:py-[80px]">
+                      <div class="container mx-auto">
+                        <div>
+                          
+                          <div class="user-manual grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
+                            {% assign manual = product.metafields.manual-description.manual-description.size | minus: 1 %}
+                            
+                                <a href="{{product.metafields.manual-file.manual-file[0]}}" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:15px 35px; font-weight:bold">
+                                 
+                                  DOWNLOAD SPECIFICATION SHEET
+                                </a>
+                              
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  {% endif %}
+
+
                   {%- when 'custom' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.code }}

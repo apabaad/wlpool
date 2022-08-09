@@ -10,10 +10,17 @@
                    
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#benefits">{{block.settings.name}}</a></li>          
                     
-                {% when 'keyfeatures' %}
+
+                {% comment %} {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
+                    {% endif %} {% endcomment %}
+
+                {% when 'keyfeatures' %}
+                    {% if product.metafields.custom.features != blank %}
+                        <li {% if forloop.first %}class="active"{% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
                     {% endif %}
+                    
                 {% when 'specifications' %}
                     {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-detail.specification-detail != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#specifications">{{block.settings.name}}</a></li>          
@@ -48,8 +55,8 @@
 									
 										<div>
 											<div class="benefit-blocks flex flex-wrap">
-												<div class="w-full md:7/12 lg:w-6/12">
-													<div class="benefit-content text-center p-5 text-black h-full flex items-center">
+												<div class="w-full">
+													<div class="benefit-content item-center p-5 text-black h-full flex" style="text-align:justify;">
 														<div>{{ product.description }}</div>
 													</div>
 												</div>
@@ -61,7 +68,7 @@
 						</div>
 					</section>
 					
-                {% when 'keyfeatures' %}
+                {% comment %} {% when 'keyfeatures' %}
                     {% if product.metafields.features-list.feature-list != blank %}
 					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 						<div class="container mx-auto">
@@ -75,7 +82,25 @@
 							</div>
 						</div>
 					</section>
+				{% endif %} {% endcomment %}
+
+                {% when 'keyfeatures' %}
+                    {% if product.metafields.custom.features != blank %}
+					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
+						<div class="container mx-auto">
+							<div class="px-4">
+								<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<div class="features">
+									<div class="feature-content">
+										{{product.metafields.custom.features}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				{% endif %}
+
+
                 {% when 'specifications' %}
                      {% if product.metafields.specification-title.specification-detail != blank %}
 						<section id="specifications" class="py-[40px] md:py-[60px] lg:py-[80px]">
@@ -147,6 +172,14 @@ color: #fdc100;
 {% comment %} border-bottom: 1px solid #fdc100; {% endcomment %}
 }
 
+.features p strong {
+display:none;
+}
+
+.user-manual .manual-block:hover{
+color:  #fdc100;
+{% comment %} opacity: 0.7; {% endcomment %}
+}
 </style>
 
  {% schema %}
@@ -384,6 +417,8 @@ color: #fdc100;
         }
       });
     });
+
+   
 
 // Slick slider
 
