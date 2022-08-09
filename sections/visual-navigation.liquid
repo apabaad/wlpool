@@ -1,0 +1,104 @@
+<div class ="visual-nav-container">
+  <div class="visual-items-container">
+  {% for block in section.blocks%}
+    <div class ="visual-item-link">
+ <a href="{{ block.settings.nav-item-link }}">
+  <div class ="visual-nav-item">
+    
+    <img class="nav-item-img" src="{{ block.settings.nav-item-image | img_url: 'master' }}">
+   <div class="nav-title"> {{ block.settings.nav-title }}</div>
+    
+  </div>
+</a>
+</div>
+{% endfor %}
+</div>
+</div>
+
+{% schema %} 
+            {
+              "blocks": [
+                            {
+                              "type": "image",
+                              "name": "Visual nav item",
+                              "settings": [
+                                            {
+                                            "id": "nav-title",
+                                            "type": "text",
+                                            "label": "Item title"
+                                            },
+                                            {
+                                              "id": "nav-item-image",
+                                              "type": "image_picker",
+                                              "label": "Item image"
+                                              },
+                                            {
+                                              "id": "nav-item-link",
+                                              "type": "url",
+                                              "label": "Item link"
+                                              }
+                                          ]
+                             }
+                          ],
+               "presets": [
+                                {
+                                "name": "Visual Nav",
+                                "category": "Advanced Layout"	
+                                }
+                           ]
+            }
+{% endschema %}
+  
+  
+  
+  
+  
+    {% style %}
+
+    .visual-nav-container{
+      background: #f2f2f2 ;
+      padding:10px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+
+    }
+
+    .visual-items-container{
+      width:50%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .visual-nav-item{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+    }
+
+    .nav-title{
+      font-size:12px;
+      font-weight:bold;
+      padding-top:15px;
+    }
+
+    .nav-item-img{
+      width:100px;
+    }
+    
+    .visual-item-link{
+   border: 5px solid transparent;
+   padding:0 15px;
+   transition: all .8s ease;
+}
+    .visual-item-link:hover{
+      
+        border-bottom :5px solid #fcd100;
+      
+    
+    }
+    {% endstyle %}
