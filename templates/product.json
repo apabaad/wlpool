@@ -16,6 +16,7 @@
         },
         "d24a80da-9a82-4a64-ad4c-73aef4e07900": {
           "type": "custom",
+          "disabled": true,
           "settings": {
             "code": "{{product.metafields.custom.features}}"
           }
@@ -37,6 +38,13 @@
             "show_dynamic_checkout": true,
             "surface_pickup_enable": true
           }
+        },
+        "daa71e38-9098-4201-ade7-0a154736bbc4": {
+          "type": "product_downloads",
+          "settings": {
+            "enable_specification_sheet": true,
+            "enable_user_manual": true
+          }
         }
       },
       "block_order": [
@@ -45,7 +53,8 @@
         "d24a80da-9a82-4a64-ad4c-73aef4e07900",
         "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8",
         "price",
-        "buy_buttons"
+        "buy_buttons",
+        "daa71e38-9098-4201-ade7-0a154736bbc4"
       ],
       "settings": {
         "sku_enable": true,
@@ -127,6 +136,7 @@
       "blocks": {
         "eb3ea5d7-216c-46ce-9990-1260ed53bc99": {
           "type": "overview",
+          "disabled": true,
           "settings": {
             "name": "Overview"
           }
@@ -137,16 +147,16 @@
             "name": "Description"
           }
         },
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
-          "type": "keyfeatures",
-          "settings": {
-            "name": "Key features"
-          }
-        },
         "2b9ec5d7-5b8a-462e-9bca-2646f8543921": {
           "type": "specifications",
           "settings": {
             "name": "Specifications"
+          }
+        },
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
+          "type": "keyfeatures",
+          "settings": {
+            "name": "Key features"
           }
         },
         "a5d28bcb-e528-4d1f-aea2-5c8324d7536c": {
@@ -159,8 +169,8 @@
       "block_order": [
         "eb3ea5d7-216c-46ce-9990-1260ed53bc99",
         "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5",
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
         "2b9ec5d7-5b8a-462e-9bca-2646f8543921",
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
         "a5d28bcb-e528-4d1f-aea2-5c8324d7536c"
       ],
       "settings": {
