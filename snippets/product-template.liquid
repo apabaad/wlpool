@@ -385,18 +385,18 @@
                     {% endif %}
                   </div> {% endcomment %}
 
-                  {% if product.metafields.manual-description.manual-description != blank %}
+                  {% if product.metafields.custom.specification_sheet != blank %}
                     <section class="py-[40px] md:py-[60px] lg:py-[80px]">
                       <div class="container mx-auto">
                         <div>
                           
                           <div class="user-manual grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
-                            {% assign manual = product.metafields.manual-description.manual-description.size | minus: 1 %}
+                           
                             
-                                <a href="{{product.metafields.manual-file.manual-file[0]}}" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:15px 35px; font-weight:bold">
-                                 
-                                  DOWNLOAD SPECIFICATION SHEET
-                                </a>
+                            <a href="{{product.metafields.custom.specification_sheet | file_url}}" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:15px 35px; font-weight:bold">
+                         
+                              DOWNLOAD SPECIFICATION SHEET
+                            </a>
                               
                           </div>
                         </div>

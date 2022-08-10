@@ -68,6 +68,7 @@
     },
     "165715069135e58c2b": {
       "type": "manual-buttons",
+      "disabled": true,
       "blocks": {
         "21135404-5238-4796-993c-a194918f70bc": {
           "type": "first-section",
