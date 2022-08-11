@@ -39,6 +39,11 @@
             "surface_pickup_enable": true
           }
         },
+        "3110a8c6-5d9b-4484-9d13-b11acfe58805": {
+          "type": "store-locator",
+          "settings": {
+          }
+        },
         "daa71e38-9098-4201-ade7-0a154736bbc4": {
           "type": "product_downloads",
           "settings": {
@@ -54,6 +59,7 @@
         "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8",
         "price",
         "buy_buttons",
+        "3110a8c6-5d9b-4484-9d13-b11acfe58805",
         "daa71e38-9098-4201-ade7-0a154736bbc4"
       ],
       "settings": {
