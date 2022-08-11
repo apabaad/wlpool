@@ -1,0 +1,177 @@
+<main class="main-content" id="MainContent">
+    <div class="page-width page-content">
+        <header class="section-header">
+            <h1 class="section-header__title locater-title">
+            Store Locator
+            </h1>
+            <h1 class="section-header__title locater-subtitle">
+              Find a store near you
+            </h1>
+        </header>
+        <div class="container">
+            <div class="product-column">
+                <h4 class="shop-locater-title-600p"><span>Harvey Norman</span></h4>
+                <div class="collection-thumbnail">
+                    <img src="https://cdn.shopify.com/s/files/1/0630/1057/0459/files/HN-Logo_360x_b405e6ad-7b7c-4435-acc6-b316f730f5d5_180x.png?v=1650938542" class="shop-image" loading="lazy">
+                </div>
+                <div class="shop-collection-description">
+                   <h4 class="shop-locater-title" class="shop-locater-title">Harvey Norman</h4>
+                    <p class="collection-text">Harvey Norman is a large Australian-based, multi-national retailer of furniture, bedding, computers, communications and consumer electrical products. It mainly operates as a franchise, with the main brand and all company-operated stores owned by ASX-listed Harvey Norman Holdings Limited.
+                     </p>
+                    <div class="sub-collection-container">
+                        <a href="https://www.harveynorman.com.au/" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:10px 20px; font-size:0.9rem;">Visit Online Store </a>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="product-column product-column-margin">
+                <h4 class="shop-locater-title-600p">Joyce Mayne</h4>
+                <div class="collection-thumbnail">
+                    <img src="https://cdn.shopify.com/s/files/1/0630/1057/0459/files/jm_logo_180x.jpg?v=1650938543" class="shop-image" loading="lazy">
+                </div>
+                <div class="shop-collection-description">
+                    <h4 class="shop-locater-title">Joyce Mayne </h4>
+                    <p class="collection-text">Joyce Mayne Online is an independently owned and operated business that provides quality household products and personal items, including computers, home appliances, homewares and more that may be purchased in most Joyce Mayne stores. </p>
+                    <div class="sub-collection-container">
+                        <a href="https://www.joycemayne.com.au/" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:10px 20px; font-size:0.9rem;">Visit Online Store </a>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="product-column product-column-margin">
+                <h4 class="shop-locater-title-600p">Domayne</h4>
+                <div class="collection-thumbnail">
+                    <img src="https://cdn.shopify.com/s/files/1/0630/1057/0459/files/dm_logo_282x31_d8bce59a-9611-4108-bb85-f12bdebe844a_180x.png?v=1650938542" class="shop-image" loading="lazy">
+                </div>
+                <div class="shop-collection-description">
+                    <h4 class="shop-locater-title">Domayne </h4>
+                    <p class="collection-text">Domayne offers Australians the best in quality furniture, bedding & homewares as well as electronics & computers! Visit us in-store or online today. </p>
+                    <div class="sub-collection-container">
+                        <a href="https://www.domayne.com.au/" target="_blank" class="flex flex-wrap sf__btn sf__btn-secondary sf__btn-wpool-primary" style="padding:10px 20px; font-size:0.9rem;">Visit Online Store </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+      
+             {% schema %} 
+                {
+                  "blocks": [
+                                {
+                                  "type": "find-store",
+                                  "name": "Find a store",
+                                  "settings": [
+                                                {
+                                                "id": "view-btn",
+                                                "type": "text",
+                                                "label": "Button name"
+                                                }
+                                              ]
+                                 }
+                              ],
+                   "presets": [
+                                    {
+                                    "name": "Find a store",
+                                    "category": "Store Locater"	
+                                    }
+                               ]
+                }
+              {% endschema %}
+      
+      
+      
+      
+              {% style %}
+
+              .product-column{
+                  display:flex;
+              }
+              
+              .product-column-margin{
+                  margin-top:30px;
+              }
+              
+              .collection-thumbnail{
+                  min-width:200px;
+              }
+              
+              .shop-image{
+                  width:180px;
+              }
+              
+              .shop-collection-description{
+                  margin-left:30px;
+                  text-align: justify;
+              }
+              
+              .locater-title{
+                color: #fcd100;
+                font-weight:bold; 
+                font-size:44px;  
+              }
+              .locater-subtitle{
+                font-weight:bold; 
+                font-size:24px;
+              }
+              
+              .shop-arrow{
+                  margin-top:300px;
+              }
+              
+              .collection-text{
+                  margin-top:-10px;  
+              }
+              
+              .sub-collection-container{
+                  margin-top:-13px;
+              }
+              
+              .sub-collection-link{
+                  font-weight: bold;
+              }
+              
+              .shop-locater-title-600p{
+                  display:none;
+              }
+              
+              .arrow-size{
+                  font-size: 12px;
+              }
+              
+              
+              @media screen and (max-width:700px){
+                  .product-column{
+                      display:flex;
+                      flex-direction:column;
+                  }
+              
+                  .collection-thumbnail{
+                      display:flex;
+                      justify-content:center;
+                      align-items:center;
+                  }
+              
+                  .shop-locater-title{
+                  display: none;
+                  }
+              
+                  .shop-locater-title-600p{
+                      display:block;
+              
+                      display:flex;
+                      justify-content:center;
+                      align-item:center;
+                  }
+              
+                  .sub-collection-container{
+                      margin-left: 0px;
+                  }
+              
+                  .collection-text{
+                      margin-top:20px;
+                      margin-left:-20px;
+                  }
+                  }
+              
+              {% endstyle %}
