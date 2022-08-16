@@ -2,13 +2,13 @@
 <div class="manual-buttons-container" {{ block.shopify_attributes }}>
   {% if product.metafields.custom.specification_sheet != blank %}
     <a href="{{product.metafields.custom.specification_sheet | file_url  }}" target="_blank" class=" manual-buttons inline-flex items-center">
-      {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
-      Specification Sheet</a>
+      {% comment %} {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+      SPEC SHEET</a>
   {% endif %}
   {% if product.metafields.custom.user_manual != blank %}
     <a href="{{product.metafields.custom.user_manual | file_url }}" target="_blank" class="manual-buttons inline-flex items-center">
-      {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %}
-      User Manual</a>
+      {% comment %} {% render 'icon', name: 'pdf', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+     USER MANUAL </a>
   {% endif %}
 </div> 
 </section>
@@ -60,13 +60,13 @@
         color: #7C7C7C;
         border: 2px solid #7C7C7C;
         padding: 11px 20px;
-        max-width: 50%;
-        min-width:300px;
+        /* max-width: 50%; */
+        /* min-width:400px; */
         line-height: 1.42;
         font-size: 16px;
         font-weight: bold;
 
-        text-align: center;
+        text-align: center !important;
         cursor: pointer;
         border-radius: 5px;
         flex: 1 0 29%;

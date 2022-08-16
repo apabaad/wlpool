@@ -57,12 +57,10 @@
 
     .visual-nav-container{
       background: #f2f2f2 ;
-      padding:10px;
+      padding:15px;
       display:flex;
       justify-content:center;
       align-items:center;
-
-
     }
 
     .visual-items-container{
@@ -87,7 +85,7 @@
     }
 
     .nav-item-img{
-      width:80px;
+      width:100px;
     }
     
     .visual-item-link{
@@ -95,10 +93,15 @@
    padding:0 15px;
    transition: all .8s ease;
 }
-    .visual-item-link:hover{
+  
+.visual-item-link:hover{
       
-        border-bottom :5px solid #fcd100;
-      
-    
-    }
+   border-bottom :5px solid #fcd100;     
+  }
+
+  @media screen and (max-width: 1009px) {
+    .visual-item-link{
+   padding:0 0;
+  }
+}
     {% endstyle %}

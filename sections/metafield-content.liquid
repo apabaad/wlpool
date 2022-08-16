@@ -1,6 +1,7 @@
 {% assign len = product.metafields.title.title.size | minus: 1 %}
 
 <nav class="product-sticky-nav">
+  <div></div>
     <ul>
         {% for block in section.blocks %}  
             {% case block.type %}
@@ -50,7 +51,7 @@
 					<section id="benefits" class="py-[40px] md:py-[60px] lg:py-[80px]" style="padding-bottom:0;">
 						<div class="container mx-auto">
 							<div class="px-4">
-								<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+								<h4 class="border-b border-wlpool pb-4 uppercase">{{block.settings.name}}</h4>
 								<div class="benefit-slider max-w-7xl mx-auto">
 									
 										<div>
@@ -68,23 +69,33 @@
 						</div>
 					</section>
 					
-                {% comment %} {% when 'keyfeatures' %}
-                    {% if product.metafields.features-list.feature-list != blank %}
-					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
-						<div class="container mx-auto">
-							<div class="px-4">
-								<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
-								<div class="features">
-									<div class="feature-content">
-										{{product.metafields.features-list.feature-list}}
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				{% endif %} {% endcomment %}
+                 {% when 'keyfeatures' %}
+                  {% if product.metafields.features-title.features-title != blank %}
+                    <section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#ffffff]">
+                      <div class="container mx-auto">
+                        <div class="px-4">
+                          <h4 class="border-b border-wlpool pb-4 uppercase">{{block.settings.name}}</h4>
+                          {% assign features = product.metafields.features-title.features-title.size | minus: 1 %}
+                          <div class="features-container flex">
+                          {% for i in (0..features) %}
+                            <div class="keyfeatures">
+                            <img class="wlpool-logo-item feature-icon" loading="lazy" src="{{product.metafields.features-image.features-image[i]}}"> 
+                            <div class="keyfeatures-text">
+                                  <strong>{{product.metafields.features-title.features-title[i] }}</strong>
+                                  <p>{{product.metafields.features-description.features-description[i]}}</p>
+                            </div>
+                          </div>
+                              
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </section>
+                    {% endif %}
 
-                {% when 'keyfeatures' %}
+
+        {% comment %} from  inbuilt metafield - from HTML {% endcomment %}
+
+                {% comment %} {% when 'keyfeatures' %}
                     {% if product.metafields.custom.features != blank %}
 					<section id="keyfeatures" class="py-[40px] md:py-[60px] lg:py-[80px] bg-[#f2f2f2]">
 						<div class="container mx-auto">
@@ -98,7 +109,7 @@
 							</div>
 						</div>
 					</section>
-				{% endif %}
+				{% endif %} {% endcomment %}
 
 
                 {% when 'specifications' %}
@@ -106,7 +117,7 @@
 						<section id="specifications" class="py-[40px] md:py-[60px] lg:py-[80px]">
 							<div class="container mx-auto">
 								<div class="px-4">
-									<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									<h4 class="border-b border-wlpool pb-4 uppercase">{{block.settings.name}}</h4>
 									{% assign specifications = product.metafields.specification-title.specification-detail.size | minus: 1 %}
 									{% for i in (0..specifications) %}
 										<div class="specification-block pt-6 border-b last:border-0 border-wlpool flex flex-wrap" style="justify-content:center; align-items:center;"> 
@@ -151,7 +162,7 @@
             <section id="userManual" class="py-[40px] md:py-[60px] lg:py-[80px]">
               <div class="container mx-auto">
                 <div class="px-4">
-									<h4 class="border-b border-wlpool pb-4 font-bold uppercase">{{block.settings.name}}</h4>
+									<h4 class="border-b border-wlpool pb-4  uppercase">{{block.settings.name}}</h4>
 									<div class="user-manual grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
                   
                     <div class = "wlpool-manuals">
@@ -199,7 +210,7 @@
 }
 
 .border-wlpool {
-color: #fdc100;
+{% comment %} color: #fdc100; {% endcomment %}
 {% comment %} border-bottom: 1px solid #fdc100; {% endcomment %}
 }
 
@@ -211,6 +222,29 @@ display:none;
 color:  #fdc100;
 {% comment %} opacity: 0.7; {% endcomment %}
 }
+
+.features-container{
+  flex-wrap:wrap;
+  
+}
+
+.keyfeatures{
+margin: 2rem 2rem 2rem 0;
+display:flex;
+width:47%;
+
+}
+
+.keyfeatures-text{
+  margin-left:30px;
+  text-align:justify;
+}
+
+.feature-icon{
+  width:80px;
+  max-height:80px;
+}
+
 </style>
 
  {% schema %}
@@ -363,7 +397,7 @@ color:  #fdc100;
   width: 100%;
   top: 0;
   left: 0;
-  background: #fdc100;
+  background: #f9f9f9;
   position: sticky;
   top: 0;
   z-index: 9999;

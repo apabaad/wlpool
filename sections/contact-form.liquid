@@ -62,7 +62,7 @@
           </div>
           <div class="grid__item medium-up--one-half field-block">
             <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" required placeholder="{{ 'contact.form.phone' | t }}*" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">          </div>
+          <input type="tel" required placeholder="Phone*" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">          </div>
         </div>
 
       {% endif %}

@@ -17,7 +17,7 @@
         "d24a80da-9a82-4a64-ad4c-73aef4e07900": {
           "type": "custom",
           "settings": {
-            "code": "<div class =\"first-few-li\">{{product.metafields.custom.features}}\n<\/div>"
+            "code": "{{product.metafields.custom.features}}"
           }
         },
         "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8": {
@@ -40,6 +40,7 @@
         },
         "3110a8c6-5d9b-4484-9d13-b11acfe58805": {
           "type": "store-locator",
+          "disabled": true,
           "settings": {
           }
         },
@@ -74,6 +75,7 @@
     },
     "165715069135e58c2b": {
       "type": "manual-buttons",
+      "disabled": true,
       "blocks": {
         "21135404-5238-4796-993c-a194918f70bc": {
           "type": "first-section",
@@ -111,6 +113,11 @@
       "settings": {
         "full_width": false,
         "space_around": true
+      }
+    },
+    "166026423839499ca4": {
+      "type": "manual-buttons",
+      "settings": {
       }
     },
     "collection-return": {
@@ -259,15 +266,8 @@
             "name": "Overview"
           }
         },
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
-          "type": "keyfeatures",
-          "settings": {
-            "name": "Key features"
-          }
-        },
         "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5": {
           "type": "benefits",
-          "disabled": true,
           "settings": {
             "name": "Description"
           }
@@ -276,6 +276,12 @@
           "type": "specifications",
           "settings": {
             "name": "Specifications"
+          }
+        },
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3": {
+          "type": "keyfeatures",
+          "settings": {
+            "name": "Key features"
           }
         },
         "a5d28bcb-e528-4d1f-aea2-5c8324d7536c": {
@@ -287,9 +293,9 @@
       },
       "block_order": [
         "eb3ea5d7-216c-46ce-9990-1260ed53bc99",
-        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
         "d1ec4bb4-55d0-48f9-b0cd-bbe2766b8bb5",
         "2b9ec5d7-5b8a-462e-9bca-2646f8543921",
+        "419869fd-ed12-4cc3-8915-e64cfd83f8b3",
         "a5d28bcb-e528-4d1f-aea2-5c8324d7536c"
       ],
       "settings": {
@@ -342,6 +348,13 @@
         "button_link": "",
         "divider": false
       }
+    },
+    "16602642204c3be834": {
+      "type": "download",
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -349,12 +362,14 @@
     "165715069135e58c2b",
     "sub",
     "165544510106ce9654",
+    "166026423839499ca4",
     "collection-return",
     "16589022534ade1920",
     "1658897706b5049edb",
     "1658897719a887950c",
     "1655372404eeb81c88",
     "product-recommendations",
-    "16588979564e01c4d4"
+    "16588979564e01c4d4",
+    "16602642204c3be834"
   ]
 }
