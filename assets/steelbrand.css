@@ -2153,6 +2153,13 @@ cucine  collection page
 .product-feature-title {
   font-weight: bold;
 }
+
+.wlpool-product-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {

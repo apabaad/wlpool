@@ -137,6 +137,20 @@
       "settings": {
       }
     },
+    "1660709276c1c1e24c": {
+      "type": "background-video-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dcb2c3f8de624562b246bcfb1b849e63.mp4",
+        "color_border": "#f4f4f4",
+        "layout": "left",
+        "height": 650
+      }
+    },
     "1658897706b5049edb": {
       "type": "custom-content",
       "blocks": {
@@ -323,9 +337,9 @@
           "settings": {
             "icon": "phone",
             "title": "Contact Us",
-            "text": "<p>Call us: 00 00000 0000<\/p><p>Email: support@arisit.com<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
+            "text": "<p>Call us: <a href=\"tel:1300762219\" target=\"_blank\">1300 762 219<\/a> Email: <a href=\"mailto:support@arisit.com\" target=\"_blank\" title=\"mailto:support@arisit.com\">support@arisit.com<\/a><\/p>",
+            "button_label": "CONTACT US",
+            "button_link": "shopify:\/\/pages\/contact"
           }
         }
       },
@@ -351,6 +365,7 @@
     "165544510106ce9654",
     "collection-return",
     "16589022534ade1920",
+    "1660709276c1c1e24c",
     "1658897706b5049edb",
     "1658897719a887950c",
     "1655372404eeb81c88",
