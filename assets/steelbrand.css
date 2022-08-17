@@ -2160,9 +2160,21 @@ cucine  collection page
   align-items: center;
 }
 
+.wlpool-header-items-width {
+}
+
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {
     width: 85% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wlpool-header-items-width {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
