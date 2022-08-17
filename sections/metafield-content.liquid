@@ -1,7 +1,7 @@
 {% assign len = product.metafields.title.title.size | minus: 1 %}
 
 <nav class="product-sticky-nav">
-  <div></div>
+  <div align="center" style="padding:1rem; font-size:2rem;">Product Details</div>
     <ul>
         {% for block in section.blocks %}  
             {% case block.type %}
@@ -81,7 +81,7 @@
                             <div class="keyfeatures">
                             <img class="wlpool-logo-item feature-icon" loading="lazy" src="{{product.metafields.features-image.features-image[i]}}"> 
                             <div class="keyfeatures-text">
-                                  <strong>{{product.metafields.features-title.features-title[i] }}</strong>
+                                  <strong style="font-size:16px;">{{product.metafields.features-title.features-title[i] }}</strong>
                                   <p>{{product.metafields.features-description.features-description[i]}}</p>
                             </div>
                           </div>
@@ -229,7 +229,7 @@ color:  #fdc100;
 }
 
 .keyfeatures{
-margin: 2rem 2rem 2rem 0;
+margin: 2rem 2rem 0rem 0;
 display:flex;
 width:47%;
 

@@ -52,8 +52,9 @@
     "enable_swatches": false,
     "enable_product_reviews": false,
     "cart_type": "drawer",
-    "social_facebook_link": "https:\/\/www.facebook.com\/steelcucineaustralia?ref=hl",
-    "social_instagram_link": "https:\/\/www.instagram.com\/steel_kitchens_australia\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/",
+    "social_youtube_link": "youtube.com",
     "favicon": "shopify:\/\/shop_images\/steelbrand-favicon.png",
     "show_breadcrumbs": true,
     "checkout_header_image": "",
@@ -142,12 +143,12 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1494292485313": {
-            "type": "menu",
+          "23076f1c-751b-4cba-b6f2-b541da663199": {
+            "type": "logo_social",
             "settings": {
-              "show_footer_title": true,
-              "menu": "main-menu",
-              "container_width": 33
+              "logo": "shopify:\/\/shop_images\/whirlpool_logo-black-01.png",
+              "desktop_logo_height": 70,
+              "container_width": 25
             }
           },
           "44bf7313-53cb-45a7-97b4-19d28eb511e2": {
@@ -158,12 +159,12 @@
               "container_width": 33
             }
           },
-          "468f7e53-8c72-4a9b-b724-266350773348": {
+          "1494292485313": {
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "footer",
-              "container_width": 15
+              "menu": "main-menu",
+              "container_width": 33
             }
           },
           "cf28f5bc-118f-4e97-8569-665de362e7fc": {
@@ -173,13 +174,22 @@
               "menu": "service-support",
               "container_width": 20
             }
+          },
+          "468f7e53-8c72-4a9b-b724-266350773348": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer",
+              "container_width": 15
+            }
           }
         },
         "block_order": [
-          "1494292485313",
+          "23076f1c-751b-4cba-b6f2-b541da663199",
           "44bf7313-53cb-45a7-97b4-19d28eb511e2",
-          "468f7e53-8c72-4a9b-b724-266350773348",
-          "cf28f5bc-118f-4e97-8569-665de362e7fc"
+          "1494292485313",
+          "cf28f5bc-118f-4e97-8569-665de362e7fc",
+          "468f7e53-8c72-4a9b-b724-266350773348"
         ],
         "settings": {
           "show_locale_selector": true,

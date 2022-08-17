@@ -1,3 +1,4 @@
+
 {%- liquid
   assign show_selectors = false
   assign currency_selector = false
@@ -19,7 +20,9 @@
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer">
   <div class="page-width">
 
-    <div class="grid-view">
+    <div class="grid__item arisit-footer-items" >
+    
+       
       {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
         {%- assign row_width = row_width | plus: block.settings.container_width -%}
@@ -55,6 +58,7 @@
           </div>
         {%- endcase -%}
       {%- endfor -%}
+      
     </div>
 
     <div class="site-footer__bottom">
@@ -136,12 +140,12 @@
 
       <div class="footer__copyright site-footer__bottom-block">
         {%- if section.settings.show_copyright -%}
-          <span>
+          <div style="margin-top:25px;">
             &copy; {{ 'now' | date: '%Y' }}  Arisit Pty. Limited ABN: 23 091 515 294
             {%- if section.settings.copyright_text != blank -%}
               {{ section.settings.copyright_text }}
             {%- endif -%}
-          </span>
+          </div>
         {%- endif -%}
         {% comment %} <span class="footer__powered_by">{{ powered_by_link }}</span> {% endcomment %}
       </div>
@@ -240,22 +244,6 @@
           "min": 15,
           "max": 95,
           "unit": "%"
-        },
-        {
-          "type":"select",
-          "id":"block_layout",
-          "label": "Layout",
-          "options": [
-              {
-                "value": "ftr_layout1",
-                "label": "Layout 1"
-              },
-              {
-                "value": "ftr_layout2",
-                "label": "Layout 2"
-              }
-            ],
-            "default": "ftr_layout1"
         }
       ]
     },
@@ -375,3 +363,25 @@
   }
 }
 {% endschema %}
+
+
+{% style %}
+  .arisit-footer-items{
+    display:flex;
+    justify-content: center !important;
+  }
+
+  .footer__title{
+    font-weight:bold;
+    letter-spacing:normal !important;
+  }
+
+
+  @media screen and (max-width:768px){
+    .enquiry-contact{
+      display:none;
+    }
+  }
+
+
+{% endstyle %}
