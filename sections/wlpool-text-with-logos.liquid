@@ -1,3 +1,4 @@
+{% if product.metafields.custom.product_award %}
 <div style="background-color:#f9f9f9; height:225px; margin-bottom:3rem">
      {% for block in section.blocks %}
     <h2 align="center" style="padding-top:1.3rem; padding-bottom:.2rem">
@@ -9,6 +10,7 @@
         <img class="wlpool-logo-item" src="{{block.settings.logo2 | img_url: 'master' }}">
     </div>
 {% endfor %}
+{% endif %}
     
 </div>
 
