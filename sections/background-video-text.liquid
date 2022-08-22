@@ -6,6 +6,8 @@
   }
 {%- endstyle -%}
 
+{% if template == 'product' and product.metafields.custom.product_video_url != blank %} 
+
 <div
   data-section-id="{{ section.id }}"
   data-section-type="video-section"
@@ -49,7 +51,7 @@
         id="Mp4Video-{{ section.id }}"
         class="video-div"
         data-type="mp4"
-        src="{{ section.settings.video_url }}"
+        src="{{ product.metafields.custom.product_video_url }}"
         loop muted playsinline autoplay  {% if template == 'product' %} style="max-width:80%;" {% endif %}></video>
     {%- endif -%}
 
@@ -98,8 +100,8 @@
     </div>
   {%- endif -%}
 </div>
-
-<div class="background-media-text__spacer background-media-text--{{ section.settings.height }}"></div>
+{% endif %}
+<div class="background-media-text__spacer background-media-text--{{ section.settings.height }}" style="{% if product.metafields.custom.product_video_url == blank %} display:none; {% endif %}"> </div>
 
 {% schema %}
 {
