@@ -83,7 +83,12 @@
           -%}
         </div>
 
-        <div class="grid__item {{ product_description_width }}">
+        <div class="grid__item {{ product_description_width }} relative">
+          {% if product.metafields.custom.warranty_icon != blank %}
+          <div class ="absolute small--hide" style="left:-3.5rem;">
+            <img width="75px" loading="lazy" src="{{ product.metafields.custom.warranty_icon  | img_url: 'master'}}">
+          </div>
+        {% endif %}
 
           <div class="product-single__meta">
             <div class="product-block product-block--header">

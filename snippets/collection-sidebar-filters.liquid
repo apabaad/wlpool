@@ -4,10 +4,10 @@
 
     {%- for filter_value in filter.active_values -%}
       <li class="tag tag--remove">
-        <a class="btn btn--small btn--no-animate" href="{{ filter_value.url_to_remove }}">
+        <a class="btn btn--small btn--no-animate" href="{{ filter_value.url_to_remove }}" style="background:#f9f9f9; color: black;">
           {{ filter_value.label | escape }}
         </a>
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+        <svg style="color:black" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
       </li>
     {%- endfor -%}
   {%- endfor -%}
