@@ -2156,8 +2156,8 @@ cucine  collection page
 
 .wlpool-product-video {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .wlpool-header-items-width {
@@ -2167,6 +2167,12 @@ cucine  collection page
   .shopify-payment-button__button,
   .add-to-cart--secondary {
     width: 85% !important;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .product-page-video-width {
+    max-width: 70% !important;
   }
 }
 

@@ -20,8 +20,10 @@
           <input required placeholder="john.doe@email.com" type="email" name="customer[email]" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
 
           {% if form.password_needed %}
-          <div class="grid">
-            <div class="grid__item one-half">
+          {% comment %} <div class="grid"> {% endcomment %}
+            <div class="grid__item one-half" style="
+              padding-left: 0;
+              margin: 0;">
               <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
             </div>
             <div class="grid__item one-half text-right">
@@ -31,8 +33,8 @@
                 </a>
               </small>
             </div>
-          </div>
-          <input placeholder="********" required type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
+          {% comment %} </div> {% endcomment %}
+          <input placeholder="*******" required type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
           {% endif %}
 
           <p>

@@ -177,6 +177,7 @@
           },
           "468f7e53-8c72-4a9b-b724-266350773348": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "show_footer_title": true,
               "menu": "footer",

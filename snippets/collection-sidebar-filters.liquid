@@ -49,7 +49,7 @@
                   endif
                 -%}
 
-                <ul class="no-bullets tag-list" style="column-count:2" >
+                <ul class="no-bullets tag-list">  {% comment %}  style="column-count:2"  {% endcomment %}
                   {%- assign tag_count = filter.values.size -%}
                   {%- for filter_value in filter.values -%}
                     {%- liquid

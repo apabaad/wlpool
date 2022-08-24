@@ -49,10 +49,10 @@
     {%- if section.settings.video_url contains '.mp4' or section.settings.video_url contains '.MP4' -%}
       <video
         id="Mp4Video-{{ section.id }}"
-        class="video-div"
+        class="video-div {% if template == 'product' %} product-page-video-width {% endif %}"
         data-type="mp4"
         src="{{ product.metafields.custom.product_video_url }}"
-        loop muted playsinline autoplay  {% if template == 'product' %} style="max-width:80%;" {% endif %}></video>
+        loop muted playsinline autoplay></video>
     {%- endif -%}
 
   </div>

@@ -24,9 +24,9 @@
           <label for="CreatePassword">{{ 'customer.register.password' | t }}</label>
           <input required placeholder="******" type="password"  name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
 
-          <label for="ConfirmPassword">Confirm Password</label>
+          {% comment %} <label for="ConfirmPassword">Confirm Password</label>
           <span class="password-match" style="display:none; color:red;">Passwords do not match</span>
-          <input required placeholder="******" type="password"  id="confirmPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
+          <input required placeholder="******" type="password"  id="confirmPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}"> {% endcomment %}
 
           <p>
             <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full btn--no-animate">

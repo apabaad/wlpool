@@ -49,8 +49,8 @@
           </div>
 
           <div class="grid__item medium-up--one-half field-block">
-            <label for="ContactFormPostcode-{{ section.id }}">Postcode</label>
-            <input type="text" required placeholder="Postcode*" pattern="[0-9]" id="ContactFormPostcode-{{ section.id }}" class="input-full" name="contact[postcode]" autocorrect="off" autocapitalize="off" >
+            <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+            <input type="email" required placeholder="{{ 'contact.form.email' | t }}*" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
           </div>
         </div>
         
@@ -68,11 +68,11 @@
       {% endif %}
         {%- if section.settings.show_phone -%}
           <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          <input type="tel" placeholder="Phone*" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
         {%- endif -%}
 
         <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
-        <textarea rows="5" placeholder="{{ 'contact.form.message' | t }}*" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+        <textarea rows="5" required placeholder="{{ 'contact.form.message' | t }}*" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 
         <button type="submit" class="btn">
           {{ 'contact.form.send' | t }}
