@@ -10,14 +10,28 @@
         {{product.metafields.custom.description_for_section_under_video}}
     </div>
 </div>
-{% endif %}
+{%endif%}
 
+{% schema %}
+
+{
+    "name":"Text with Description",
+     "presets": [
+                      {
+                      "name": "Text with Description",
+                      "category": "Custom layout"	
+                      }
+                 ]
+  }
+
+  {% endschema %}
 
 {% style %}
 
 .wlpool-logo-text-container{
     margin-top:3rem;
     background-color:#f9f9f9;
+    border-radius:5px;
 }
 
 .logo-item{
