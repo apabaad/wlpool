@@ -40,6 +40,7 @@
         },
         "3110a8c6-5d9b-4484-9d13-b11acfe58805": {
           "type": "store-locator",
+          "disabled": true,
           "settings": {
           }
         },
@@ -74,6 +75,7 @@
     },
     "165715069135e58c2b": {
       "type": "manual-buttons",
+      "disabled": true,
       "blocks": {
         "21135404-5238-4796-993c-a194918f70bc": {
           "type": "first-section",
@@ -90,6 +92,7 @@
     },
     "sub": {
       "type": "product-full-width",
+      "disabled": true,
       "settings": {
         "max_width": true
       }
@@ -121,6 +124,7 @@
     },
     "16589022534ade1920": {
       "type": "wlpool-text-with-logos",
+      "disabled": true,
       "blocks": {
         "a8a48c23-2c3b-4314-aa56-278cf37040b9": {
           "type": "Text",
@@ -139,6 +143,7 @@
     },
     "1660709276c1c1e24c": {
       "type": "background-video-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",
@@ -153,11 +158,13 @@
     },
     "166131398584781dde": {
       "type": "wlpool-description-with-logo",
+      "disabled": true,
       "settings": {
       }
     },
     "1658897706b5049edb": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "16588977063cce17ab-1": {
           "type": "image",
@@ -214,6 +221,7 @@
     },
     "1658897719a887950c": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "16588977197c8711ff-0": {
           "type": "text",
@@ -270,6 +278,7 @@
     },
     "1655372404eeb81c88": {
       "type": "metafield-content",
+      "disabled": true,
       "blocks": {
         "eb3ea5d7-216c-46ce-9990-1260ed53bc99": {
           "type": "overview",

@@ -18,12 +18,12 @@
                     {% endif %} {% endcomment %}
 
                 {% when 'keyfeatures' %}
-                    {% if product.metafields.custom.features != blank %}
+                    {% if product.metafields.features-title.features-title != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#keyfeatures">{{block.settings.name}}</a></li>          
                     {% endif %}
                     
                 {% when 'specifications' %}
-                    {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-detail.specification-detail != blank %}
+                    {% if product.metafields.specification-detail.specification-detail != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#specifications">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'user_manual' %}
@@ -241,8 +241,8 @@ width:47%;
 }
 
 .feature-icon{
-  width:80px;
-  max-height:80px;
+  width:60px;
+  max-height:60px;
 }
 
 @media screen and (max-width:1279px){

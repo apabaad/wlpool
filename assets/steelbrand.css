@@ -2163,6 +2163,10 @@ cucine  collection page
 .wlpool-header-items-width {
 }
 
+.terms-links li a {
+  color: #fdc100;
+}
+
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {
