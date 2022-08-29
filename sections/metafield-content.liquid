@@ -23,7 +23,7 @@
                     {% endif %}
                     
                 {% when 'specifications' %}
-                    {% if product.metafields.specification-detail.specification-detail != blank %}
+                    {% if product.metafields.specification-title.specification-title != blank or product.metafields.specification-detail.specification-detail != blank %}
                         <li {% if forloop.first %}class="active"{% endif %}><a href="#specifications">{{block.settings.name}}</a></li>          
                     {% endif %}
                 {% when 'user_manual' %}

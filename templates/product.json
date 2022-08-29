@@ -126,8 +126,8 @@
           "type": "Text",
           "settings": {
             "title": "Product Awards",
-            "logo1": "shopify:\/\/shop_images\/logo1.png",
-            "logo2": "shopify:\/\/shop_images\/logo2.png"
+            "logo1": "{{ product.metafields.custom.product_award_1.value }}",
+            "logo2": "{{ product.metafields.custom.product_award_2.value }}"
           }
         }
       },
