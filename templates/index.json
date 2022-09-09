@@ -11,7 +11,7 @@
         "text_align": "vertical-center horizontal-center",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/61fe43837b8b47a6b4a2c71416036d08.mp4",
         "overlay_opacity": 0,
-        "section_height": "650px",
+        "section_height": "750px",
         "mobile_height": "auto"
       }
     },
@@ -22,7 +22,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Refrigerators",
-            "nav-item-image": "shopify:\/\/shop_images\/fridge.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-refrigerators_6c3d4f42-85cf-442f-8ca7-4b3e8733ccbf.png",
             "nav-item-link": "shopify:\/\/collections\/fridges"
           }
         },
@@ -30,7 +30,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Ranges",
-            "nav-item-image": "shopify:\/\/shop_images\/range.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-ovens.png",
             "nav-item-link": "shopify:\/\/collections\/rangehoods"
           }
         },
@@ -38,7 +38,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Dishwashers",
-            "nav-item-image": "shopify:\/\/shop_images\/dish.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-dishwashers.png",
             "nav-item-link": "shopify:\/\/collections\/dishwashers"
           }
         },
@@ -46,7 +46,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Microwaves",
-            "nav-item-image": "shopify:\/\/shop_images\/micro.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-microwaves.png",
             "nav-item-link": "shopify:\/\/collections\/microwaves"
           }
         },
@@ -54,7 +54,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Cooktops",
-            "nav-item-image": "shopify:\/\/shop_images\/cook.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-hobs.png",
             "nav-item-link": "shopify:\/\/collections\/cooktops"
           }
         },
@@ -62,7 +62,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Washers",
-            "nav-item-image": "shopify:\/\/shop_images\/wash.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-washing-machines.png",
             "nav-item-link": "shopify:\/\/collections\/laundry"
           }
         },
@@ -70,7 +70,7 @@
           "type": "image",
           "settings": {
             "nav-title": "Dryers",
-            "nav-item-image": "shopify:\/\/shop_images\/dry.png",
+            "nav-item-image": "shopify:\/\/shop_images\/main-nav-appliance-dryers.png",
             "nav-item-link": "shopify:\/\/collections\/dryers"
           }
         }
@@ -209,6 +209,7 @@
     },
     "1658447237c1ccb236": {
       "type": "text-columns",
+      "disabled": true,
       "blocks": {
         "1658447237cd88c810-0": {
           "type": "text_block",
@@ -260,6 +261,7 @@
     },
     "1658457580b8985e5c": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "1658457580165bfe3c-0": {
           "type": "text",
@@ -316,6 +318,7 @@
     },
     "165845897368f27069": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "16584589724f2dcf9e-1": {
           "type": "image",

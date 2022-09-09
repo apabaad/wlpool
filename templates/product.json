@@ -162,7 +162,7 @@
         "16588977063cce17ab-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/globe-wrapped-in-lights.jpg",
+            "image": "{{ product.metafields.custom.product_page_image1_.value }}",
             "link": "",
             "width": "50%",
             "alignment": "center",
@@ -242,7 +242,7 @@
         "16588977197c8711ff-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6th-sense-2.jpg",
+            "image": "{{ product.metafields.custom.product_page_image2.value }}",
             "link": "",
             "width": "50%",
             "alignment": "center",
