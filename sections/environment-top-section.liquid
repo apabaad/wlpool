@@ -1,0 +1,60 @@
+<div class="environment-top-container">
+    <div class="environment-left-image">
+        <img class="env-img"src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/environment__header__leaves--left.png?v=1663034175">
+    </div>
+    <div class="environment-center-content">
+        <div class=" env-heading content__heading text-2xl text-black lg:text-3xl sm:text-2xl">
+            One planet, One community approach.
+        </div> <br/>
+        <p class="env-text">
+            Whirlpool’s commitment to the environment goes beyond our pledge to send zero waste to landfill by 2020, or that we continually strive to find new, more ecologically friendly components for our machines, such as the new Solstice Liquid Blowing Agents.<br/><br/>
+
+            As well as ensuring 80-90% of materials used to make appliances are recyclable, Whirlpool takes a One Planet, One Community approach to the environment which is why we strive to consider future generations in every wash, every meal, every cool glass of water we help make happen.
+        </p><br>
+        <a href="#environment-second-container" class="env-btn sf__btn sf__btn-secondary sf__btn-wpool-primary ">
+        DISCOVER MORE</a>
+
+    </div>
+    <div class="environment-right-image">
+        <img class="env-img"src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/environment__header__leaves--right.png?v=1663034176">
+    </div>
+</div>
+</div>
+
+{% style %}
+
+.environment-top-container{
+    display:flex;
+    justify-content:space-between;
+    background-image: url("https://cdn.shopify.com/s/files/1/0653/9103/4619/files/environment__header__background--large.jpg?v=1663034173");
+    max-height:100vh;
+}
+.env-img{
+    max-height:75vh;
+}
+
+.environment-center-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    max-width:50%
+}
+
+.env-text{
+    text-align:center;
+    font-size:18px;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "presets": [
+        {
+        "name": "Environment Top",
+        "category": "Custom layout"	
+        }
+   ]    
+}
+{% endschema %}
