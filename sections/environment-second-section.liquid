@@ -1,7 +1,9 @@
-<div class="environment-second-container" id="environment-second-container">
-    <img src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/bg-cooling--large.jpg?v=1663036404">
-    <div class="env-second-content">
-        <div class=" env-second-heading content__heading text-2xl text-black lg:text-3xl sm:text-2xl">
+<div class="environment-container" id="environment-second-container">
+    <img class="env-bg-img" src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/bg-cooling--large.jpg?v=1663036404">
+   
+    <div class="env-content">
+        <div class="env-item">
+        <div class=" env-heading content__heading text-2xl text-black lg:text-3xl sm:text-2xl">
             Cooling solutions that reduce heating the planet.
         </div> <br/>
         <p>The environmental impact of food wastage is great. The journey from farm to fork creates a frightening landscape of how well travelled ingredients can be before they reach our plate, so it is essential that we all use what we buy to help cut down on emissions and pesticide use.<br><br>
@@ -10,36 +12,70 @@
     </p>
     </div>    
 </div>
+</div>
 
 {% style %}
 
-.environment-second-container{
+.env-bg-img{
+    /* max-width:100% */
+    /* height:auto; */
+}
+
+.environment-container{
     display:flex;
     justify-content:space-between;
-    background-image: url("https://cdn.shopify.com/s/files/1/0653/9103/4619/files/bg-cooling--large.jpg?v=1663036404");
     position:relative;
     margin-top:2rem;
     margin-bottom:4rem;
+    max-width:1920px;
 }
 
 
-.env-second-content{
+.env-content{
     position:absolute;
-top:30%;
-right:15%;
-    max-width:40%;
-    background:black;
+top:0;
+right:0;
+bottom:0;
+left:0;
+display:flex;
+justify-content: flex-end;
+align-items:center;
+padding-left: 3%;
+    padding-right: 3%;
+}
+
+.env-item{
+    background-color: rgba(0,0,0,.8);
     color:white;
-    padding:2.5rem;
-    opacity:0.8;
-    /* line-height:1.5; */
+    padding:2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+   
 }
 
-.env-text{
-    text-align:center;
-    font-size:18px;
+
+
+@media screen and (min-width:1024px){
+    .env-item{
+    width:45%;
+    }
 }
 
+@media screen and (max-width:768px){
+    .env-item{
+        padding-top: 30px;
+    padding-bottom: 20px;
+    }
+
+    .environment-container{
+        position:static;
+        flex-direction:column;
+    }
+    .env-content{
+        position:static;
+        padding:0;
+    }
+}
 {% endstyle %}
 
 {% schema %}

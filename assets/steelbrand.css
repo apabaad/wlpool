@@ -2105,6 +2105,31 @@ cucine  collection page
   margin-left: 25px;
 }
 
+.wlpool-icons-btn {
+  background_color: #f9f9f9;
+  border: 2px solid #d0d3d4;
+  padding: 20px;
+  border-radius: 5px;
+  color: #d0d3d4;
+  font-weight: bold;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wlpool-icons-btn {
+    width: 200px;
+    padding: 10px;
+    /* height: 50px; */
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .text-with-icons__block--wpool {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
 .wpool-filter-label {
   background-color: #f9f9f9;
   padding: 10px 20px;
@@ -2167,7 +2192,7 @@ cucine  collection page
   color: #fdc100;
 }
 
-@media screen and (min-width: 1280px) {
+te @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {
     width: 85% !important;

@@ -80,10 +80,28 @@
         "mobile_gap": 10,
         "custom_class": ""
       }
+    },
+    "166322433958ee9a7a": {
+      "type": "innovation-first-section",
+      "settings": {
+      }
+    },
+    "1663224344ae7f2ec8": {
+      "type": "innovation-second-section",
+      "settings": {
+      }
+    },
+    "1663224351b4ff20b4": {
+      "type": "innovation-third-section",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1654837648af55b8ec"
+    "1654837648af55b8ec",
+    "166322433958ee9a7a",
+    "1663224344ae7f2ec8",
+    "1663224351b4ff20b4"
   ]
 }

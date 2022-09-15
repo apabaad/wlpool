@@ -1,0 +1,253 @@
+<div class ="inv-container page-width">
+    <div class="inv-content">
+        <img class="img-mobile-screen" src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/slide-home-3-mobile.jpg?v=1663129001">
+        <img class="img-big-screen" src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/slide-home-3.jpg?v=1663124016">
+
+        <div class="inv-first-item">
+            <div class="inv-first-right-content">
+
+           
+            <img class="inv-logo" src="https://cdn.shopify.com/s/files/1/0653/9103/4619/files/logo_main_cooling_1.png?v=1663124015">
+            <p>The <span class="inv-span"> N°1 </span> in preserving your food,
+            for freshness up to <span style="border-bottom:2px solid #EDB112 ">4 times longer</span>.</p>
+    </div>
+</div>
+</div>
+</div>
+
+{% style %}
+.inv-third-content{
+background-color:#FAFAFA;
+background:url("https://cdn.shopify.com/s/files/1/0653/9103/4619/files/bg-consumer-insights.jpg?v=1663218372");
+padding:0 0 80px 0;
+}
+
+.inv-third-title{
+    padding-top:60px;
+}
+
+.inv-third-text{
+    padding:40px 60px 40px 60px;
+    font-size:18px;
+    text-align:center;
+}
+
+.what-you-asked{
+    color:#EDB112;
+    font-size:28px;
+}
+.inv-third-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    padding:0 35px;
+    
+}
+.inv-icon-item{
+    padding:0 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.inv-icon{
+    width:140px;
+    margin-bottom:10px;
+}
+.inv-second-item{
+    position:absolute;
+    display:flex;
+    position:absolute;    
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    justify-content: center;
+    align-items:center;
+}
+
+.inv-second-text{
+    /* width:33%; */
+    background:white;
+    /* opacity:0.9; */
+    padding:20px;
+    text-align:center;
+    line-height:200px;
+}
+
+
+
+.inv-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.inv-content{
+    position:relative;
+}
+
+.img-mobile-screen{
+    display:none;
+}
+
+.inv-first-item{
+    display:flex;
+    position:absolute;    
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+/* .inv-span{
+    font-size:24px
+} */
+
+.inv-first-right-content{
+    position:absolute;
+    padding:2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    top:5%;
+    left:52%;
+}
+
+/* .inv-text-row{
+    display:flex;
+    padding:100px;
+    flex-direction:column;
+} */
+
+.inv-first-item p{
+    font-size:18px;
+}
+
+/* .inv-span{
+    font-size:34px;
+} */
+
+.inv-logo{
+    width:110px;
+}
+
+
+@media screen and (min-width:1024px){
+    
+    .inv-first-right-content{
+        width:50%;
+} 
+.inv-first-item p{
+    font-size:28px;
+}
+
+.inv-span{
+    font-size:44px;
+}
+.inv-logo{
+    width:173px;
+}
+}
+
+@media screen and (max-width:1023px){
+.inv-third-icons{
+    flex-wrap:wrap;
+    padding:0 15px;
+    
+}
+.inv-icon-item{
+    padding:10px 15px;
+    max-width:45%;
+}
+.inv-icon{
+    width:110px;
+    margin-bottom:10px;
+}
+}
+
+@media screen and (max-width:768px){
+
+    .inv-first-item{
+    justify-content: center;
+    align-items:center;
+}
+
+.inv-first-item p{
+    font-size:18px;
+}
+
+.inv-span{
+    font-size:34px;
+}
+
+.inv-text-row img{
+    width:173px;
+}
+
+.inv-second-text{
+    /* width:70%; */
+    opacity:0.7
+
+} 
+}
+
+@media screen and (max-width:590px){
+
+.inv-first-item{
+justify-content: center;
+align-items:center;
+}
+
+.inv-first-right-content{
+position:absolute;
+padding:2.5%;
+padding-top: 2.5%;
+padding-bottom: 2%;
+display:flex;
+flex-direction:row;
+align-items:center;
+top:40%;
+left:0%;
+background-color:white;
+opacity:0.8;
+}
+
+.inv-first-item p{
+font-size:18px;
+}
+
+.inv-span{
+font-size:28px;
+}
+
+.inv-text-row img{
+width:173px;
+}
+.img-mobile-screen{
+    display:block;
+}
+.img-big-screen{
+    display:none;
+}
+
+} 
+
+
+
+{% endstyle %}
+
+{% schema %}
+{
+    "presets": [
+        {
+        "name": "Innovation First",
+        "category": "Custom layout"	
+        }
+   ]    
+}
+{% endschema %}

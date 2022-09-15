@@ -99,7 +99,7 @@
         "166305124026313aed-0": {
           "type": "text",
           "settings": {
-            "BgColor": "#fff",
+            "BgColor": "#ffffff",
             "text_padding_top": 40,
             "text_padding_bottom": 40,
             "title": "Laundry that lets you manage cost and energy",
@@ -137,7 +137,7 @@
         "166305124026313aed-1"
       ],
       "settings": {
-        "heading": "Custom content",
+        "heading": "",
         "subheading": "",
         "description": "",
         "header_alignment": "center",
@@ -177,61 +177,36 @@
         "divider": false
       }
     },
-    "16630517130e2f6f53": {
-      "type": "custom-content",
+    "1663109338c3a6b75e": {
+      "type": "slideshow",
       "blocks": {
-        "16630517134fb893f3-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "BgColor": "#fff",
-            "text_padding_top": 40,
-            "text_padding_bottom": 40,
-            "title": "Talk about your brand",
-            "subheading": "",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "inner_width": 500,
-            "alignment": "center",
-            "horizontal_alignment": "center",
-            "align_text": "left",
-            "text_size": "medium",
-            "text_color": "black",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_color": "sf__btn-black",
-            "mobile_order": "",
-            "block_custom_class": ""
-          }
-        },
-        "16630517134fb893f3-1": {
+        "16631093383649504d-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bg-footer--large.png",
+            "title": "",
+            "title_size": 10,
+            "subheading": "",
             "link": "",
-            "width": "100%",
-            "alignment": "center",
-            "mobile_order": "",
-            "block_custom_class": ""
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "title_bg_color": "#000",
+            "title_bg_opacity": 0.5,
+            "image": "shopify:\/\/shop_images\/bg-footer--large.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "16630517134fb893f3-0",
-        "16630517134fb893f3-1"
+        "16631093383649504d-1"
       ],
       "settings": {
-        "heading": "",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "background_color": "",
-        "gap": 0,
-        "use_scroll_mobile": false,
-        "gap_mobile": 16,
-        "custom_class": ""
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
       }
     }
   },
@@ -244,6 +219,6 @@
     "16630512356e3eb86d",
     "16630512408a84d4f8",
     "1663051710bdf04f4b",
-    "16630517130e2f6f53"
+    "1663109338c3a6b75e"
   ]
 }

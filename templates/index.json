@@ -110,7 +110,7 @@
             "button_link": "shopify:\/\/pages\/innovation-design",
             "button_style": "sf__btn-secondary",
             "button_color": "sf__btn-wpool-primary",
-            "mobile_order": "",
+            "mobile_order": "2",
             "block_custom_class": ""
           }
         },
@@ -122,14 +122,14 @@
             "content_alignment": "left",
             "text_size": "medium",
             "text_color": "white",
-            "image": "shopify:\/\/shop_images\/modern-updated-kitchen-interior-home.jpg",
+            "image": "shopify:\/\/shop_images\/bg-innovation-discoverdifference.jpg",
             "link": "",
             "title": "",
             "subtitle": "",
             "button_label": "",
             "button_style": "sf__btn-primary",
             "button_size": "",
-            "mobile_order": "",
+            "mobile_order": "1",
             "block_custom_class": ""
           }
         }
@@ -157,11 +157,11 @@
         "1658444034211766c6-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/country-road-with-tall-windmills-on-the-left.jpg",
+            "image": "shopify:\/\/shop_images\/bg-cooking--large.jpg",
             "link": "",
             "width": "50%",
             "alignment": "center",
-            "mobile_order": "",
+            "mobile_order": "1",
             "block_custom_class": ""
           }
         },
@@ -185,7 +185,7 @@
             "button_link": "shopify:\/\/pages\/environment",
             "button_style": "sf__btn-primary",
             "button_color": "sf__btn-wpool-primary",
-            "mobile_order": "",
+            "mobile_order": "2",
             "block_custom_class": ""
           }
         }
