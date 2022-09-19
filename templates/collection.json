@@ -63,15 +63,15 @@
         "1656973672a1f5b7c4-0": {
           "type": "image",
           "settings": {
-            "title": "Whirlpool Ovens cooking made effortless",
+            "title": "",
             "title_size": 27,
-            "subheading": "Dolor sit amet, consectetur adipiscing elit. Maecenas suscipit sem ac velit iaculis eleifend. Phasellus ultrices.",
+            "subheading": "",
             "link": "",
             "link_text": "",
             "text_align": "vertical-center horizontal-left",
             "title_bg_color": "#000000",
             "title_bg_opacity": 0.4,
-            "image": "shopify:\/\/shop_images\/homepage-gallery-01-set-talent-p201047xx-115z1.jpg",
+            "image": "{{ collection.metafields.custom.collection_banner.value }}",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -81,7 +81,7 @@
         "1656973672a1f5b7c4-0"
       ],
       "settings": {
-        "section_height": "550px",
+        "section_height": "650px",
         "mobile_height": "auto",
         "parallax": false,
         "style": "arrows",

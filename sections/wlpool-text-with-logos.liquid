@@ -9,7 +9,7 @@
     <h2>
     <div class ="wlpool-award-logos">
         <img class="wlpool-logo-item" src="{{block.settings.logo1 | img_url: 'master' }}">
-        {% comment %} <img class="wlpool-logo-item" src="{{block.settings.logo2 | img_url: 'master' }}"> {% endcomment %}
+        {% if block.settings.logo2 != blank %} <img class="wlpool-logo-item" src="{{block.settings.logo2 | img_url: 'master' }}"> {% endif %}
     </div>
 {% endfor %}
 </div>

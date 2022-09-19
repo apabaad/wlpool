@@ -2169,7 +2169,8 @@ cucine  collection page
   font-weight: bold;
 }
 
-.product-block {
+.product-block .rte,
+.first-few-li {
   text-align: justify;
 }
 .first-few-li ul li:nth-child(n + 4) {
@@ -2192,7 +2193,11 @@ cucine  collection page
   color: #fdc100;
 }
 
-te @media screen and (min-width: 1280px) {
+.contact-form-section .page-width {
+  padding: 0;
+}
+
+@media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {
     width: 85% !important;

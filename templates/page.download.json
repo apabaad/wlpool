@@ -13,9 +13,9 @@
             "link_text": "",
             "text_align": "vertical-center horizontal-center",
             "title_bg_color": "#fdc100",
-            "title_bg_opacity": 0.5,
-            "image": "shopify:\/\/shop_images\/chess-pieces-close-up.jpg",
-            "overlay_opacity": 0,
+            "title_bg_opacity": 0.6,
+            "image": "shopify:\/\/shop_images\/downloads_page.jpg",
+            "overlay_opacity": 50,
             "focal_point": "center center"
           }
         }

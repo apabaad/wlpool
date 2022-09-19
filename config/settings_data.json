@@ -45,16 +45,16 @@
     "animate_underlines": true,
     "product_grid_image_size": "natural",
     "product_grid_image_fill": false,
-    "product_hover_image": true,
+    "product_hover_image": false,
     "quick_shop_enable": false,
     "enable_shop_price": true,
     "enable_add_to_cart": true,
     "enable_swatches": false,
     "enable_product_reviews": false,
     "cart_type": "drawer",
-    "social_facebook_link": "https:\/\/www.facebook.com\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/",
-    "social_youtube_link": "youtube.com",
+    "social_facebook_link": "https:\/\/www.facebook.com\/whirlpoolcookingaustralia",
+    "social_instagram_link": "https:\/\/www.instagram.com\/whirlpoolaustralia\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCMx1xZoqLHR0LfrlEstCdiw",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "show_breadcrumbs": true,
     "checkout_header_image": "",
@@ -146,7 +146,7 @@
           "23076f1c-751b-4cba-b6f2-b541da663199": {
             "type": "logo_social",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/whirlpool_logo-black-01.png",
+              "logo": "shopify:\/\/shop_images\/Whirlpool_Footer-Logo_d5a031af-9606-483c-9eee-e7964ca86a4c.png",
               "desktop_logo_height": 70,
               "container_width": 23
             }

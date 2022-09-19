@@ -43,7 +43,7 @@
             "text_padding_bottom": 40,
             "title": "Dishwashing that considers our most precious resource of all.",
             "subheading": "",
-            "text": "<p>Dispelling the myth that washing dishes by hand is a more ecological friendly option to mechanical dishwashing, Whirlpool has developed 6 litre cycles.<\/p><p>Working in conjunction with sensor technology to detect the level of soiling on dishes, pans and cutlery, our appliances clean up to 13 place settings for just a fraction of the water consumption of washing by hand.<\/p><p>Versus the average of 45 litres used with traditional handwashing, Whirlpool’s 6 litre cycles provide a healthier approach to cleaning whilst 6TH SENSE helps to save up to 50% on energy too.<\/p>",
+            "text": "<p>Dispelling the myth that washing dishes by hand is a more ecologically friendly option than mechanical dishwashing, Whirlpool has developed 6-liter cycles.<\/p><p>Working in conjunction with sensor technology to detect the level of soiling on dishes, pans, and cutlery, our appliances clean up to 13 place settings for just a fraction of the water consumption of washing by hand.<\/p><p>Versus the average of 45 liters used with traditional handwashing, Whirlpool’s 6-liter cycles provide a healthier approach to cleaning whilst 6TH SENSE helps to save up to 50% on energy too.<\/p>",
             "width": "50%",
             "inner_width": 560,
             "alignment": "center",
@@ -163,7 +163,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>By keeping Earth’s most precious, finite resources at the forefront of design and development, Whirlpool’s appliances reflect this crucial requirement to respectfully use what we need and ensure our everyday lives and conveniences do not come at the detriment of future generations.<\/p>"
+            "text": "<p>By keeping Earth’s most precious, finite resources at the forefront of design and development, Whirlpool’s appliances reflect this crucial requirement to respectfully use what we need and ensure our everyday lives and conveniences do<br\/>not come at the detriment of future generations.<\/p>"
           }
         }
       },
@@ -189,7 +189,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "title_bg_color": "#000",
+            "title_bg_color": "#000000",
             "title_bg_opacity": 0.5,
             "image": "shopify:\/\/shop_images\/bg-footer--large.png",
             "overlay_opacity": 0,

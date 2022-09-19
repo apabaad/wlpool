@@ -7,8 +7,17 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
-        "title": "Popular picks"
+        "title": "Popular picks",
+        "description": "<p>Featured collection description<\/p>",
+        "home_featured_products": "microwaves",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false,
+        "enable_add_to_cart": false,
+        "enable_price": false
       }
     }
   },
