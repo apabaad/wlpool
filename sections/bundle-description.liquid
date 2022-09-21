@@ -1,0 +1,37 @@
+<div class="bundle-description">
+<div class="page-width">
+<h2><strong>{{section.settings.bundle-desc-heading}}</strong></h2>
+{{ product.metafields.bundle-description.bundle-description }}
+</div>
+</div>
+
+{% style %}
+.bundle-description ul{
+    list-style:disc;
+    
+}
+{% endstyle %}
+
+
+{% schema %}
+{
+
+        "name":"Bundle Description",
+    "settings":[
+        {
+            "type":"text",
+            "id":"bundle-desc-heading",
+            "label":"Heading",
+            "default":"Bundle Description"
+        }
+],
+
+    
+    "presets": [
+        {
+          "name": "Bundle Description",
+          "category": "Custom layout"	
+        }
+      ]
+    }
+    {% endschema %}

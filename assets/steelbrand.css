@@ -2197,6 +2197,10 @@ cucine  collection page
   padding: 0;
 }
 
+.wlpool-grid-product__price {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {

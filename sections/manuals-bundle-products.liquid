@@ -1,0 +1,129 @@
+{% if product.metafields.custom.button_label_product_1 !=blank or product.metafields.custom.manual_btn_label_product_2 != blank or product.metafields.custom.specs_button_label_product_2 != blank or product.metafields.custom.manual_btn_label_product_1 != blank%}
+<section class="page-width">
+    <div class="" {{ block.shopify_attributes }}>
+        
+        {% if product.metafields.custom.specs_bundle_product_1 != blank or product.metafields.custom.specs_bundle_product_2 != blank %}
+        <h5 style="color:black;"><strong>Specification Sheets</strong></h5>
+
+        <div class="bundle-manuals manual-buttons-container" style="margin-bottom:20px;">
+      
+      {% if product.metafields.custom.specs_bundle_product_1 != blank %}
+      {% if product.metafields.custom.button_label_product_1 != blank %}
+
+        <a href="{{product.metafields.custom.specs_bundle_product_1 | file_url  }}" target="_blank" class=" manual-buttons  items-center">
+          {% comment %} {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+          {{ product.metafields.custom.button_label_product_1 }}</a>
+      {% endif %}
+    {% endif %}
+
+      {% if product.metafields.custom.specs_bundle_product_2 != blank %}
+        {% if product.metafields.custom.specs_button_label_product_2 != blank %}
+        <a href="{{product.metafields.custom.specification_sheet | file_url  }}" target="_blank" class=" manual-buttons  items-center">
+          {% comment %} {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+          {{ product.metafields.custom.specs_button_label_product_2}}</a>
+      {% endif %}
+    {% endif %}
+    </div>
+{% endif %}
+
+    {% if product.metafields.custom.manual_bundle_product_1 != blank or product.metafields.custom.manual_bundle_product_2 != blank %}
+      <h5 style="color:black;"><strong>User Manuals</strong></h5>
+      <div class="bundle-manuals manual-buttons-container">
+
+      {% if product.metafields.custom.manual_bundle_product_1 != blank %}
+        {% if product.metafields.custom.manual_btn_label_product_1 != blank%}
+        <a href="{{product.metafields.custom.manual_bundle_product_1 | file_url  }}" target="_blank" class=" manual-buttons  items-center">
+          {% comment %} {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+          {{ product.metafields.custom.manual_btn_label_product_1 }}</a>
+      {% endif %}
+    {% endif %}
+
+      {% if product.metafields.custom.manual_bundle_product_2 != blank %}
+        {% if product.metafields.custom.manual_btn_label_product_2 !=blank %}
+        <a href="{{product.metafields.custom.manual_bundle_product_2 | file_url  }}" target="_blank" class=" manual-buttons  items-center">
+          {% comment %} {% render 'icon', name: 'printer', size: 'custom', class: 'w-[20px] h-[20px] mr-[10px]' %} {% endcomment %}
+          {{ product.metafields.custom.manual_btn_label_product_2 }}</a>
+      {% endif %}
+      {% endif %}
+
+    </div>
+{% endif %}
+
+    </div> 
+</section>
+{% endif %}
+    
+      
+             {% schema %} 
+                {
+
+                   "presets": [
+                                    {
+                                    "name": "Bundle Manuals",
+                                    "category": "ADVANCED LAYOUT"	
+                                    }
+                               ]
+                }
+              {% endschema %}
+      
+      
+      
+      
+      
+        {% style %}
+          
+        .manual-buttons-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction:row;
+            color:white;
+            margin-bottom: 80px;
+            max-width:40%;
+              }
+      
+        .manual-buttons{
+            margin-left: 20px;
+            background: white;
+            color: #7C7C7C;
+            border: 2px solid #7C7C7C;
+            padding: 11px 20px;
+            /* max-width: 50%; */
+            /* min-width:400px; */
+            line-height: 1.42;
+            font-size: 16px;
+            font-weight: bold;
+    
+            text-align: center !important;
+            cursor: pointer;
+            border-radius: 5px;
+            flex: 1 0 29%;
+            
+        }
+      
+        .manual-buttons:hover{
+              color: #fdc100;
+              border: 2px solid #fdc100;
+            }
+      
+        
+        @media screen and (max-width: 600px) {
+       
+          .manual-buttons-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction:column;
+                  margin-top: 25px;
+                  margin-bottom: 100px;
+                  max-width: 100%;
+            }
+              .manual-buttons	{
+            margin: 0px 20px 7px 20px;
+                 
+          }
+        
+      }
+      
+            {% endstyle %}
+          

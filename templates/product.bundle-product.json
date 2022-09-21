@@ -1,0 +1,217 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "d24a80da-9a82-4a64-ad4c-73aef4e07900": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class =\"first-few-li\">{{product.metafields.custom.features}}\n<\/div>"
+          }
+        },
+        "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "3110a8c6-5d9b-4484-9d13-b11acfe58805": {
+          "type": "store-locator",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "daa71e38-9098-4201-ade7-0a154736bbc4": {
+          "type": "product_downloads",
+          "disabled": true,
+          "settings": {
+            "enable_specification_sheet": true,
+            "enable_user_manual": true
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "separator",
+        "d24a80da-9a82-4a64-ad4c-73aef4e07900",
+        "06c5c104-8d7e-4563-8a0c-13e4bf4e7eb8",
+        "price",
+        "buy_buttons",
+        "3110a8c6-5d9b-4484-9d13-b11acfe58805",
+        "daa71e38-9098-4201-ade7-0a154736bbc4"
+      ],
+      "settings": {
+        "sku_enable": true,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "16637242608986acac": {
+      "type": "manuals-bundle-products",
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16589022534ade1920": {
+      "type": "wlpool-text-with-logos",
+      "blocks": {
+        "a8a48c23-2c3b-4314-aa56-278cf37040b9": {
+          "type": "Text",
+          "settings": {
+            "title": "Product Awards",
+            "logo1": "{{ product.metafields.custom.product_award_1.value }}",
+            "logo2": "{{ product.metafields.custom.product_award_2.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "a8a48c23-2c3b-4314-aa56-278cf37040b9"
+      ],
+      "settings": {
+      }
+    },
+    "1660709276c1c1e24c": {
+      "type": "background-video-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dcb2c3f8de624562b246bcfb1b849e63.mp4",
+        "color_border": "#f4f4f4",
+        "layout": "left",
+        "height": 650
+      }
+    },
+    "166131398584781dde": {
+      "type": "wlpool-description-with-logo",
+      "settings": {
+      }
+    },
+    "166355686626c477a5": {
+      "type": "bundle-description",
+      "settings": {
+        "bundle-desc-heading": "Bundle Description"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Recommended Products",
+        "related_count": 5
+      }
+    },
+    "16588979564e01c4d4": {
+      "type": "text-with-icons",
+      "blocks": {
+        "165889795644bc2b55-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "envelope",
+            "title": "Downloads",
+            "text": "<p>Access or download your product manuals.<\/p>",
+            "button_label": "DISCOVER MORE",
+            "button_link": "shopify:\/\/pages\/download-manuals"
+          }
+        },
+        "165889795644bc2b55-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "phone",
+            "title": "Contact Us",
+            "text": "<p>Call us: <a href=\"tel:1300762219\" target=\"_blank\">1300 762 219<\/a> Email: <a href=\"mailto:support@arisit.com\" target=\"_blank\" title=\"mailto:support@arisit.com\">support@arisit.com<\/a><\/p>",
+            "button_label": "CONTACT US",
+            "button_link": "shopify:\/\/pages\/contact"
+          }
+        }
+      },
+      "block_order": [
+        "165889795644bc2b55-0",
+        "165889795644bc2b55-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "165544510106ce9654": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "7e7780ef-d7a3-4331-aee3-d4faf2743019": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e7780ef-d7a3-4331-aee3-d4faf2743019"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "16637242608986acac",
+    "collection-return",
+    "16589022534ade1920",
+    "1660709276c1c1e24c",
+    "166131398584781dde",
+    "166355686626c477a5",
+    "product-recommendations",
+    "16588979564e01c4d4",
+    "165544510106ce9654"
+  ]
+}
