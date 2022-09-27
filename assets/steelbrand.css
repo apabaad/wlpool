@@ -2199,8 +2199,25 @@ cucine  collection page
 
 .wlpool-grid-product__price {
   font-weight: bold;
+  font-size: larger !important;
+}
+.grid-product__tag--sale {
+  color: #fdc100 !important;
 }
 
+.grid-product__price--original,
+.product__price--compare {
+  color: #fdc100;
+}
+
+.product-block--price .sale-price,
+.product__price {
+  font-weight: bold;
+}
+
+.cart__checkout-wrapper button {
+  color: white !important;
+}
 @media screen and (min-width: 1280px) {
   .shopify-payment-button__button,
   .add-to-cart--secondary {
